@@ -51,19 +51,26 @@ def main(venue:str, no:int):
 
 
 if __name__ == '__main__':
-    # fire.Fire(main)
+    import argparse
     set_logger()
 
-    no = int(input('CCF期刊/会议类别：'))
-    path = '../paper_db/{}'.format(no)
-    if os.path.isdir(path):
-        pass
+    parser = argparse.ArgumentParser(description='构建CCF推荐期刊/会议论文数据库')
+    parser.add_argument('--category', type=int, help='CCF期刊/会议类别 (1-10)')
+    parser.add_argument('--rank', type=str, default='A/B/C', help="期刊/会议等级，形如'A/B/C'，默认全选")
+    args = parser.parse_args()
+
+    if args.category is None:
+        no = int(input('CCF期刊/会议类别：'))
     else:
+        no = args.category
+
+    path = '../paper_db/{}'.format(no)
+    if not os.path.isdir(path):
         os.makedirs(path)
 
-    venue_list = ccf_filter(no, rank='A/B/C')
+    venue_list = ccf_filter(no, rank=args.rank)
 
-    for venue in venue_list[31:]:
+    for venue in venue_list:
         if venue in no_dblp:
             logging.info('"{}" in tmp_no_dblp!!'.format(venue))
         else:

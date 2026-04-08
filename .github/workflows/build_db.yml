@@ -1,0 +1,62 @@
+name: Build Paper DB
+
+on:
+  workflow_dispatch:
+    inputs:
+      category:
+        description: 'CCF期刊/会议类别 (1-10)'
+        required: true
+        default: '3'
+        type: choice
+        options:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+          - '5'
+          - '6'
+          - '7'
+          - '8'
+          - '9'
+          - '10'
+      rank:
+        description: "期刊/会议等级，形如'A/B/C'"
+        required: false
+        default: 'A/B/C'
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build paper database
+        run: |
+          cd src
+          python main.py --category ${{ github.event.inputs.category }} --rank "${{ github.event.inputs.rank }}"
+
+      - name: Commit and push updated database
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add paper_db/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update paper DB for category ${{ github.event.inputs.category }} [skip ci]"
+            git push
+          fi
