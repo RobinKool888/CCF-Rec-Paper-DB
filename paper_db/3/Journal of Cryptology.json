@@ -1,9 +1,180 @@
 [
     {
         "name": "Journal of Cryptology",
+        "year": "2026",
+        "info": "Volume 39: 2026",
+        "count": 24,
+        "papers": [
+            "Finding the Inverse of some Shift Invariant Transformations.",
+            "Efficient Algorithms for the Detection of (N, N)-Splittings and Endomorphisms.",
+            "Public-Coin Three-Round Zero-Knowledge from Learning with Errors and Keyless Multi-Collision-Resistant Hash.",
+            "Fair Coin Flipping: Tighter Analysis and the Many-Party Case.",
+            "Permutations Satisfying (P1) and (P2) Properties and \u2113-Optimal Bent Functions.",
+            "Faster Homomorphic Operations and Beyond: Expediting Homomorphic Computation via Boolean Circuit Optimization.",
+            "Differential-Linear Cryptanalysis from an Algebraic Perspective.",
+            "Accurate Score Prediction for Dual-Sieve Attacks.",
+            "Time-Space Tradeoffs for Sponge Hashing: Attacks and Limitations for Short Collisions.",
+            "Four Attacks and a Proof for Telegram.",
+            "Computational Robust (Fuzzy) Extractors for CRS-dependent Sources with Minimal Min-entropy.",
+            "Universally Composable Almost-Everywhere Secure Computation.",
+            "Link Between the Differential Cryptanalysis and Linear Approximations over Finite Abelian Groups And Its Applications.",
+            "Space-Efficient and Noise-Robust Quantum Factoring.",
+            "Study of Arithmetization Methods for STARKs.",
+            "Exponential Sums in Linear Cryptanalysis.",
+            "Your Reputation's Safe with Me: Framing-Free Distributed Zero-Knowledge Proofs.",
+            "New Attacks on Feistel Structures with Improved Memory Complexities.",
+            "The Fiat - Shamir Transformation of $(\\varGamma _1,\\dots ,\\varGamma _\\mu )$-Special-Sound Interactive Proofs.",
+            "New Results on Elliptic Curve Hidden Number Problem for ECDH Key Exchange.",
+            "The Combinatorial Structure and Value Distributions of Plateaued Functions.",
+            "Correction to: Actively Secure Setup for SPDZ.",
+            "Generic Constructions of Compact and Tightly Selective-Opening Secure Public-Key Encryption Schemes.",
+            "Instance-Hiding Interactive Proofs."
+        ]
+    },
+    {
+        "name": "Journal of Cryptology",
+        "year": "2025",
+        "info": "Volume 38: 2025",
+        "count": 36,
+        "papers": [
+            "Protecting Distributed Primitives Against Leakage: Equivocal Secret Sharing and more.",
+            "New Representations of the AES Key Schedule.",
+            "SwiftEC: Shallue-van de Woestijne Indifferentiable Function To Elliptic Curves.",
+            "On Soundness Notions for Interactive Oracle Proofs.",
+            "Achievable CCA2 Relaxation for Homomorphic Encryption.",
+            "Lattice-Based Zero-Knowledge Proofs in Action: Applications to Electronic Voting.",
+            "Compact Proofs of Partial Knowledge for Overlapping CNF Formulae.",
+            "On Building Fine-Grained One-Way Functions from Strong Average-Case Hardness.",
+            "Decrypting Without Keys: The Case of the GlobalPlatform SCP02 Protocol.",
+            "An Efficient ZK Compiler from SIMD Circuits to General Circuits.",
+            "Fiat-Shamir Bulletproofs are Non-malleable (in the Random Oracle Model).",
+            "A Complete Analysis of the BKZ Lattice Reduction Algorithm.",
+            "Efficient Succinct Zero-Knowledge Arguments in the CL Framework.",
+            "Natively Compatible Super-Efficient Lookup Arguments and How to Apply Them.",
+            "Improved Universal Thresholdizer from Iterative Shamir Secret Sharing.",
+            "Guaranteed Output in $O(\\sqrt{n})$ Rounds for Round-Robin Sampling Protocols.",
+            "Ceno: Non-uniform, Segment and Parallel Zero-Knowledge Virtual Machine.",
+            "Correction to: A Complete Analysis of the BKZ Lattice Reduction Algorithm.",
+            "Actively Secure Half-Gates with Minimum Overhead under Duplex Networks.",
+            "Two Generalizations of Almost Perfect Nonlinearity.",
+            "Speeding Up Multi-scalar Multiplications for Pairing-Based zkSNARKs.",
+            "On Decompositions of Permutations in Quadratic Functions.",
+            "A Guide to the Design of Digital Signatures based on Cryptographic Group Actions.",
+            "Parametric Construction Approach of Balanced Boolean Functions from Two-to-one Mappings.",
+            "A New Multivariate Primitive from CCZ Equivalence.",
+            "Unbounded Dynamic Predicate Compositions in ABE from Standard Assumptions.",
+            "Exploiting the Symmetry of $\\mathbb {Z}^n$: Randomization and the Automorphism Problem.",
+            "Threshold Computation in the Head: Improved Framework for Post-Quantum Signatures and Zero-Knowledge Arguments.",
+            "Towards Accountability in CRS Generation.",
+            "A New Linear Distinguisher for Four-Round AES.",
+            "Two-Round Threshold Signature from Algebraic One-More Learning with Errors.",
+            "Lossy Cryptography from Code-Based Assumptions Dense-Sparse LPN: A New Subexponentially Hard LPN Variant in SZK.",
+            "Quantum CCA-Secure PKE, Revisited.",
+            "Improving Linear Key Recovery Attacks using Walsh Spectrum Puncturing.",
+            "New Characterizations of Dillon-like Hyperbent Functions via Dickson Polynomials.",
+            "Asymptotically Free Broadcast in Constant Expected Time via Packed VSS."
+        ]
+    },
+    {
+        "name": "Journal of Cryptology",
+        "year": "2024",
+        "info": "Volume 37: 2024",
+        "count": 39,
+        "papers": [
+            "Beyond the Csisz\u00e1r-K\u00f6rner Bound: Best-Possible Wiretap Coding via Obfuscation.",
+            "Breaking the $O(\\sqrt{n})$-Bit Barrier: Byzantine Agreement with Polylog Bits Per Party.",
+            "BLEACH: Cleaning Errors in Discrete Computations Over CKKS.",
+            "Lattice-Based Programmable Hash Functions and Applications.",
+            "Masking the GLP Lattice-Based Signature Scheme at Any Order.",
+            "Lattice Enumeration and Automorphisms for Tower NFS: A 521-Bit Discrete Logarithm Computation.",
+            "Cryptographic Competitions.",
+            "(Inner-Product) Functional Encryption with Updatable Ciphertexts.",
+            "Robust Channels: Handling Unreliable Networks in the Record Layers of QUIC and DTLS 1.3.",
+            "Time-Space Lower Bounds for Finding Collisions in Merkle-Damg\u00e5rd Hash Functions.",
+            "Hashing to Elliptic Curves Through Cipolla-Lehmer-M\u00fcller's Square Root Algorithm.",
+            "Identity-Based Encryption with (Almost) Tight Security in the Multi-instance, Multi-ciphertext Setting.",
+            "Entropy Computation for Oscillator-based Physical Random Number Generators.",
+            "Collision Resistance from Multi-collision Resistance.",
+            "The COLM Authenticated Encryption Scheme.",
+            "Bandwidth-Hard Functions: Reductions and Lower Bounds.",
+            "(Continuous) Non-malleable Codes for Partial Functions with Manipulation Detection and Light Updates.",
+            "Bitcoin as a Transaction Ledger: A Composable Treatment.",
+            "Optimizing Rectangle and Boomerang Attacks: A Unified and Generic Framework for Key Recovery.",
+            "Analysis of Multivariate Encryption Schemes: Application to Dob and C*.",
+            "Cryptographic Primitives with Hinting Property.",
+            "Watermarking PRFs and PKE Against Quantum Adversaries.",
+            "Compact NIZKs from Standard Assumptions on Bilinear Maps.",
+            "Multi-key and Multi-input Predicate Encryption (for Conjunctions) from Learning with Errors.",
+            "Simple Constructions from (Almost) Regular One-Way Functions.",
+            "Tighter Security for Schnorr Identification and Signatures: A High-Moment Forking Lemma for $\\varvec{\\Sigma }$-Protocols.",
+            "Lightweight Asynchronous Verifiable Secret Sharing with Optimal Resilience.",
+            "Algebraically Structured LWE, Revisited.",
+            "Bringing Order to Chaos: The Case of Collision-Resistant Chameleon-Hashes.",
+            "The Price of Active Security in Cryptographic Protocols.",
+            "Lattice-Based Polynomial Commitments: Towards Asymptotic and Concrete Efficiency.",
+            "The Retracing Boomerang Attack, with Application to Reduced-Round AES.",
+            "Symmetric and Dual PRFs from Standard Assumptions: A Generic Validation of a Prevailing Assumption.",
+            "Randomness Recoverable Secret Sharing Schemes.",
+            "Finding Collisions in a Quantum World: Quantum Black-Box Separation of Collision-Resistance and One-Wayness.",
+            "Memory-Efficient Attacks on Small LWE Keys.",
+            "Families of Prime-Order Endomorphism-Equipped Embedded Curves on Pairing-Friendly Curves.",
+            "Zeromorph: Zero-Knowledge Multilinear-Evaluation Proofs from Homomorphic Univariate Commitments.",
+            "Full Quantum Equivalence of Group Action DLog and CDH, and More."
+        ]
+    },
+    {
+        "name": "Journal of Cryptology",
+        "year": "2023",
+        "info": "Volume 36: 2023",
+        "count": 40,
+        "papers": [
+            "On the Hardness of Module Learning with Errors with Short Distributions.",
+            "Minicrypt Primitives with Algebraic Structure and Applications.",
+            "Rotational Differential-Linear Cryptanalysis Revisited.",
+            "Topical Collection on Computing on Encrypted Data.",
+            "Correction: Locally Computable UOWHF with Linear Shrinkage.",
+            "Decentralized Multi-authority ABE for sfNC1 from BDH.",
+            "Oblivious RAM with Worst-Case Logarithmic Overhead.",
+            "SLAP: Simpler, Improved Private Stream Aggregation from Ring Learning with Errors.",
+            "No-Signaling Linear PCPs.",
+            "An Efficient Threshold Access-Structure for RLWE-Based Multiparty Homomorphic Encryption.",
+            "Adaptively Secure MPC with Sublinear Communication Complexity.",
+            "Bootstrapping for BGV and BFV Revisited.",
+            "On the Communication Efficiency of Statistically Secure Asynchronous MPC with Optimal Resilience.",
+            "NIZK from SNARGs.",
+            "Fast Large-Scale Honest-Majority MPC for Malicious Adversaries.",
+            "Revisiting the Efficiency of Asynchronous MPC with Optimal Resilience Against General Adversaries.",
+            "I Want to Ride My BICYCL : BICYCL Implements CryptographY in CLass Groups.",
+            "Latin Dances Reloaded: Improved Cryptanalysis Against Salsa and ChaCha, and the Proposal of Forr\u00f3.",
+            "Learn from Your Faults: Leakage Assessment in Fault Attacks Using Deep Learning.",
+            "Must the Communication Graph of MPC Protocols be an Expander?",
+            "High-Throughput Secure Three-Party Computation with an Honest Majority.",
+            "MPClan: Protocol Suite for Privacy-Conscious Computations.",
+            "Zero-Knowledge Arguments for Lattice-Based Accumulators: Logarithmic-Size Ring Signatures and Group Signatures Without Trapdoors.",
+            "Almost-Optimally Fair Multiparty Coin-Tossing with Nearly Three-Quarters Malicious.",
+            "On the Power of an Honest Majority in Three-Party Computation Without Broadcast.",
+            "Actively Secure Garbled Circuits with Constant Communication Overhead in the Plain Model.",
+            "Candidate iO from Homomorphic Encryption Schemes.",
+            "Parameter Optimization and Larger Precision for (T)FHE.",
+            "Unbounded Predicate Inner Product Functional Encryption from Pairings.",
+            "Manticore: A Framework for Efficient Multiparty Computation Supporting Real Number and Boolean Arithmetic.",
+            "Cover Attacks for Elliptic Curves over Cubic Extension Fields.",
+            "Fine-Grained Secure Attribute-Based Encryption.",
+            "Breaking and Fixing Garbled Circuits When a Gate has Duplicate Input Wires.",
+            "A Theoretical Framework for the Analysis of Physical Unclonable Function Interfaces and Its Relation to the Random Oracle Model.",
+            "Fiat-Shamir Transformation of Multi-Round Interactive Proofs (Extended Version).",
+            "Compact Structure-Preserving Signatures with Almost Tight Security.",
+            "Revisiting Mutual Information Analysis: Multidimensionality, Neural Estimation and Optimality Proofs.",
+            "Topology-Hiding Communication from Minimal Assumptions.",
+            "Non-malleable Vector Commitments via Local Equivocability.",
+            "Rinocchio: SNARKs for Ring Arithmetic."
+        ]
+    },
+    {
+        "name": "Journal of Cryptology",
         "year": "2022",
-        "info": "Volume 35",
-        "count": 9,
+        "info": "Volume 35: 2022",
+        "count": 29,
         "papers": [
             "Limits on the Efficiency of (Ring) LWE-Based Non-interactive Key Exchange.",
             "Correction to: Unconditionally Secure Computation Against Low-Complexity Leakage.",
@@ -13,13 +184,33 @@
             "Locality-Preserving Oblivious RAM.",
             "Correction to: Unconditionally Secure Computation Against Low-Complexity Leakage.",
             "Semi-quantum Money.",
-            "CCA Security and Trapdoor Functions via Key-Dependent-Message Security."
+            "CCA Security and Trapdoor Functions via Key-Dependent-Message Security.",
+            "On the Round Complexity of Randomized Byzantine Agreement.",
+            "Non-Malleable Functions and their Applications.",
+            "Multiparty Generation of an RSA Modulus.",
+            "TinyKeys: A New Approach to Efficient Multi-Party Computation.",
+            "Two-Round n-out-of-n and Multi-Signatures and Trapdoor Commitment from Lattices.",
+            "Succinct Non-Interactive Arguments via Linear Interactive Proofs.",
+            "Constant-Round Leakage-Resilient Zero-Knowledge from Collision Resistance.",
+            "An Efficient and Generic Construction for Signal's Handshake (X3DH): Post-quantum, State Leakage Secure, and Deniable.",
+            "A Note on Perfect Correctness by Derandomization.",
+            "Obfustopia Built on Secret-Key Functional Encryption.",
+            "Everlasting UC Commitments from Fully Malicious PUFs.",
+            "On the Complexity of Compressing Obfuscation.",
+            "Non-commutative Ring Learning with Errors from Cyclic Algebras.",
+            "ZK-PCPs from Leakage-Resilient Secret Sharing.",
+            "Breaking the Decisional Diffie-Hellman Problem for Class Group Actions Using Genus Theory: Extended Version.",
+            "On the (in)Security of ROS.",
+            "Signed (Group) Diffie-Hellman Key Exchange with Tight Security.",
+            "Efficient Perfectly Secure Computation with Optimal Resilience.",
+            "The Inverse of \u03c7 and Its Applications to Rasta-Like Ciphers.",
+            "Improved Differential-Linear Attacks with Applications to ARX Ciphers."
         ]
     },
     {
         "name": "Journal of Cryptology",
         "year": "2021",
-        "info": "Volume 34",
+        "info": "Volume 34: 2021",
         "count": 44,
         "papers": [
             "Learning Strikes Again: The Case of the DRS Signature Scheme.",
@@ -71,7 +262,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2020",
-        "info": "Volume 33",
+        "info": "Volume 33: 2020",
         "count": 46,
         "papers": [
             "Solving LPN Using Covering Codes.",
@@ -125,7 +316,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2019",
-        "info": "Volume 32",
+        "info": "Volume 32: 2019",
         "count": 36,
         "papers": [
             "Multidimensional Linear Cryptanalysis.",
@@ -169,7 +360,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2018",
-        "info": "Volume 31",
+        "info": "Volume 31: 2018",
         "count": 32,
         "papers": [
             "Minimizing Locality of One-Way Functions via Semi-private Randomized Encodings.",
@@ -209,7 +400,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2017",
-        "info": "Volume 30",
+        "info": "Volume 30: 2017",
         "count": 33,
         "papers": [
             "Weak Locking Capacity of Quantum Channels Can be Much Larger Than Private Capacity.",
@@ -250,7 +441,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2016",
-        "info": "Volume 29",
+        "info": "Volume 29: 2016",
         "count": 26,
         "papers": [
             "Enhanced Public Key Security for the McEliece Cryptosystem.",
@@ -284,7 +475,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2015",
-        "info": "Volume 28",
+        "info": "Volume 28: 2015",
         "count": 28,
         "papers": [
             "Slidex Attacks on the Even-Mansour Encryption Scheme.",
@@ -320,7 +511,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2014",
-        "info": "Volume 27",
+        "info": "Volume 27: 2014",
         "count": 24,
         "papers": [
             "An Efficient State Recovery Attack on the X-FCSR Family of Stream Ciphers.",
@@ -352,7 +543,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2013",
-        "info": "Volume 26",
+        "info": "Volume 26: 2013",
         "count": 24,
         "papers": [
             "Public-Coin Parallel Zero-Knowledge for NP.",
@@ -384,7 +575,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2012",
-        "info": "Volume 25",
+        "info": "Volume 25: 2012",
         "count": 23,
         "papers": [
             "Resource Requirements of Private Quantum Channels and Consequences for Oblivious Remote State Preparation.",
@@ -415,7 +606,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2011",
-        "info": "Volume 24",
+        "info": "Volume 24: 2011",
         "count": 26,
         "papers": [
             "Practical Collisions for EnRUPT.",
@@ -449,7 +640,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2010",
-        "info": "Volume 23",
+        "info": "Volume 23: 2010",
         "count": 20,
         "papers": [
             "On Expected Probabilistic Polynomial-Time Adversaries: A Suggestion for Restricted Definitions and Their Benefits.",
@@ -477,7 +668,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2009",
-        "info": "Volume 22",
+        "info": "Volume 22: 2009",
         "count": 20,
         "papers": [
             "Security Proofs for Identity-Based Identification and Signature Schemes.",
@@ -505,7 +696,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2008",
-        "info": "Volume 21",
+        "info": "Volume 21: 2008",
         "count": 20,
         "papers": [
             "Practical Construction and Analysis of Pseudo-Randomness Primitives.",
@@ -533,7 +724,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2007",
-        "info": "Volume 20",
+        "info": "Volume 20: 2007",
         "count": 20,
         "papers": [
             "Another Look at \"Provable Security\".",
@@ -561,7 +752,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2006",
-        "info": "Volume 19",
+        "info": "Volume 19: 2006",
         "count": 17,
         "papers": [
             "An Extension of Kedlaya's Algorithm to Hyperelliptic Curves in Characteristic 2.",
@@ -586,7 +777,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2005",
-        "info": "Volume 18",
+        "info": "Volume 18: 2005",
         "count": 18,
         "papers": [
             "Computationally Secure Oblivious Transfer.",
@@ -612,7 +803,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2004",
-        "info": "Volume 17",
+        "info": "Volume 17: 2004",
         "count": 15,
         "papers": [
             "Preface.",
@@ -635,7 +826,7 @@
     {
         "name": "Journal of Cryptology",
         "year": "2003",
-        "info": "Volume 16",
+        "info": "Volume 16: 2003",
         "count": 12,
         "papers": [
             "Efficient Amplification of the Security of Weak Pseudo-Random Function Generators.",
@@ -650,341 +841,6 @@
             "Separating Decision Diffie-Hellman from Computational Diffie-Hellman in Cryptographic Groups.",
             "Decorrelation: A Theory for Block Cipher Security.",
             "Generating Random Factored Numbers, Easily."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "2002",
-        "info": "Volume 15",
-        "count": 16,
-        "papers": [
-            "Improving the Exact Security of Digital Signature Schemes.",
-            "Constructive and Destructive Facets of Weil Descent on Elliptic Curves.",
-            "Cryptanalysis of the ANSI X9.52 CBCM Mode.",
-            "A Cipher Based on Data-Dependent Permutations.",
-            "Securing Threshold Cryptosystems against Chosen Ciphertext Attack.",
-            "Constructing Pseudo-Random Permutations with a Prescribed Structure.",
-            "Reconciling Two Views of Cryptography (The Computational Soundness of Formal Encryption).",
-            "Elliptic Curve Paillier Schemes.",
-            "Authenticated Key Exchange Provably Secure Against the Man-in-the-Middle Attack.",
-            "The Insecurity of the Digital Signature Algorithm with Partially Known Nonces.",
-            "Privacy Preserving Data Mining.",
-            "The Security of Feistel Ciphers with Six Rounds or Less.",
-            "OAEP Reconsidered.",
-            "Paillier's Trapdoor Function Hides up to O(n) Bits.",
-            "A Note on Negligible Functions.",
-            "New Approaches to Designing Public Key Cryptosystems Using One-Way Functions and Trapdoors in Finite Groups."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "2001",
-        "info": "Volume 14",
-        "count": 15,
-        "papers": [
-            "On the Existence of Secure Keystream Generators.",
-            "How to Protect DES Against Exhaustive Key Search (an Analysis of DESX).",
-            "Universal Service-Providers for Private Information Retrieval.",
-            "Weakness in Quaternion Signatures.",
-            "Cryptanalysis of the Chor - Rivest Cryptosystem.",
-            "On the Importance of Eliminating Errors in Cryptographic Computations.",
-            "Secure Communication in Multicast Channels: The Answer to Franklin and Wright's Question.",
-            "Decomposing Attacks on Asymmetric Cryptography Based on Mapping Compositions.",
-            "Efficient Arithmetic in Finite Field Extensions with Application in Elliptic Curve Cryptography.",
-            "Complexity Bounds on General Hard-Core Predicates.",
-            "Attacks on Block Ciphers of Low Algebraic Degree.",
-            "Dynamic Traitor Tracing.",
-            "Public Key Cryptosystems Based on Drinfeld Modules Are Insecure.",
-            "Almost k-Wise Independent Sample Spaces and Their Cryptologic Applications.",
-            "Selecting Cryptographic Key Sizes."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "2000",
-        "info": "Volume 13",
-        "count": 20,
-        "papers": [
-            "Preface.",
-            "Secure Communication in Minimal Connectivity Models.",
-            "Player Simulation and General Adversary Structures in Perfect Multiparty Computation.",
-            "Maintaining Authenticated Communication in the Presence of Break-Ins.",
-            "Randomness versus Fault-Tolerance.",
-            "Security and Composition of Multiparty Cryptographic Protocols.",
-            "Practical Aspects of Quantum Cryptographic Key Distribution.",
-            "Stronger Security Proofs for RSA and Rabin Bits.",
-            "Fast Correlation Attacks on the Summation Generator.",
-            "A New Public-Key Cryptosystem over a Quadratic Order with Quadratic Decryption Time.",
-            "Robust and Efficient Sharing of RSA Functions.",
-            "Maximum Correlation Analysis of Nonlinear Combining Functions in Stream Ciphers.",
-            "CBC MAC for Real-Time Data Sources.",
-            "On Polynomial Approximation of the Discrete Logarithm and the Diffie - Hellman Mapping.",
-            "Security Arguments for Digital Signatures and Blind Signatures.",
-            "RSA-Based Undeniable Signatures.",
-            "A Detailed Analysis of SAFER K.",
-            "Kangaroos, Monopoly and Discrete Logarithms.",
-            "Short Non-Interactive Cryptographic Proofs.",
-            "Computing Discrete Logarithms in Quadratic Orders."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1999",
-        "info": "Volume 12",
-        "count": 16,
-        "papers": [
-            "Parallel Collision Search with Cryptanalytic Applications.",
-            "On the Construction of Pseudorandom Permutations: Luby-Rackoff Revisited.",
-            "A Fast Diffie-Hellman Protocol in Genus 2.",
-            "Efficient Commitment Schemes with Bounded Sender and Unbounded Receiver.",
-            "Bucket Hashing and Its Application to Fast Message Authentication.",
-            "Translucent Cryptography - An Alternative to Key Escrow, and Its Implementation via Fractional Oblivious Transfer.",
-            "Elliptic Curve Cryptosystems over Small Fields of Odd Characteristic.",
-            "On a Fallacious Bound for Authentication Codes.",
-            "Cryptanalysis of Triple Modes of Operation.",
-            "How to Stretch Random Functions: The Security of Protected Counter Sums.",
-            "The Discrete Logarithm Problem on Elliptic Curves of Trace One.",
-            "Divertible and Subliminal-Free Zero-Knowledge Proofs for Languages.",
-            "Bounds for Key Distribution Patterns.",
-            "Chinese Remaindering Based Cryptosystems in the Presence of Faults.",
-            "On the Security of a Practical Identification Scheme.",
-            "On the Contrast in Visual Cryptography Schemes."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1998",
-        "info": "Volume 11",
-        "count": 17,
-        "papers": [
-            "An Efficient Noninteractive Zero-Knowledge Proof System for NP with General Assumptions.",
-            "A Structural Comparison of the Computational Difficulty of Breaking Discrete Log Cryptosystems.",
-            "Cryptanalysis of Multiple Modes of Operation.",
-            "Attacks on Fast Double Block Length Hash Functions.",
-            "On Matroid Characterization of Ideal Secret Sharing Schemes.",
-            "Perfect Zero-Knowledge Arguments for NP Using Any One-Way Permutation.",
-            "A Public-Key Cryptosystem Using Purely Cubic Fields.",
-            "The Black-Box Model for Cryptographic Primitives.",
-            "The Improbability That an Elliptic Curve Has Subexponential Discrete Log Problem under the Menezes - Okamoto - Vanstone Algorithm.",
-            "Zero-Knowledge Authentication Scheme with Secret Key Exchange.",
-            "Lattice Reduction: A Toolbox for the Cryptanalyst.",
-            "An Efficient Existentially Unforgeable Signature Scheme and Its Applications.",
-            "Two-Key Triple Encryption.",
-            "Fast Multiplication on Elliptic Curves over Small Fields of Characteristic Two.",
-            "An Analysis of SAFER.",
-            "Cryptanalysis of MD4.",
-            "A Software-Optimized Encryption Algorithm."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1997",
-        "info": "Volume 10",
-        "count": 16,
-        "papers": [
-            "On Schnorr's Preprocessing for Digital Signature Schemes.",
-            "Locally Random Reductions: Improvements and Applications.",
-            "A Language-Dependent Cryptographic Primitive.",
-            "RIPEMD with Two-Round Compress Function is Not Collision-Free.",
-            "A Chosen Message Attack on Demytko's Elliptic Curve Cryptosystem.",
-            "Batch RSA.",
-            "Batch Diffie-Hellman Key Agreement Systems.",
-            "Linking Information Reconciliation and Privacy Amplification.",
-            "Feedback Shift Registers, 2-Adic Span, and Combiners with Memory.",
-            "A Construction of a Cipher from a Single Pseudorandom Permutation.",
-            "On the Existence of Statistically Hiding Bit Commitment Schemes and Fail-Stop Signatures.",
-            "An Improvement of Davies' Attack on DES.",
-            "The Security of the Birational Permutation Signature Schemes.",
-            "The Size of a Share Must Be Large.",
-            "Small Solutions to Polynomial Equations, and Low Exponent RSA Vulnerabilities.",
-            "Mutually Trusted Authority-Free Secret Sharing Schemes."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1996",
-        "info": "Volume 9",
-        "count": 15,
-        "papers": [
-            "Substitution-Permutation Networks Resistant to Differential and Linear Cryptanalysis.",
-            "Differential Cryptanalysis of Lucifer.",
-            "On-Line/Off-Line Digital Signatures.",
-            "Bounds on Secret Key Exchange Using a Random Deal of Cards.",
-            "A Low Communication Competitive Interactive Proof System for Promised Quadratic Residuosity.",
-            "Correlation Properties of a General Binary Combiner with Memory.",
-            "Guest Editor's Introduction.",
-            "The Power of Preprocessing in Zero-Knowledge Proofs of Knowledge.",
-            "Certifying Permutations: Noninteractive Zero-Knowledge Based on Any Trapdoor Permutation.",
-            "How to Construct Constant-Round Zero-Knowledge Proof Systems for NP.",
-            "A Secure Protocol for the Oblivious Transfer (Extended Abstract).",
-            "Efficient Cryptographic Schemes Provably as Secure as Subset Sum.",
-            "Joint Encryption and Message-Efficient Secure Computation.",
-            "Ideal Secret Sharing Schemes with Multiple Secrets.",
-            "Pseudorandom Generators and the Frequency of Simplicity."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1995",
-        "info": "Volume 8",
-        "count": 13,
-        "papers": [
-            "Pairs and Triplets of DES S-Boxes.",
-            "Provable Security Against a Differential Attack.",
-            "Graph Decompositions and Secret Sharing Schemes.",
-            "On the Distribution of Characteristics in Bijective Mappings.",
-            "Necessary and Sufficient Condtions for Collision-Free Hashing.",
-            "Short RSA Keys and Their Generation.",
-            "Further Enumerating Boolean Functions of Cryptographic Significance.",
-            "Fast Generation of Prime Numbers and Secure Public-Key Cryptographic Parameters.",
-            "The Cryptanalysis of a Public-Key Implementation of Finite Group Mappings.",
-            "An Infinite Class of Counterexamples to a Conjecture Concerning Nonlinear Resilient Functions.",
-            "Information-Theoretic Bounds for Authentication Codes and Block Designs.",
-            "On Key Storage in Secure Networks.",
-            "Practical and Provably Secure Release of a Secret and Exchange of Signatures."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1994",
-        "info": "Volume 7",
-        "count": 12,
-        "papers": [
-            "Definitions and Properties of Zero-Knowledge Proof Systems.",
-            "The Vulnerability of Geometric Sequences Based on Fields of Odd Characteristic.",
-            "On the Structure of the Privacy Hierarchy.",
-            "A Weak Cipher that Generates the Symmetric Group.",
-            "Proof of Soundness (Integrity) of Cryptographic Protocols.",
-            "Three System for Cryptographic Protocol Analysis.",
-            "An Analysis of a Class of Algorithms for S-Box Construction.",
-            "Functional Inversion and Communication Complexity.",
-            "A Key-Exchange Protocol Using Real Quadratic Fields.",
-            "Factorizations in the Elementary Abelian p-Group and Their Cryptographic Significance.",
-            "Algebraic Nonlinearity and Its Applications to Cryptography.",
-            "New Types of Cryptanalytic Attacks Using Related Keys."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1993",
-        "info": "Volume 6",
-        "count": 14,
-        "papers": [
-            "Arithmetic Operations in GF(2m).",
-            "Multiple Assignment Scheme for Sharing Secret.",
-            "A Uniform-Complexity Treatment of Encryption and Zero-Knowledge.",
-            "Cascade Ciphers: The Importance of Being First.",
-            "On the Communication Complexity of Zero-Knowledge Proofs.",
-            "Secret Sharing Over Infinite Domains.",
-            "A Perfect Zero-Knowledge Proof System for a Problem Equivalent to the Discrete Logarithm.",
-            "Universal Tests for Nonuniform Distributions.",
-            "A Lower Bound on Authentication After Having Observed a Sequence of Messages.",
-            "On the Size of Shares for Secret Sharing Schemes.",
-            "Modifications to the Number Field Sieve.",
-            "A Design of a Fast Pipelined Modular Multiplier Based on a Diminished-Radix Algorithm.",
-            "Elliptic Curve Cryptosystems and Their Implementations.",
-            "User Impersonation in Key Certification Schemes."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1992",
-        "info": "Volume 5",
-        "count": 13,
-        "papers": [
-            "Experimental Quantum Cryptography.",
-            "An Interactive Identification Scheme Based on Discrete Logarithms and Factoring.",
-            "Which New RSA-Signatures Can be Computed from Certain Given RSA-Signatures?",
-            "Conditionally-Perfect Secrecy and a Provably-Secure Randomized Cipher.",
-            "Correlation Properties of Combiners with Memory in Stream Ciphers.",
-            "A Universal Statistical Test for Random Bit Generators.",
-            "Counting Binary Functions with Certain Cryptographic Properties.",
-            "Some Remarks on the Security of the Identification Scheme Based on Permuted Kernels.",
-            "A Cubic RSA Code Equivalent to Factorization.",
-            "Some Improved Bounds on the Information Rate of Perfect Secret Sharing Schemes.",
-            "Algebraic Properties of Cryptosystem PGM.",
-            "Strongly Ideal Secret Sharing Schemes.",
-            "Binary Sequences Derived from ML-Sequences over Rings, I: Periods of Minimal Polynomials."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1991",
-        "info": "Volume 4",
-        "count": 9,
-        "papers": [
-            "Differential Cryptanalysis of DES-like Cryptosystems.",
-            "Secure Multiparty Protocols and Zero-Knowledge Proof Systems Tolerating a Faulty Minority.",
-            "On the Classification of Ideal Secret Sharing Schemes.",
-            "Local Randomness in Pseudorandom Sequences.",
-            "Bit Commitment Using Pseudorandomness.",
-            "Efficient Signature Generation by Smart Cards.",
-            "Secure Implementations of Identification Systems.",
-            "Practical Zero-Knowledge Proofs: Giving Hints and Using Deficiencies.",
-            "Elliptic Curve Implementations of Zero-Knowledge Blobs."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1990/1991",
-        "info": "Volume 3",
-        "count": 13,
-        "papers": [
-            "Key-Minimal Crytosystems for Unconditional Secrecy.",
-            "The Structured Design of Cryptographically Good S-Boxes.",
-            "A Fast Software One-Way Hash Function.",
-            "An Implementation for a Fast Public-Key Cryptosystem.",
-            "Applying a Formal Analysis Technique to the CCITT X.509 Strong Two-Way Authentication Protocol.",
-            "How to Time-Stamp a Digital Document.",
-            "Key Processing with Control Vectors.",
-            "CRYPTOPOST - A Cryptographic Application to Mail Processing.",
-            "On the Chor-Rivest Knapsack Cryptosystem.",
-            "Efficient, Perfect Polynomial Random Number Generators.",
-            "New Bounds and Constructions for Authentication/Secrecy Codes with Splitting.",
-            "One-Way Permutations on Elliptic Curves.",
-            "A Generalized Correlation Attack on a Class of Stream Ciphers Based on the Levenshtein Distance."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1990",
-        "info": "Volume 2",
-        "count": 11,
-        "papers": [
-            "Secure Circuit Evaluation.",
-            "Probability To Meet in the Middle.",
-            "The Combinatorics of Authentication and Secrecy Codes.",
-            "A Matrix Key-Distribution Scheme.",
-            "A Discrete Logarithm Implementation of Perfect Zero-Knowledge Blobs.",
-            "A Cartesian Product Construction for Unconditionally Secure Authentication Codes that Permit Arbitration.",
-            "A Combinatorial Approach to Probabilistic Results on the Linear Complexity Profile of Random Sequences.",
-            "Methods and Instruments for Designing S-Boxes.",
-            "Information-Theoretic Bounds for Authentication Schemes.",
-            "The Cryptanalysis of FEAL-4 with 20 Chosen Plaintexts.",
-            "Enumerating Boolean Functions of Cryptographic Significance."
-        ]
-    },
-    {
-        "name": "Journal of Cryptology",
-        "year": "1988/1989",
-        "info": "Volume 1",
-        "count": 15,
-        "papers": [
-            "Is the Data Encryption Standard a Group? (Results of Cycling Experiments on DES).",
-            "Some Constructions and Bounds for Authentication Codes.",
-            "The Generation of Random Numbers that Are Probably Prime.",
-            "The Dining Cryptographers Problem: Unconditional Sender and Recipient Untraceability.",
-            "Zero-Knowledge Proofs of Identity.",
-            "A Key Distribution System Equivalent to Factoring.",
-            "A Key-Exchange System Based on Imaginary Quadratic Fields.",
-            "A Construction for Authentication/Secrecy Codes from Certain Combinatorial Designs.",
-            "A Generalization of Hellman's Extension to Shannon's Approach to Cryptography.",
-            "How to Share a Secret with Cheaters.",
-            "Hyperelliptic Cryptosystems.",
-            "A Study of Password Security.",
-            "Fast Correlation Attacks on Certain Stream Ciphers.",
-            "Inferring Sequences Produced by a Linear Congruential Generator Missing Low-Order Bits.",
-            "Linear Ciphers and Spreads."
         ]
     }
 ]
