@@ -67,7 +67,8 @@ class Parse_HTML(object):
                         key = sv.get('sub_name_abbr', '')
                         if key and sv.get('papers'):
                             existing_sv_lookup[key] = sv['papers']
-            except Exception:
+            except Exception as e:
+                logging.info('加载已有数据失败，将重新抓取: {}'.format(e))
                 pass
 
         year_pattern = re.compile(r'(19|20)\d{2}')
@@ -258,11 +259,10 @@ class Parse_HTML(object):
                     year = yr_entry.get('year', '')
                     papers = yr_entry.get('papers', [])
                     if year and papers:
-                        if year not in existing_year_lookup:
-                            existing_year_lookup[year] = papers
-                        else:
-                            existing_year_lookup[year] = existing_year_lookup[year] + papers
-            except Exception:
+                        existing_year_lookup.setdefault(year, [])
+                        existing_year_lookup[year] = existing_year_lookup[year] + papers
+            except Exception as e:
+                logging.info('加载已有数据失败，将重新抓取: {}'.format(e))
                 pass
 
         main_content = self.soup.find('div', attrs={'id': 'main'})
