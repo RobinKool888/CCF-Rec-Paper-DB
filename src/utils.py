@@ -84,7 +84,7 @@ def ccf_filter(no: int, rank='A/B/C'):
         abbrs = filter_df['abbr'].to_list()
         names = filter_df['name'].to_list()
         for i, abbr in enumerate(abbrs):
-            if pd.isna(abbr) or abbr in duplicate_abbr:
+            if pd.isna(abbr) or abbr == '' or abbr in duplicate_abbr:
                 venue_list.append(names[i])
             else:
                 venue_list.append(abbr)
@@ -97,10 +97,12 @@ def ccf_duplicate_abbr():
     ccf_catalog = '../paper_db/ccf_catalog.csv'
     df = pd.read_csv(ccf_catalog)
 
-    abbrs = df['abbr'].to_list()  # 重复最多的是nan，即没有简称，循环时略过
+    abbrs = df['abbr'].to_list()  # 重复最多的是空串或nan，即没有简称，循环时略过
 
     duplicate_abbr = list()
     for abbr, count in dict(Counter(abbrs)).items():
+        if pd.isna(abbr) or abbr == '':
+            continue
         if count == 2:
             duplicate_abbr.append(abbr)
 
@@ -118,8 +120,8 @@ def ccf_not_dblp():
     no_dblp = list()
     for i in range(len(df)):
         row_se = df.iloc[i]
-        if 'http://dblp' not in row_se['url'] and 'https://dblp' not in row_se['url']:  # 非dblp数据库
-            if pd.isna(row_se.abbr):
+        if 'http://dblp' not in str(row_se['url']) and 'https://dblp' not in str(row_se['url']):  # 非dblp数据库
+            if pd.isna(row_se.abbr) or row_se.abbr == '':
                 no_dblp.append(row_se['name'])
             else:
                 no_dblp.append(row_se['abbr'])
