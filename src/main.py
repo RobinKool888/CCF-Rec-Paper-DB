@@ -1,4 +1,5 @@
 import os
+import time
 import dblp
 import pandas as pd
 import re
@@ -79,6 +80,7 @@ if __name__ == '__main__':
                 logging.info('\n\n')
             except Exception as e:
                 logging.info('"{}" PARSED ERROR!! {}: {}'.format(venue, type(e).__name__, str(e)))
+            time.sleep(1)
 
 
 

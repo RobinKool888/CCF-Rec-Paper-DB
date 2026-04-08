@@ -1,3 +1,4 @@
+import time
 import requests
 import logging
 import re
@@ -6,6 +7,8 @@ from tqdm import tqdm
 from random import randint
 from bs4 import BeautifulSoup
 from collections import defaultdict, Counter
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
 def set_logger():
@@ -24,7 +27,7 @@ def set_logger():
     logging.getLogger('').addHandler(console)
 
 
-def FetchUrl(url):
+def FetchUrl(url, max_retries=5, backoff_factor=2, timeout=30):
     '''
     功能：访问 url 的网页，获取网页内容并返回
     参数：目标网页的 url
@@ -44,17 +47,48 @@ def FetchUrl(url):
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0",
     ]
     random_agent = USER_AGENTS[randint(0, len(USER_AGENTS) - 1)]
-    #     proxies = {"http": "http://221.122.91.60:80", "https": "http://10.10.1.10:1080",}
     headers = {
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'accept-language': 'en-US,en;q=0.9',
+        'accept-encoding': 'gzip, deflate, br',
+        'connection': 'keep-alive',
+        'upgrade-insecure-requests': '1',
+        'cache-control': 'max-age=0',
         'user-agent': random_agent,
     }
 
-    #     r = requests.get(url, headers=headers,proxies=proxies)
-    r = requests.get(url, headers=headers)
-    r.raise_for_status()
-    r.encoding = r.apparent_encoding
-    return r.text
+    retry_strategy = Retry(
+        total=max_retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["GET"],
+        raise_on_status=False,
+    )
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session = requests.Session()
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+
+    last_exc = None
+    for attempt in range(1, max_retries + 1):
+        wait = backoff_factor ** attempt
+        try:
+            r = session.get(url, headers=headers, timeout=timeout)
+            r.raise_for_status()
+            r.encoding = r.apparent_encoding
+            return r.text
+        except requests.exceptions.ConnectionError as e:
+            last_exc = e
+            logging.info('连接失败（第{}次），{}秒后重试: {}'.format(attempt, wait, e))
+            time.sleep(wait)
+        except requests.exceptions.Timeout as e:
+            last_exc = e
+            logging.info('请求超时（第{}次），{}秒后重试: {}'.format(attempt, wait, e))
+            time.sleep(wait)
+
+    if last_exc is not None:
+        raise last_exc
+    raise requests.exceptions.ConnectionError('FetchUrl failed after {} retries: {}'.format(max_retries, url))
 
 
 def ccf_filter(no: int, rank='A/B/C'):
