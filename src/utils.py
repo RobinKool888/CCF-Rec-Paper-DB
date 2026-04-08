@@ -76,6 +76,7 @@ def FetchUrl(url, max_retries=5, backoff_factor=2, timeout=30):
             r = session.get(url, headers=headers, timeout=timeout)
             r.raise_for_status()
             r.encoding = r.apparent_encoding
+            time.sleep(randint(1, 3))  # polite delay after each successful request
             return r.text
         except requests.exceptions.ConnectionError as e:
             last_exc = e

@@ -4,6 +4,7 @@ import dblp
 import pandas as pd
 import re
 import fire
+from random import randint
 from utils import *
 from stat_info import *
 from parse_html import Parse_HTML
@@ -40,6 +41,12 @@ def main(venue:str, no:int):
         name, url, type = para[0], para[1], para[2]
         if ':' in name:
             name = name.replace(':', '：')  # 文件命名时无法保留字符':'，为此将其替换为'：'
+
+        output_path = '../paper_db/{}/{}.json'.format(no, name)
+        if os.path.isfile(output_path):
+            logging.info('"{}" 已存在，跳过'.format(name))
+            continue
+
         if 'http://dblp' in url or 'https://dblp' in url:  # dblp数据库
             Parse_HTML(name, url, type, no).parse_dblp()
         else:
@@ -80,7 +87,7 @@ if __name__ == '__main__':
                 logging.info('\n\n')
             except Exception as e:
                 logging.info('"{}" PARSED ERROR!! {}: {}'.format(venue, type(e).__name__, str(e)))
-            time.sleep(1)
+            time.sleep(randint(3, 8))
 
 
 
