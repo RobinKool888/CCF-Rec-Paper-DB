@@ -1,4 +1,5 @@
 import json
+import os
 import re
 from tqdm import tqdm
 from bs4 import BeautifulSoup
@@ -52,6 +53,22 @@ class Parse_HTML(object):
         except:
             paper_db = list()
 
+        # Load existing scraped data for incremental updates.
+        # Sub-pages (one per year/workshop) whose sub_name_abbr is already stored are
+        # skipped to avoid redundant HTTP requests.
+        output_path = '../paper_db/{}/{}.json'.format(self.no, self.venue)
+        existing_sv_lookup = {}  # sub_name_abbr -> papers list
+        if os.path.isfile(output_path):
+            try:
+                with open(output_path, 'r', encoding='utf-8') as ef:
+                    existing_db = json.load(ef)
+                for yr_entry in existing_db:
+                    for sv in yr_entry.get('venues', []):
+                        key = sv.get('sub_name_abbr', '')
+                        if key and sv.get('papers'):
+                            existing_sv_lookup[key] = sv['papers']
+            except Exception:
+                pass
 
         year_pattern = re.compile(r'(19|20)\d{2}')
         for yearly_info in self.soup.find_all('h2'):
@@ -105,37 +122,44 @@ class Parse_HTML(object):
                 if conf_year != publish_year:
                     logging.info('从标题中正则匹配的年份{}与出版年份{}不匹配，人工核查！'.format(conf_year, publish_year))
 
-                may_contain_new_url = sub_venue_info.find('a', attrs={'class': 'toc-link'}, string='[contents]')
-                if may_contain_new_url is None:
-                    # Fallback: find toc-link by partial text match
-                    for a in sub_venue_info.find_all('a', attrs={'class': 'toc-link'}):
-                        if '[contents]' in a.get_text():
-                            may_contain_new_url = a
-                            break
-                try:
-                    paper_page_url = may_contain_new_url['href']
-                except:
-                    logging.info('{}-{}没有得到论文页面跳转url！！！'.format(self.venue, conf_year))
-                    continue
+                sv_key = db_sub_venue['sub_name_abbr']
+                if sv_key in existing_sv_lookup:
+                    db_sub_venue['papers'] = existing_sv_lookup[sv_key]
+                    db_sub_venue['count'] = len(existing_sv_lookup[sv_key])
+                    logging.info('{}\t{} (cached, {} papers)'.format(
+                        self.venue, conf_year, db_sub_venue['count']))
+                else:
+                    may_contain_new_url = sub_venue_info.find('a', attrs={'class': 'toc-link'}, string='[contents]')
+                    if may_contain_new_url is None:
+                        # Fallback: find toc-link by partial text match
+                        for a in sub_venue_info.find_all('a', attrs={'class': 'toc-link'}):
+                            if '[contents]' in a.get_text():
+                                may_contain_new_url = a
+                                break
+                    try:
+                        paper_page_url = may_contain_new_url['href']
+                    except:
+                        logging.info('{}-{}没有得到论文页面跳转url！！！'.format(self.venue, conf_year))
+                        continue
 
-                try:
-                    new_html_doc = FetchUrl(paper_page_url)
-                except:
-                    logging.info('未能获取链接页面有效内容{}'.format(paper_page_url))
-                    continue
-                new_soup = BeautifulSoup(new_html_doc, 'html.parser')
+                    try:
+                        new_html_doc = FetchUrl(paper_page_url)
+                    except:
+                        logging.info('未能获取链接页面有效内容{}'.format(paper_page_url))
+                        continue
+                    new_soup = BeautifulSoup(new_html_doc, 'html.parser')
 
-                papers_sub_venue = new_soup.find_all('li', attrs={'class': 'entry inproceedings'})
-                if not papers_sub_venue:
-                    papers_sub_venue = new_soup.find_all('li', attrs={'class': 'entry incollection'})
-                db_sub_venue['count'] = len(papers_sub_venue)
+                    papers_sub_venue = new_soup.find_all('li', attrs={'class': 'entry inproceedings'})
+                    if not papers_sub_venue:
+                        papers_sub_venue = new_soup.find_all('li', attrs={'class': 'entry incollection'})
+                    db_sub_venue['count'] = len(papers_sub_venue)
 
-                paper_titles = list()
-                for paper_info in tqdm(papers_sub_venue):
-                    paper_title = paper_info.find('span', attrs={'class': 'title'}).text
-                    paper_titles.append(paper_title)
+                    paper_titles = list()
+                    for paper_info in tqdm(papers_sub_venue):
+                        paper_title = paper_info.find('span', attrs={'class': 'title'}).text
+                        paper_titles.append(paper_title)
 
-                db_sub_venue['papers'] = paper_titles
+                    db_sub_venue['papers'] = paper_titles
 
                 # 根据子会场的年份将子会场信息置于db_year['venues']之内
                 for i, db_year in enumerate(paper_db):
@@ -221,6 +245,26 @@ class Parse_HTML(object):
     def dblp_jour_frame(self):
         paper_db = list()
 
+        # Load existing scraped data for incremental updates.
+        # Years whose papers are already stored are skipped entirely to avoid
+        # redundant HTTP requests for every volume issue of that year.
+        output_path = '../paper_db/{}/{}.json'.format(self.no, self.venue)
+        existing_year_lookup = {}  # year -> papers list
+        if os.path.isfile(output_path):
+            try:
+                with open(output_path, 'r', encoding='utf-8') as ef:
+                    existing_db = json.load(ef)
+                for yr_entry in existing_db:
+                    year = yr_entry.get('year', '')
+                    papers = yr_entry.get('papers', [])
+                    if year and papers:
+                        if year not in existing_year_lookup:
+                            existing_year_lookup[year] = papers
+                        else:
+                            existing_year_lookup[year] = existing_year_lookup[year] + papers
+            except Exception:
+                pass
+
         main_content = self.soup.find('div', attrs={'id': 'main'})
 
         volume_block = list()
@@ -248,6 +292,14 @@ class Parse_HTML(object):
                 db_year['info'] = volume.text.strip()  # 该年度出版的卷编号
                 db_year['count'] = 0
                 db_year['papers'] = list()
+
+                if conf_year in existing_year_lookup:
+                    db_year['papers'] = existing_year_lookup[conf_year]
+                    db_year['count'] = len(existing_year_lookup[conf_year])
+                    logging.info('{}\t{} (cached, {} papers)'.format(
+                        self.venue, conf_year, db_year['count']))
+                    paper_db.append(db_year)
+                    continue
 
                 # 获取年度期刊的子卷，同时获取跳转下一页面（论文页面）的url
                 vol_url_tags = volume.find_all('a')
