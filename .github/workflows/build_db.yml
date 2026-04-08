@@ -47,6 +47,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build paper database
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           cd src
           python main.py --category ${{ github.event.inputs.category }} --rank "${{ github.event.inputs.rank }}"
