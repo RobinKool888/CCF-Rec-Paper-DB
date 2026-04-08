@@ -53,13 +53,23 @@ class Parse_HTML(object):
             paper_db = list()
 
 
+        year_pattern = re.compile(r'(19|20)\d{2}')
         for yearly_info in self.soup.find_all('h2'):
             # yearly_info example:
             #   <h2 id = "2022"> 36th AAAI / 34nd <a href =
-            #   "https://dblp.uni-trier.de/db/conf/iaai/index.html"> IAAI </a> 2022: Virtual Event </h2>
+            #   "https://dblp.org/db/conf/iaai/index.html"> IAAI </a> 2022: Virtual Event </h2>
             db_year = dict()
+            year_val = None
             if yearly_info.attrs:
-                db_year['year'] = str(yearly_info.attrs['id'])  # 会议举行年份
+                if 'id' in yearly_info.attrs:
+                    year_val = str(yearly_info.attrs['id'])
+                else:
+                    # Fallback: extract year from text when h2 has no id attribute
+                    m = re.search(year_pattern, yearly_info.text)
+                    if m:
+                        year_val = m.group()
+            if year_val and re.fullmatch(r'(19|20)\d{2}', year_val):
+                db_year['year'] = year_val  # 会议举行年份
                 if ': ' in yearly_info.text:
                     db_year['name'] = yearly_info.text.split(': ')[0]
                     db_year['info'] = yearly_info.text.split(': ')[1]
@@ -95,7 +105,13 @@ class Parse_HTML(object):
                 if conf_year != publish_year:
                     logging.info('从标题中正则匹配的年份{}与出版年份{}不匹配，人工核查！'.format(conf_year, publish_year))
 
-                may_contain_new_url = sub_venue_info.find('a', attrs={'class': 'toc-link'}, text='[contents]')
+                may_contain_new_url = sub_venue_info.find('a', attrs={'class': 'toc-link'}, string='[contents]')
+                if may_contain_new_url is None:
+                    # Fallback: find toc-link by partial text match
+                    for a in sub_venue_info.find_all('a', attrs={'class': 'toc-link'}):
+                        if '[contents]' in a.get_text():
+                            may_contain_new_url = a
+                            break
                 try:
                     paper_page_url = may_contain_new_url['href']
                 except:
@@ -129,8 +145,11 @@ class Parse_HTML(object):
                 try:
                     paper_db[idx]['venues'].append(db_sub_venue)
                 except:
-                    paper_db[0]['venues'].append(db_sub_venue)
-                    logging.info("sub_venue首次与db_year['venues']对齐时，未能赋值idx，默认将idx置为0，后需人工调整")
+                    if paper_db:
+                        paper_db[0]['venues'].append(db_sub_venue)
+                        logging.info("sub_venue首次与db_year['venues']对齐时，未能赋值idx，默认将idx置为0，后需人工调整")
+                    else:
+                        logging.info("paper_db为空，无法添加sub_venue信息，跳过")
 
         # 有的会议论文列表两种形式混杂，见‘https://dblp.uni-trier.de/db/conf/ches/index.html’
         # 处理完只有一种形式后，对另一种形式单独处理,判断依据'Proccedings published in' in text
