@@ -77,8 +77,8 @@ if __name__ == '__main__':
             try:
                 main(venue, no)
                 logging.info('\n\n')
-            except:
-                logging.info('"{}" PARSED ERROR!!'.format(venue))
+            except Exception as e:
+                logging.info('"{}" PARSED ERROR!! {}: {}'.format(venue, type(e).__name__, str(e)))
 
 
 
