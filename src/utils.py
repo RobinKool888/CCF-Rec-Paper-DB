@@ -11,6 +11,12 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 
+# Session-level timer: track first and last successful FetchUrl call times.
+# Used to compute an adaptive wait when a connection error exhausts all retries.
+_first_success_time = None
+_last_success_time = None
+
+
 def set_logger():
     log_file = '../spider.log'
     logging.basicConfig(
@@ -33,6 +39,8 @@ def FetchUrl(url, max_retries=5, backoff_factor=2, timeout=30):
     参数：目标网页的 url
     返回：目标网页的 html 内容
     '''
+    global _first_success_time, _last_success_time
+
     # Normalize legacy dblp.uni-trier.de URLs to the current dblp.org domain
     url = url.replace('http://dblp.uni-trier.de/', 'https://dblp.org/')
     url = url.replace('https://dblp.uni-trier.de/', 'https://dblp.org/')
@@ -76,6 +84,11 @@ def FetchUrl(url, max_retries=5, backoff_factor=2, timeout=30):
             r = session.get(url, headers=headers, timeout=timeout)
             r.raise_for_status()
             r.encoding = r.apparent_encoding
+            now = time.time()
+            if _first_success_time is None:
+                _first_success_time = now
+            _last_success_time = now
+            time.sleep(randint(2, 5))  # polite delay after each successful request
             return r.text
         except requests.exceptions.ConnectionError as e:
             last_exc = e
@@ -85,6 +98,13 @@ def FetchUrl(url, max_retries=5, backoff_factor=2, timeout=30):
             last_exc = e
             logging.info('请求超时（第{}次），{}秒后重试: {}'.format(attempt, wait, e))
             time.sleep(wait)
+
+    # All retries exhausted — adaptive wait: sleep for the full session duration so
+    # the rate-limit window has time to reset before the caller handles the error.
+    if _first_success_time is not None and _last_success_time is not None:
+        session_duration = max(_last_success_time - _first_success_time, 30)
+        logging.info('自适应等待 {:.0f}秒（本次会话已运行时长）'.format(session_duration))
+        time.sleep(session_duration)
 
     if last_exc is not None:
         raise last_exc
