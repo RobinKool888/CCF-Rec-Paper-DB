@@ -1,7 +1,379 @@
 [
     {
+        "year": "2025",
+        "name": "24th Networking 2025",
+        "info": "Limassol, Cyprus",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/networking/2025",
+                "sub_name": "2025 IFIP Networking Conference, Limassol, Cyprus, 26-30 May 2025.",
+                "count": 80,
+                "papers": [
+                    "A Reinforcement Learning Approach to Demand Balancing and Tariff Optimization in Blockchain-Based Smart Water Networks.",
+                    "Enhanced Water Leak Detection with Convolutional Neural Networks and One-Class Support Vector Machine.",
+                    "Centrality-Aware Machine Learning for Water Network Pressure Prediction.",
+                    "Flash Flood Forecasting and the Role of Catchment Response Time: Predictions via Rainfall-Runoff and Deep Learning Models.",
+                    "Dyn-WNTR: Dynamic Network Adaptive Extension for Hydraulic Simulations with WNTR.",
+                    "Sloth: A Kernel-Bypass Scheduler Maximizing Energy Efficiency under Latency Constraints.",
+                    "Finding Global Top-K Flows in the Data Plane.",
+                    "Enhanced Open-Source NWDAF for Event-Driven Analytics in 5G Networks.",
+                    "Dynamic Energy-Efficient User Plane Function Selection in 5G Networks.",
+                    "Dissecting 5G New-Radio Latency: Interacting Layers and Latency-Generating Operations.",
+                    "The Slices Cloud Continuum Blueprint: a Resilient Infrastructure to Support Large-scale Cloud Continuum Experiments.",
+                    "Monitoring 6G UPFs: A Software-based Network Tomography Framework.",
+                    "AI-driven Anomaly Detection with ICS Protocols in Smart Grids.",
+                    "LAPRAD: LLM-Assisted PRotocol Attack Discovery.",
+                    "Performance Evaluation of L4S in XR Scenarios.",
+                    "Joint Resource Allocation and Trajectory Planning in Air-Ground Collaborative Edge Computing Power Offloading Network.",
+                    "GRANT: Genetic-based RAN orchestration Tuning for latency sensitive XR verticals.",
+                    "XAI Based Technique for Detecting and Understanding Position Falsification Attacks in VANET.",
+                    "Improving User Experience in Hybrid SATCOM with Deep Q-Learning.",
+                    "Faster Latency Constrained Service Placement in Edge Computing with Deep Reinforcement Learning.",
+                    "Explaining Aggregated Network Traffic Predictors.",
+                    "Analyzing the Impact of Encryption on Traffic Classification through Explainable AI.",
+                    "TPOTI: A Triplet-Network-based Obfuscated Tor Traffic Identification.",
+                    "A Sybil Attack Traceability Detection Scheme Adapted to Vehicle Pseudonym Change Strategy.",
+                    "Squatspotting: Towards the Systematic Measurement of Typosquatting Techniques.",
+                    "Securing Software-Defined Tactical Networks: A Cyber Defense System.",
+                    "Forward Error Correction and Weighted Hierarchical Fair Multiplexing for HTTP/3 over QUIC.",
+                    "Examining the Heterogeneous Throughput Performance Landscape of QUIC Implementations.",
+                    "VGPrio: Visually Guided HTTP/3 Prioritization.",
+                    "A First Look on Discovery of Designated Resolvers.",
+                    "Secure and Efficient Data Spaces over Named Data Networking.",
+                    "An Embedded Covert Channel Construction using HLS Protocol.",
+                    "A Lightweight Authentication Protocol for Wide-Range Drone Communications.",
+                    "Unsteady Underwater - On the Constancy of Submarine Path Properties.",
+                    "Argus Lens: Innovating Internet Measurement Infrastructure via Relay Services.",
+                    "Preserving Coreness while Reducing Connectivity in Network Graphs.",
+                    "Breaking Through the Clouds: Performance Insights into Starlink's Latency and Packet Loss.",
+                    "PASD-5GC: A Process-Based Approach for Anomalous Signaling Detection in 5G Core Network.",
+                    "Interpretable Outlier and Anomaly Detection for Mobile Networks from Small Tabular Data.",
+                    "Self-Supervised Transformer-based Contrastive Learning for Intrusion Detection Systems.",
+                    "Bandwidth-Aware Adaptive Gradient Quantization for Cross-Organization Federated Learning.",
+                    "FORESIGHT: Joint Time and Space Scheduling for Efficient Distributed ML Training.",
+                    "STAGS: A Graph-Sampling Approach for GNN-based Network Anomaly Detection.",
+                    "Constraint-Aware Probabilistic Packet Forwarding Based on Deep Reinforcement Learning.",
+                    "E-MATRO: An Adaptive and Energy-Efficient Framework for Slicing within the O-RAN Architecture.",
+                    "Geo-distributed and Dynamic Control Plane Management toward Green Mobile Networks.",
+                    "Deep Learning-Driven Two-Stage Distributed Radio Resource Allocation in 6G Cell-Free Communication Systems.",
+                    "BlocBin: SLA-Compliant and Efficient RAN Slicing in Next-Generation Networks.",
+                    "TROPIC: Traffic-Engineering-Oriented Planning of IP Core Networks.",
+                    "On the Resilience of Fast Failover Routing Against Dynamic Link Failures.",
+                    "Non-Shortest Path Routing in Lossy Data Center Networks.",
+                    "Efficient Datacenter Load Balancing with Microslices.",
+                    "Detecting Stragglers in Programmable Data Plane.",
+                    "Detecting Manipulation to Table Rules in the Programmable Data Planes.",
+                    "Hocarest: Host Cardinality Estimation On-Switch using Randomized Algorithm and TCAM.",
+                    "ReBARC: Recovery-Budget-Aware In-Network Retransmission Control in ICN.",
+                    "Towards End-to-End Network Intent Management with Large Language Models.",
+                    "Min-Cost Multicast Streaming with Network Coding in Edge Computing Networks.",
+                    "Multicast-partitioning in Time-triggered Stream Planning for Time-Sensitive Networks.",
+                    "Selective Aggressive Caching in DNS Resolvers.",
+                    "Memory-efficient Online Caching Policies with Regret Guarantees.",
+                    "A Holistic 3D Deployment and Connectivity Framework for IoT-Enabled Environments.",
+                    "LoRa++: Mixed Up-Down CSS Modulation for Enhanced Scalability and Data Rate in LPWANs.",
+                    "Measurement-Efficient Dynamics Change Detection in On-Off Models for Dynamic Spectrum Access.",
+                    "SAGE: Transmission Power Management for Deadline-aware, Multihop IoT Edge Networks.",
+                    "Reminis: A Simple and Efficient Congestion Control Scheme for 5G Networks and Beyond.",
+                    "PVD-TD3: A Latency-Oriented Multi-Agent Reinforcement Learning Algorithm for Multipath Routing in DetNet.",
+                    "Insights into BBRv3's Performance and Behavior by Experimental Evaluation.",
+                    "Demand-Aware Multi-Source IP-Multicast: Minimal Congestion via Link Weight Optimization.",
+                    "BBR's Sharing Behavior with CUBIC and Reno.",
+                    "Predicting Video QoE from Encrypted Traffic: Leveraging Video Fingerprinting and Providing System-Level Insights.",
+                    "Precise Positioning for Healthcare Robotics with Retroreflective Tags in 5G Small Cell Networks.",
+                    "Zone-Fingerprinting: Unlocking the Power of Fingerprinting for Indoor Localization in 5G.",
+                    "Transferability of TCP/IP-based OS fingerprinting models.",
+                    "Distributed Fog Computing for Real-Time Surveillance.",
+                    "Modular ML-Based IDS: Layered Attack Detection via Header & Payload Analysis.",
+                    "Group-aware Resource and Path Discovery for Collaborative Ultra-Low Latency Applications.",
+                    "Effectively Mimicking Datacenter Traffic Patterns Using Transformers.",
+                    "Privacy Preserving Integrated Sensing and Communication Architecture for 6G Networks.",
+                    "D-Band Line-of-Sight MIMO Link Demonstration."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2024",
+        "name": "23nd Networking 2024",
+        "info": "Thessaloniki, Greece",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/networking/2024",
+                "sub_name": "IFIP Networking Conference, IFIP Networking 2024, Thessaloniki, Greece, June 3-6, 2024.",
+                "count": 113,
+                "papers": [
+                    "Pub/Sub Meets MLS: End-to-End Encrypted Group Data Sharing Over Publish-Subscribe.",
+                    "HyperSFC: State-Intensive Service Function Chaining on Hyper-Converged Edge Infrastructure.",
+                    "Enhancing Real-Time Streaming Quality through a Multipath Redundant Communication Framework.",
+                    "Optimizing Virtual Payment Channel Establishment in the Face of On-Path Adversaries.",
+                    "Baiji: Domain Planning for CDNs under the 95th Percentile Billing Model.",
+                    "$x$eoverse: A Real-time Simulation Platform for Large LEO Satellite Mega-Constellations.",
+                    "Programmable Real-Time Scheduling of Disaggregated Network Functions.",
+                    "Dynamic, Reconfigurable and Green Network Slice Admission Control and Resource Allocation in the O-RAN Using Model Predictive Control.",
+                    "Distributed Consensus Through Network Support.",
+                    "From Information Freshness to Semantics of Information and Goal-oriented Communications.",
+                    "Quality of Service-Driven Overlapping Cooperative NOMA Scheme.",
+                    "Isochrons in Photonic Oscillators: A Paradigm Shift in Positioning.",
+                    "Opportunistic Packet Forwarding for Proactive Transport in Datacenters.",
+                    "Are Today's 5G Networks Ready to Support 5G \"Killer Apps\"?",
+                    "OFIQUIC: Leveraging QUIC in OSPF for Seamless Network Topology Changes.",
+                    "OpenAirLink: Reproducible Wireless Channel Emulation using Software Defined Radios.",
+                    "AoI-Aware Query Services in Digital-TwinEmpowered Edge Computing.",
+                    "Unlocking IoT Potential: Empowering LoraWANfor Secure, Distributed Smart Water Management.",
+                    "The Next Wave of IoT - Extreme IoT.",
+                    "Intelligent Routing as a Service (iRaaS) A Flexible Routing Framework for Knowledge-Defined Networks.",
+                    "Increasing Network Resilience Through Dynamic Routing with Disjoint Paths.",
+                    "Industry Use Case Viability Study with Performance Models for Satellite Computing Networks.",
+                    "In-Network Management of Parallel Data Streams over Programmable Data Planes.",
+                    "Characterizing Power Usage in Zero Reserved Power Data Centers to Enable Planned Maintenance.",
+                    "Glancing at Extended Reality: An Empirical Model of 3D Animated XR Data Traffic.",
+                    "dAQM: Derivative-Based Active Queue Management.",
+                    "PB-FS: Postcard-Based Fast Start.",
+                    "Autonomous Systems Risk Level in the Route Server Infrastructure of an Internet Exchange Point.",
+                    "AB-TCAD: An Access Behavior-Based Two-Stage Compromised Account Detection Framework.",
+                    "MalFusion: Simple String Manipulations Confuse Malware Detection.",
+                    "Anomaly Detection in In-Network Fast ReRoute Systems.",
+                    "Chain-Sawing: A Longitudinal Analysis of Certificate Chains.",
+                    "X-OAR: Orchestration of Access Resources for eXtended Reality Educational Applications.",
+                    "Enhanced Mobility Management with SD-RAN in 5G Networks.",
+                    "Is Multi-Link Operation of 802.11be TCP Friendly? Analysis and Solution.",
+                    "Packet Ordering Functions in Low-Power Wireless Deterministic Networks.",
+                    "FlexBoT: A Scalable Architecture for Multi-Application Supporting BoT Environments with Application Shifting at Runtime.",
+                    "A Quantum of QUIC: Dissecting Cryptography with Post-Quantum Insights.",
+                    "Secure Target-Tracking by UAVs in O-RAN Environment.",
+                    "Optimizing Information Freshness in IoT Systems with Update Rate Constraints: A Token-Based Approach.",
+                    "I Know Who You Scanned Last Summer: Mapping the Landscape of Internet-Wide Scanners.",
+                    "Utility-Driven Optimization of TTL Cache Hierarchies Under Network Delays.",
+                    "AdaFlow: Efficient In-Network Traffic Classification using Programmable Switches.",
+                    "Gaming on the Edge: Performance Issues of Distributed Online Gaming.",
+                    "Improving Performance Bounds for Network min-Systems with Link Correlations.",
+                    "How Mature is 5G Deployment? A Cross-Sectional, Year-Long Study of 5G Uplink Performance.",
+                    "Indoor Localization in Current 5G Networks: The Way to Go.",
+                    "Experimenting with Ledbat++: Fairness, Flow Scalability and LBE Compliance.",
+                    "Preprocess your Paths - Speeding up Linear Programming-based Optimization for Segment Routing Traffic Engineering.",
+                    "CARTA: Coordinated Arrangement of Receivers for Target Acquisition.",
+                    "Quantority: Parameter Prioritization for Incremental Updates of Convolutional Neural Networks in Small Satellite Missions.",
+                    "A Site-Specific LoRaWAN Parameters Selection Approach with Multi-Loss Propagation Model.",
+                    "Mapping Wireless Networks into Digital Reality through Joint Vertical and Horizontal Learning.",
+                    "Practical Heavy-Hitter Detection Algorithms for Programmable Switches.",
+                    "Enabling User Intent-based Network Path Adaptation for Live Volumetric Streaming.",
+                    "SSCL-IDS: Enhancing Generalization of Intrusion Detection with Self-Supervised Contrastive Learning.",
+                    "Supervising Smart Home Device Interactions: A Profile-Based Firewall Approach.",
+                    "Poisoning Attacks on Federated Learning-based Wireless Traffic Prediction.",
+                    "Inter-Slice Defender: An Anomaly Detection Solution for Distributed Slice Mobility Attacks.",
+                    "Cost-Aware Digital Twin Migration in Mobile Edge Computing via Deep Reinforcement Learning.",
+                    "Deduplicator: When Computation Reuse Meets Load Balancing at the Network Edge.",
+                    "Workload Prediction for Efficient Node Management in Mobile Edge Computing.",
+                    "CoDel-ACT: Realizing CoDel AQM for Programmable Switch ASIC.",
+                    "Feasibility of Application Layer Header Parsing in eBPF and P4.",
+                    "Do Cloud Games Adapt to Client Settings and Network Conditions?",
+                    "A First Look at 160 MHz WiFi 6/6E in Action: Performance and Interference Characterization.",
+                    "Online Learning of Weakly Coupled MDP Policies for Load Balancing and Auto Scaling.",
+                    "Optimal Control for Distributed Wireless SDN.",
+                    "Through the Lens of Google CrUX: Dissecting Web Browsing Experience Across Devices and Countries.",
+                    "A Generic Blue Agent Training Framework for Autonomous Cyber Operations.",
+                    "Secrets are Forever: Characterizing Sensitive File Leaks on IPFS.",
+                    "Charting Censorship Resilience and Global Internet Reachability: A Quantitative Approach.",
+                    "Toward Global Latency Transparency.",
+                    "RM-Gen: Conditional Diffusion Model-Based Radio Map Generation for Wireless Networks.",
+                    "Distributed Predictive QoS in Automotive Environments Under Concept Drift.",
+                    "Collaborative Optimization of the Age of Information Under Partial Observability.",
+                    "Exploring The Benefits of In-Band Service Routing.",
+                    "Enabling Online Reinforcement Learning Training for Open RAN.",
+                    "SWI-FEED: Smart Water IoT Framework for Evaluation of Energy and Data in Massive Scenarios.",
+                    "Weather-Based Link Prediction for LEO-Satellite Networks using the WetLinks Dataset.",
+                    "Dynamic Connectivity Solutions: UAV Integration with 5G Networks.",
+                    "A Data-Driven Solution for Improving Transferability of Traffic Flow Feature Selection.",
+                    "Securing 5G: Trusted Execution Environments for Centrally Controlled IPsec Integrity.",
+                    "Latency-Aware Node Selection in Federated Learning.",
+                    "Private Edge Computing Resource Allocation and Communication Optimization Based on Federated Learning.",
+                    "Hierarchical Deep Reinforcement Learning-Based Load Balancing Algorithm for Multi-Domain Software-Defined Networks.",
+                    "Studying Slot Assignment for Multi-Gateway Time Scheduled Channel Access in LoRaWan.",
+                    "Evaluating Localization Algorithms in IoT Networks Under Jamming Attacks.",
+                    "Resilience Assessment of Multi-Layered Cyber-Physical Systems.",
+                    "Core QUIC: Enabling Dynamic, Implementation-Agnostic Protocol Extensions.",
+                    "An Optimized Handover Management Scheme Tailored for Heavy Hitters in a Disaggregated 5G O-RAN Architecture.",
+                    "RO-Crate for Testbeds: Automated Packaging of Experimental Results.",
+                    "slAIces: an LLM Chatbot for Simplifying Experiments with the SLICES-RI.",
+                    "Wireless Signal Source Localization by Unmanned Aerial Vehicle Using AERPAW Digital Twin and Testbed.",
+                    "Towards Trustworthy Experimental Replication in SLICES-RI.",
+                    "Design and Development of an IoT Smart Home and Smart Grid Testbed in a Residential Living Lab.",
+                    "Water Leak Detection and Classification Using Multiple Sensors.",
+                    "Comparative Analysis of Energy Consumption in Simulated LoRa Water Meter Reconfiguration vs. Real-world Readings.",
+                    "UNet-WD: Deep Learning for Multi-Appliance Water Disaggregation.",
+                    "A Tool to Facilitate the Design of Smart Contracts in Smart Water Distribution Networks.",
+                    "AI-Based Dynamic Schedule Calculation in Time Sensitive Networks Using GCN-TD3.",
+                    "Towards Domain-Specific Time-Sensitive Information-Centric Networking Architecture.",
+                    "Provisioning of Time-Sensitive and non-Time-Sensitive Flows: from Control to Data Plane.",
+                    "An East-Westbound Control Architecture for Multi-Segment Deterministic Networking.",
+                    "Architecture and Methodology for Green MEC Services Using Programmable Data Planes in 5G and Beyond Networks.",
+                    "Determinism in Industrial Converged Networks: Evaluating Approaches to Jitter Mitigation in 5G and TSN Integration.",
+                    "Traffic Prediction- and Explainable Artificial Intelligence-Based Dynamic Routing in Software-Defined Elastic Optical Networks.",
+                    "XAI for Interpretable Multimodal Architectures with Contextual Input in Mobile Network Traffic Classification.",
+                    "Navigating Explainable Privacy in Federated Learning.",
+                    "XAI-Guided Optimization of a Multilayer Network Regression Model.",
+                    "Reputation-based Trustworthiness Degree in Interference-variable Vehicular Networks.",
+                    "Federated Learning for Network Traffic Prediction.",
+                    "Edge Service Caching with Delayed Hits and Request Forwarding to Reduce Latency."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2023",
+        "name": "22nd Networking 2023",
+        "info": "Barcelona, Spain",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/networking/2023",
+                "sub_name": "IFIP Networking Conference, IFIP Networking 2023, Barcelona, Spain, June 12-15, 2023.",
+                "count": 65,
+                "papers": [
+                    "Exploring the Quantitative Resilience Analysis of Cyber-Physical Systems.",
+                    "Longitudinal Analysis of Wildcard Certificates in the WebPKI.",
+                    "GNSGA: A Decentralized Data Replication Algorithm for Big Science Data.",
+                    "IRGAN: cGAN-based Indoor Radio Map Prediction.",
+                    "The Case for Stochastic Online Segment Routing under Demand Uncertainty.",
+                    "Web Privacy By Design: Evaluating Cross-layer Interactions of QUIC, DNS and H/3.",
+                    "Secure Middlebox-Assisted QUIC.",
+                    "Simulation and Practice: A Hybrid Experimentation Platform for TSN.",
+                    "QUIC on the Highway: Evaluating Performance on High-rate Links.",
+                    "Hercules: High-Speed Bulk-Transfer over SCION.",
+                    "Privacy-Enhanced Content Discovery for Bitswap.",
+                    "Overcoming New Technologies Challenges in IoT Security Labs: Strategies for Effective Adaptation.",
+                    "An Enhanced Model for Machine Learning-Based DoS Detection in Vehicular Networks.",
+                    "ER-ERT:A Method of Ensemble Representation Learning of Encrypted RAT Traffic.",
+                    "Evaluating DNS Resiliency with Truncation, Fragmentation and DoTCP Fallback.",
+                    "A Decade Long View of Internet Traffic Composition in Japan.",
+                    "Linking User Identities Across Social Networks via Frequency Domain Analysis.",
+                    "A Multi-Connectivity Architecture with Data Replication for XR Traffic in mmWave Networks.",
+                    "Controlling Epidemic Spread Under Immunization Delay Constraints.",
+                    "Towards the Integration of TAPRIO-based Scheduling with Centralized TSN Control.",
+                    "Scalable Reinforcement Learning for Dynamic Overlay Selection in SD-WANs.",
+                    "Delay Analysis of TSN Based Industrial Networks With Preemptive Traffic Using Network Calculus.",
+                    "Game Theoretic Resource Planning and Request Scheduling in Mobile Edge Computing Networks.",
+                    "TSN Gatekeeper: Enforcing stream reservations via P4-based in-network filtering.",
+                    "FSTC: Dynamic Category Adaptation for Encrypted Network Traffic Classification.",
+                    "FedABR: A Personalized Federated Reinforcement Learning Approach for Adaptive Video Streaming.",
+                    "Data-VCG: A Data Preservation Game for Base Station-less Sensor Networks with Performance Guarantee.",
+                    "On Real-time Failure Localization via Instance Correlation in Optical Transport Networks.",
+                    "Filling the Gap: Fault-Tolerant Updates of On-Satellite Neural Networks Using Vector Quantization.",
+                    "GuRuChain: Guarantee and Reputation-based Blockchain Service Trading Platform.",
+                    "National roaming as a fallback or default?",
+                    "5GShield: HTTP/2 Anomaly Detection in 5G Service-Based Architecture.",
+                    "Galette: a Lightweight XDP Dataplane on your Raspberry Pi.",
+                    "Tactical Traffic Engineering with Segment Routing Midpoint Optimization.",
+                    "On the integration of OPC UA over Wired - Wireless Time Sensitive Networking.",
+                    "Lightweight Network Delay Segmentation Based on Smoothed Hierarchical Clustering.",
+                    "DMTP: Deadline-aware Multipath Transport Protocol.",
+                    "Imperfect Bandwidth-Sharing Policies using Network Calculus.",
+                    "Behavioral Biometrics for Mobile User Authentication: Benefits and Limitations.",
+                    "Mobile App Fingerprinting through Automata Learning and Machine Learning.",
+                    "TSNZeek: An Open-source Intrusion Detection System for IEEE 802.1 Time-sensitive Networking.",
+                    "A Privacy-preserving Proof-of-Reputation.",
+                    "Full Exploitation of Limited Memory in Quantum Entanglement Switching.",
+                    "Learning to Walk: Towards Assessing the Maturity of OT Security Control Standards and Guidelines.",
+                    "Optimizing DNS Resolvers for High Loads.",
+                    "Hierarchical Thompson Sampling for Multi-band Radio Channel Selection.",
+                    "Flow Prioritization for TSN Asynchronous Traffic Shapers.",
+                    "An IoT/IoMT Security Testbed for Anomaly-based Intrusion Detection Systems.",
+                    "Q-learning for Waiting Time Control in CDN/V2V Live streaming.",
+                    "Graph Convolutional Reinforcement Learning for Load Balancing and Smart Queuing.",
+                    "Wrapping DNS into HTTP(S): An Empirical Study on Name Resolution in Mobile Applications.",
+                    "Dragonfly: In-Flight CCA Identification.",
+                    "On the (dis)Advantages of Programmable NICs for Network Security Services.",
+                    "Graph Neural Network-based Delay Prediction Model Enhanced by Network Calculus.",
+                    "MetaIoT: Few Shot Malicious Traffic Detection in Internet of Things Networks Based on HIN.",
+                    "A cheap and accurate delay-based IP Geolocation method using Machine Learning and Looking Glass.",
+                    "Federated Learning-Based In-Network Traffic Analysis on IoT Edge.",
+                    "Keeping up to Date with P4Runtime: An Analysis of Data Plane Updates on P4 Switches.",
+                    "Cutting Onions With Others' Hands: A First Measurement of Tor Proxies in the Wild.",
+                    "Maximal Distance Spectrum Assignment for Services Provisioning in Elastic Optical Networks.",
+                    "Placement of UAVs to Reconnect Lost Subnetworks in Wireless Sensor Networks.",
+                    "A Tutorial on the Implementation of a Hyperledger Fabric-based Security Architecture for IoMT.",
+                    "Energy-Aware Spreading Factor Selection in LoRaWAN Using Delayed-Feedback Bandits.",
+                    "Optimizing Service Selection and Load Balancing in Multi-Cluster Microservice Systems with MCOSS.",
+                    "Meta-Migration: Reducing Switch Migration Tail Latency Through Competition."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "name": "21st Networking 2022",
+        "info": "Catania, Italy",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/networking/2022",
+                "sub_name": "IFIP Networking Conference, IFIP Networking 2022, Catania, Italy, June 13-16, 2022.",
+                "count": 58,
+                "papers": [
+                    "Local and Public DNS Resolvers: do you trade off performance against security?",
+                    "Clustering Payloads: Grouping Randomized Scan Probes Into Campaign Templates.",
+                    "Federating EdgeNet with Fed4FIRE+ and Deploying its Nodes Behind NATs.",
+                    "Routing on the Shortest Pairs of Disjoint Paths.",
+                    "IPswen: A Long Term Evolution Approach for the IPv4 Internet Architecture.",
+                    "The AERPAW Control Framework - Considerations for Resource Control and Orchestration for a Computing-supported Physical Research Platform.",
+                    "Network Traffic Prediction Based on the Feature of Newly-Generated Network Flows.",
+                    "Tiramisu: Fast and Scalable Traffic Splitting on Commodity Switches.",
+                    "Multiscale Energy Network Tomography.",
+                    "CL-ETC: A Contrastive Learning Method for Encrypted Traffic Classification.",
+                    "Contradiction Management in Intent-driven Cognitive Autonomous RAN.",
+                    "NetStack: A Game Approach to Synthesizing Consistent Network Updates.",
+                    "Global-Aware Prototypical Network for Few-Shot Encrypted Traffic Classification.",
+                    "Improving Performance Bounds for Weighted Round-Robin Schedulers under Constrained Cross-Traffic.",
+                    "Exploring Proxying QUIC and HTTP/3 for Satellite Communication.",
+                    "SNAPS: Seamless Network-Assisted Publish-Subscribe.",
+                    "Inter-networking and Function Optimization for Mega-Constellations.",
+                    "Constant Delay Switching: Asynchronous Traffic Shaping with Jitter Control.",
+                    "CArDS: Dealing a New Hand in Reducing Service Request Completion Times.",
+                    "gPHI: Lightweight Anonymity Protocol for Anonymity at Host and AS Levels.",
+                    "Improving Inter-Protocol Fairness Based on Estimated Behavior of Competing Flows.",
+                    "Performance and Improvements of TCP CUBIC in Low-Delay Cellular Networks.",
+                    "Overload Balancing in Single-hop Networks with Bounded Buffers.",
+                    "A Highly Parallelizable Algorithm for Routing With Automatic Tunneling.",
+                    "A Global Study of the Risk of Earthquakes to IXPs.",
+                    "Hierarchical Congestion Control (HCC): Fairness and Fast Convergence for Data Centers.",
+                    "Accelerator-Aware In-Network Load Balancing for Improved Application Performance.",
+                    "An Eight Years Perspective on the Internet Broadband Infrastructure in the USA.",
+                    "DCoflow: Deadline-Aware Scheduling Algorithm for Coflows in Datacenter Networks.",
+                    "Data Drift in DL: Lessons Learned from Encrypted Traffic Classification.",
+                    "Long-Range ICN for the IoT: Exploring a LoRa System Design.",
+                    "Malicious attack detection based on traffic-flow information fusion.",
+                    "Veritaa-IoT: A Distributed Public Key Infrastructure for the Internet of Things.",
+                    "Centrality-aware gossiping for distributed learning in wireless sensor networks.",
+                    "Lightweight Fingerprint Attack and Encrypted Traffic Analysis on News Articles.",
+                    "PRISMA: A Packet Routing Simulator for Multi-Agent Reinforcement Learning.",
+                    "Joint Consensus Matrix Design and Resource Allocation for Decentralized Learning.",
+                    "Revisiting Application Offloads on Programmable Switches.",
+                    "Prediction of Mobile-App Network-Video-Traffic Aggregates using Multi-task Deep Learning.",
+                    "Build Automation Framework for Design Validation of Automotive Gateway Controllers.",
+                    "CloudPilot: Flow Acceleration in the Cloud.",
+                    "Query-Efficient and Imperceptible Attacks on Multivariate Time Series DNN Models.",
+                    "A Longitudinal Characterization of the Third-Party Authentication Landscape.",
+                    "PNT Sketch: A Generic Sketch Algorithm for Periodic Network Telemetry.",
+                    "Online Caching with Optimistic Learning.",
+                    "Preventing the Flood: Incentive-Based Collaborative Mitigation for DRDoS Attacks.",
+                    "Attention Networks for Time Series Regression and Application to Congestion Control.",
+                    "Tailoring FANET-Based 6G Network Slices in Remote Areas for Low-Latency Applications.",
+                    "FABRIC Network Service Model.",
+                    "On the way to a configurable testbed to support IoT research.",
+                    "Herding the FLOQ: Flow Optimised Queueing.",
+                    "FACL: A Flexible and High-Performance ACL engine on FPGA-based SmartNIC.",
+                    "Implementation of Federated Learning on Resource-constrained devices: Lessons learned.",
+                    "On the Incremental Reconfiguration of Time-sensitive Networks at Runtime.",
+                    "KIRA: Distributed Scalable ID-based Routing with Fast Forwarding.",
+                    "Prototyping Prototyping Facilities: Developing and Bootstrapping Testbeds.",
+                    "EZPath: Expediting Container Network Traffic via Programmable Switches.",
+                    "Shoehorn: Towards Portable P4 for Low Cost Hardware."
+                ]
+            }
+        ]
+    },
+    {
         "year": "2021",
-        "name": "Networking 2021",
+        "name": "20th Networking 2021",
         "info": "Espoo and Helsinki, Finland",
         "venues": [
             {
@@ -98,7 +470,7 @@
     },
     {
         "year": "2020",
-        "name": "Networking 2020",
+        "name": "19th Networking 2020",
         "info": "Paris, France",
         "venues": [
             {
@@ -240,7 +612,7 @@
     },
     {
         "year": "2019",
-        "name": "Networking 2019",
+        "name": "18th Networking 2019",
         "info": "Warsaw, Poland",
         "venues": [
             {
@@ -302,12 +674,12 @@
     },
     {
         "year": "2018",
-        "name": "Networking 2018",
+        "name": "17th Networking 2018",
         "info": "Zurich, Switzerland",
         "venues": [
             {
                 "sub_name_abbr": "conf/networking/2018",
-                "sub_name": "17th International IFIP TC6 Networking Conference, Networking 2018, Zurich, Switzerland, May 14-16, 2018.",
+                "sub_name": "2018 IFIP Networking Conference and Workshops, Networking 2018, Zurich, Switzerland, May 14-16, 2018.",
                 "count": 66,
                 "papers": [
                     "Rasch Analysis of HTTPS Reachability.",
@@ -382,7 +754,7 @@
     },
     {
         "year": "2017",
-        "name": "Networking 2017",
+        "name": "16th Networking 2017",
         "info": "Stockholm, Sweden",
         "venues": [
             {
@@ -467,7 +839,7 @@
     },
     {
         "year": "2016",
-        "name": "Networking 2016",
+        "name": "15th Networking 2016",
         "info": "Vienna, Austria",
         "venues": [
             {
@@ -545,7 +917,7 @@
     },
     {
         "year": "2015",
-        "name": "Networking 2015",
+        "name": "14th Networking 2015",
         "info": "Toulouse, France",
         "venues": [
             {
@@ -607,7 +979,7 @@
     },
     {
         "year": "2014",
-        "name": "Networking 2014",
+        "name": "13th Networking 2014",
         "info": "Trondheim, Norway",
         "venues": [
             {
@@ -676,7 +1048,7 @@
     },
     {
         "year": "2013",
-        "name": "Networking 2013",
+        "name": "12th Networking 2013",
         "info": "Brooklyn, New York, USA",
         "venues": [
             {
@@ -740,7 +1112,7 @@
     },
     {
         "year": "2012",
-        "name": "Networking 2012",
+        "name": "11th Networking 2012",
         "info": "Prague, Czech Republic",
         "venues": [
             {
@@ -853,7 +1225,7 @@
     },
     {
         "year": "2011",
-        "name": "Networking 2011",
+        "name": "10th Networking 2011",
         "info": "Valencia, Spain",
         "venues": [
             {
@@ -973,7 +1345,7 @@
     },
     {
         "year": "2010",
-        "name": "Networking 2010",
+        "name": "9th Networking 2010",
         "info": "Chennai, India",
         "venues": [
             {
@@ -1019,7 +1391,7 @@
     },
     {
         "year": "2009",
-        "name": "Networking 2009",
+        "name": "8th Networking 2009",
         "info": "Aachen, Germany",
         "venues": [
             {
@@ -1108,7 +1480,7 @@
     },
     {
         "year": "2008",
-        "name": "Networking 2008",
+        "name": "7th Networking 2008",
         "info": "Singapore",
         "venues": [
             {
@@ -1204,7 +1576,7 @@
     },
     {
         "year": "2007",
-        "name": "Networking 2007",
+        "name": "6th Networking 2007",
         "info": "Atlanta, GA, USA",
         "venues": [
             {
@@ -1341,7 +1713,7 @@
     },
     {
         "year": "2006",
-        "name": "Networking 2006",
+        "name": "5th Networking 2006",
         "info": "Coimbra, Portugal",
         "venues": [
             {
@@ -1474,7 +1846,7 @@
     },
     {
         "year": "2005",
-        "name": "Networking 2005",
+        "name": "4th Networking 2005",
         "info": "Waterloo, Canada",
         "venues": [
             {
@@ -1629,7 +2001,7 @@
     },
     {
         "year": "2004",
-        "name": "Networking 2004",
+        "name": "3rd Networking 2004",
         "info": "Athens, Greece",
         "venues": [
             {
@@ -1786,7 +2158,7 @@
     },
     {
         "year": "2002",
-        "name": "Networking 2002",
+        "name": "2nd Networking 2002",
         "info": "Pisa, Italy",
         "venues": [
             {
@@ -1967,7 +2339,7 @@
     },
     {
         "year": "2000",
-        "name": "Networking 2000",
+        "name": "1st Networking 2000",
         "info": "Paris, France",
         "venues": [
             {
@@ -2077,46 +2449,6 @@
                     "Threshold-Based Registration (TBR) in Mobile IPv6.",
                     "Enhanced Mobile IP Protocol.",
                     "A Reliable Subcasting Protocol for Wireless Environments."
-                ]
-            }
-        ]
-    },
-    {
-        "year": "1993",
-        "name": "NetWORKing 1993",
-        "info": "Vienna, Austria",
-        "venues": [
-            {
-                "sub_name_abbr": "conf/networking/1993",
-                "sub_name": "NetWORKing: Connecting Workers In and Between Organizations, Proceedings of the IFIP WG9.1 Working Conference on NetWORKing, Vienna, Austria, 16-18 June, 1993.",
-                "count": 26,
-                "papers": [
-                    "Introductory Remarks on Speed and Development.",
-                    "Reconstructing Understandings of Organisation.",
-                    "Tele-Racism: The Role of IT in Making Fascist Images Socially Acceptable.",
-                    "Networking: Participation and Power.",
-                    "\"Engaged Effort\" and Local Area Networks.",
-                    "Social Control and Social Contract in Networking: Total Quality Management and the Control of Knowledge Work.",
-                    "Network Technology and Organizational Control: A Case Study of Decision Making and Industrial Relations in a Privatized Public Enterprise.",
-                    "Computer-Mediated Communication as Employee Voice: The Profit Sharing Plan.",
-                    "From Electronic Networks to Mediated Collaborative Research: The Optimism and Obstacles.",
-                    "Loss of Situative Context and its Relevance for Computer Mediated Communication and Cooperation.",
-                    "Telecommunication and Strategic Networks in Rural Areas.",
-                    "Trouble at the Boundaries: Changes in Everyday Life Through Computer Networks.",
-                    "Networking: Transparency versus Privacy.",
-                    "Working in (and on) the Electronic Fischbowl? Privacy Aspects of Multi-Media Communications.",
-                    "Considering Privacy-Aspects in Designing CSCW-Applications.",
-                    "The Ambivalence of Network Visibility in an Organizational Context.",
-                    "Risks of Networking as Risks of Discourses.",
-                    "Distributing Resources Through Network Utilisation.",
-                    "The Politics of Networking in Health Care.",
-                    "Torn Between Values and Interests: Standardization in a European Context.",
-                    "Interorganizational Networking and the Institutional Gap.",
-                    "When Negotiation and Interpretation Processes Limit Computer-Based Networks.",
-                    "Networking in Services: Organisational and Professional Changes.",
-                    "Integrated Gender Perspectives on Human-Centred Approaches to Developing Computerised Office Systems.",
-                    "Empowering Team Work with Coordination Techologies: An Organizational Learning Perspective.",
-                    "Cognitive Couplers: Toward a New Generation of Organizational Support Systems."
                 ]
             }
         ]

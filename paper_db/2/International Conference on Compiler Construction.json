@@ -1,0 +1,1157 @@
+[
+    {
+        "year": "2026",
+        "name": "35th CC 2026",
+        "info": "Sydney, NSW, Australia",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2026",
+                "sub_name": "Proceedings of the 35th ACM SIGPLAN International Conference on Compiler Construction, CC 2026, Sydney, NSW, Australia, 31 January 2026 - 1 February 2026.",
+                "count": 18,
+                "papers": [
+                    "GraalMHC: ML-Based Method-Hotness Classification for Binary-Size Reduction in Optimizing Compilers.",
+                    "It's about Time: Temporal Abstractions for Asynchronous GPU Tensor Computations.",
+                    "Optimizing Sparse Tensor Compilation for Sparse Output.",
+                    "RIFS: Run-Time Invariant Function Specialization.",
+                    "DiTOX: Fault Detection and Localization in the ONNX Optimizer.",
+                    "SSMR: Statically Detecting Speculation Safe Memory Regions to Mitigate Transient Execution Attacks.",
+                    "CHEHAB: Automatic Compiler Code Optimization for Fully Homomorphic Encryption.",
+                    "Parallel and Customizable Equality Saturation.",
+                    "Accelerating Sparse Algebra with Program Synthesis.",
+                    "Schedgehammer: Auto-tuning Compiler Optimizations beyond Numerical Parameters.",
+                    "TinyGen: Portable and Compact Code Generation for Tiny Machine Learning.",
+                    "CPerfSmith: A Randomized C Program Generator for Performance-Oriented Compiler Testing.",
+                    "Inside VOLT: Designing an Open-Source GPU Compiler (Tool).",
+                    "Nsight Python: A Python-First Profiling Toolkit for Seamless GPU Kernel Analysis (Tool).",
+                    "HORIZON: Estimating Alias Analysis Precision Bounds and Their Impact on Performance.",
+                    "Type Deduction Analysis: Reconstructing Transparent Pointer Types in LLVM-IR.",
+                    "Compact Representation and Interleaved Solving for Scalable Constraint-Based Points-to Analysis.",
+                    "Practical MHP Analysis for Java."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2025",
+        "name": "34th CC 2025",
+        "info": "Las Vegas, NV, USA",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2025",
+                "sub_name": "Proceedings of the 34th ACM SIGPLAN International Conference on Compiler Construction, CC 2025, Las Vegas, NV, USA, March 1-2, 2025.",
+                "count": 17,
+                "papers": [
+                    "Enhancing Program Analysis with Deterministic Distinguishable Calling Context.",
+                    "A Comparative Study on the Accuracy and the Speed of Static and Dynamic Program Classifiers.",
+                    "Automatic Test Case Generation for Jasper App HDL Compiler: An Industry Experience.",
+                    "pyATF: Constraint-Based Auto-Tuning in Python.",
+                    "Data-Efficient Performance Modeling via Pre-training.",
+                    "Overloading the Dot.",
+                    "MimIrADe: Automatic Differentiation in MimIR.",
+                    "Finding Missed Code Size Optimizations in Compilers using Large Language Models.",
+                    "DFA-Net: A Compiler-Specific Neural Architecture for Robust Generalization in Data Flow Analyses.",
+                    "A Deep Technical Review of nZDC Fault Tolerance.",
+                    "Fusion of Operators of Computational Graphs via Greedy Clustering: The XNNC Experience.",
+                    "Scalable Data-Flow Modeling and Validation of Distributed-Memory Algorithms.",
+                    "LLM Compiler: Foundation Language Models for Compiler Optimization.",
+                    "Post-Link Outlining for Code Size Reduction.",
+                    "Biotite: A High-Performance Static Binary Translator using Source-Level Information.",
+                    "Secure Scripting with CHERIoT MicroPython.",
+                    "Compiler Support for Speculation in Decoupled Access/Execute Architectures."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2024",
+        "name": "33rd CC 2024",
+        "info": "Edinburgh, UK",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2024",
+                "sub_name": "Proceedings of the 33rd ACM SIGPLAN International Conference on Compiler Construction, CC 2024, Edinburgh, United Kingdom, March 2-3, 2024.",
+                "count": 21,
+                "papers": [
+                    "Fast Template-Based Code Generation for MLIR.",
+                    "A Unified Memory Dependency Framework for Speculative High-Level Synthesis.",
+                    "If-Convert as Early as You Must.",
+                    "Paguroidea: Fused Parser Generator with Transparent Semantic Actions.",
+                    "Region-Based Data Layout via Data Reuse Analysis.",
+                    "A Context-Sensitive Pointer Analysis Framework for Rust and Its Application to Call Graph Construction.",
+                    "CoSense: Compiler Optimizations using Sensor Technical Specifications.",
+                    "UNIFICO: Thread Migration in Heterogeneous-ISA CPUs without State Transformation.",
+                    "BLQ: Light-Weight Locality-Aware Runtime for Blocking-Less Queuing.",
+                    "APPy: Annotated Parallelism for Python on GPUs.",
+                    "Accurate Coverage Metrics for Compiler-Generated Debugging Information.",
+                    "FlowProf: Profiling Multi-threaded Programs using Information-Flow.",
+                    "Reducing the Overhead of Exact Profiling by Reusing Affine Variables.",
+                    "Stale Profile Matching.",
+                    "From Low-Level Fault Modeling (of a Pipeline Attack) to a Proven Hardening Scheme.",
+                    "Clog: A Declarative Language for C Static Code Checkers.",
+                    "Compiler-Based Memory Encryption for Machine Learning on Commodity Low-Power Devices.",
+                    "YFlows: Systematic Dataflow Exploration and Code Generation for Efficient Neural Network Inference using SIMD Architectures on CPUs.",
+                    "Fast and Accurate Context-Aware Basic Block Timing Prediction using Transformers.",
+                    "The Next 700 ML-Enabled Compiler Optimizations.",
+                    "Exponentially Expanding the Phase-Ordering Search Space via Dormant Information."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2023",
+        "name": "32nd CC 2023",
+        "info": "Montr\u00e9al, QC, Canada",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2023",
+                "sub_name": "Proceedings of the 32nd ACM SIGPLAN International Conference on Compiler Construction, CC 2023, Montr\u00e9al, QC, Canada, February 25-26, 2023.",
+                "count": 21,
+                "papers": [
+                    "Java Vector API: Benchmarking and Performance Analysis.",
+                    "Compiling Discrete Probabilistic Programs for Vectorized Exact Inference.",
+                    "A Multi-threaded Fast Hardware Compiler for HDLs.",
+                    "Efficiently Learning Locality Optimizations by Decomposing Transformation Domains.",
+                    "A Deep Learning Model for Loop Interchange.",
+                    "(De/Re)-Compositions Expressed Systematically via MDH-Based Schedules.",
+                    "A Sound and Complete Algorithm for Code Generation in Distance-Based ISA.",
+                    "Matching Linear Algebra and Tensor Code to Specialized Hardware Accelerators.",
+                    "Torchy: A Tracing JIT Compiler for PyTorch.",
+                    "A Symbolic Emulator for Shuffle Synthesis on the NVIDIA PTX Code.",
+                    "Register Allocation for Compressed ISAs in LLVM.",
+                    "RL4ReAl: Reinforcement Learning for Register Allocation.",
+                    "Automatically Localizing Dynamic Code Generation Bugs in JIT Compiler Back-End.",
+                    "HyBF: A Hybrid Branch Fusion Strategy for Code Size Reduction.",
+                    "Linker Code Size Optimization for Native Mobile Applications.",
+                    "Building a Compiled Query Engine in Python.",
+                    "Codon: A Compiler for High-Performance Pythonic Applications and DSLs.",
+                    "MOD2IR: High-Performance Code Generation for a Biophysically Detailed Neuronal Simulation DSL.",
+                    "A Hotspot-Driven Semi-automated Competitive Analysis Framework for Identifying Compiler Key Optimizations.",
+                    "LAGrad: Statically Optimized Differentiable Programming in MLIR.",
+                    "Lazy Evaluation for the Lazy: Automatically Transforming Call-by-Value into Call-by-Need."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "name": "31st CC 2022",
+        "info": "Seoul, South Korea",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2022",
+                "sub_name": "CC '22: 31st ACM SIGPLAN International Conference on Compiler Construction, Seoul, South Korea, April 2 - 3, 2022.",
+                "count": 21,
+                "papers": [
+                    "Writing and verifying a Quantum optimizing compiler (keynote).",
+                    "QSSA: an SSA-based IR for Quantum computing.",
+                    "QRANE: lifting QASM programs to an affine IR.",
+                    "A polynomial time exact solution to the bit-aware register binding problem.",
+                    "Graph transformations for register-pressure-aware instruction scheduling.",
+                    "Caviar: an e-graph based TRS for automatic code optimization.",
+                    "On the computation of interprocedural weak control closure.",
+                    "Seamless deductive inference via macros.",
+                    "One-shot tuner for deep learning compilers.",
+                    "Training of deep learning pipelines on memory-constrained GPUs via segmented fused-tiled execution.",
+                    "MLIR-based code generation for GPU tensor cores.",
+                    "Automating reinforcement learning architecture design for code optimization.",
+                    "Memory access scheduling to reduce thread migrations.",
+                    "Performant portable OpenMP.",
+                    "BinPointer: towards precise, sound, and scalable binary-level pointer analysis.",
+                    "Cape: compiler-aided program transformation for HTM-based cache side-channel defense.",
+                    "Making no-fuss compiler fuzzing effective.",
+                    "Loner: utilizing the CPU vector datapath to process scalar integer data.",
+                    "Mapping parallelism in a functional IR through constraint satisfaction: a case study on convolution for mobile GPUs.",
+                    "Software pre-execution for irregular memory accesses in the HBM era.",
+                    "Efficient profile-guided size optimization for native mobile applications."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2021",
+        "name": "30th CC 2021",
+        "info": "Virtual Event, South Korea",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2021",
+                "sub_name": "CC '21: 30th ACM SIGPLAN International Conference on Compiler Construction, Virtual Event, March 2-3, 2021.",
+                "count": 14,
+                "papers": [
+                    "Data-aware process networks.",
+                    "Integrating a functional pattern-based IR into MLIR.",
+                    "Compiling data-parallel Datalog.",
+                    "PGZ: automatic zero-value code specialization.",
+                    "Exploring the space of optimization sequences for code-size reduction: insights and tools.",
+                    "PolyBench/Python: benchmarking Python environments with polyhedral optimizations.",
+                    "A modern compiler for the French tax code.",
+                    "NSan: a floating-point numerical sanitizer.",
+                    "Communication-safe web programming in TypeScript with routed multiparty session types.",
+                    "Helper function inlining in dynamic binary translation.",
+                    "Lightning BOLT: powerful, fast, and scalable binary optimization.",
+                    "Compact native code generation for dynamic languages on micro-core architectures.",
+                    "Deep NLP-based co-evolvement for synthesizing code analysis from natural language.",
+                    "Resolvable ambiguity: principled resolution of syntactically ambiguous programs."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2020",
+        "name": "29th CC 2020",
+        "info": "San Diego, CA, USA",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2020",
+                "sub_name": "CC '20: 29th International Conference on Compiler Construction, San Diego, CA, USA, February 22-23, 2020.",
+                "count": 19,
+                "papers": [
+                    "Vectorization-aware loop unrolling with seed forwarding.",
+                    "Secure delivery of program properties through optimizing compilation.",
+                    "Mix your contexts well: opportunities unleashed by recent advances in scaling context-sensitivity.",
+                    "Scalable pointer analysis of data structures using semantic models.",
+                    "A study of event frequency profiling with differential privacy.",
+                    "Improving database query performance with automatic fusion.",
+                    "Robust quantization of deep neural networks.",
+                    "Generating fast sparse matrix vector multiplication from a high level generic functional IR.",
+                    "Runtime multi-versioning and specialization inside a memoized speculative loop optimizer.",
+                    "Dynamic property caches: a step towards faster JavaScript proxy objects.",
+                    "Mixed-data-model heterogeneous compilation and OpenMP offloading.",
+                    "Balancing performance and productivity for the development of dynamic binary instrumentation tools: a case study on Arm systems.",
+                    "Compiling first-order functions to session-typed parallel code.",
+                    "Is stateful packrat parsing really linear in practice? a counter-example, an improved grammar, and its parsing algorithms.",
+                    "Bitwidth customization in image processing pipelines using interval analysis and SMT solvers.",
+                    "Automatically harnessing sparse acceleration.",
+                    "Postcondition-preserving fusion of postorder tree transformations.",
+                    "Compiler-based graph representations for deep learning models of code.",
+                    "Relaxing the one definition rule in interpreted C++."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2019",
+        "name": "28th CC 2019",
+        "info": "Washington, DC, USA",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2019",
+                "sub_name": "Proceedings of the 28th International Conference on Compiler Construction, CC 2019, Washington, DC, USA, February 16-17, 2019.",
+                "count": 18,
+                "papers": [
+                    "The sparse tensor algebra compiler (keynote).",
+                    "PPOpenCL: a performance-portable OpenCL compiler with host and kernel thread code fusion.",
+                    "Enabling prefix sum parallelism pattern for recurrences with principled function reconstruction.",
+                    "Revec: program rejuvenation through revectorization.",
+                    "To unify or not to unify: a case study on unified builds (in WebKit).",
+                    "A static slicing method for functional programs and its incremental version.",
+                    "Codestitcher: inter-procedural basic block layout optimization.",
+                    "Low-cost deterministic C++ exceptions for embedded systems.",
+                    "Spinal code: automatic code extraction for near-user computation in fogs.",
+                    "Property caches revisited.",
+                    "Accelerating web application loading with snapshot of event and DOM handling.",
+                    "GPU-accelerated fixpoint algorithms for faster compiler analyses.",
+                    "Compare less, defer more: scaling value-contexts based whole-program heap analyses.",
+                    "Valence: variable length calling context encoding.",
+                    "Path sensitive MFP solutions in presence of intersecting infeasible control flow path segments.",
+                    "Automatic adaptive approximation for stencil computations.",
+                    "Efficiency and expressiveness in UW-OpenMP.",
+                    "Efficient concolic testing of MPI applications."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2018",
+        "name": "27th CC 2018",
+        "info": "Vienna, Austria",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2018",
+                "sub_name": "Proceedings of the 27th International Conference on Compiler Construction, CC 2018, February 24-25, 2018, Vienna, Austria.",
+                "count": 20,
+                "papers": [
+                    "Rethinking compilers in the rise of machine learning and AI (keynote).",
+                    "Compiler and language design for quantum computing (keynote).",
+                    "Modeling the conflicting demands of parallelism and Temporal/Spatial locality in affine scheduling.",
+                    "A polyhedral compilation framework for loops with dynamic data-dependent bounds.",
+                    "Polyhedral expression propagation.",
+                    "Computing partially path-sensitive MFP solutions in data flow analyses.",
+                    "An efficient data structure for must-alias analysis.",
+                    "Parallel sparse flow-sensitive points-to analysis.",
+                    "PAYJIT: space-optimal JIT compilation and its practical implementation.",
+                    "Finding missed compiler optimizations by differential testing.",
+                    "Fast and flexible instruction selection with constraints.",
+                    "Compiling for concise code and efficient I/O.",
+                    "Termination checking and task decomposition for task-based intermittent programs.",
+                    "A session type provider: compile-time API generation of distributed protocols with refinements in F#.",
+                    "Tail call elimination and data representation for functional languages on the Java virtual machine.",
+                    "CAnDL: a domain specific language for compiler analysis.",
+                    "Semantic reasoning about the sea of nodes.",
+                    "Towards a compiler analysis for parallel algorithmic skeletons.",
+                    "Generalized profile-guided iterator recognition.",
+                    "Efficient dynamic analysis for Node.js."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2017",
+        "name": "26th CC 2017",
+        "info": "Austin, TX, USA",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2017",
+                "sub_name": "Proceedings of the 26th International Conference on Compiler Construction, Austin, TX, USA, February 5-6, 2017.",
+                "count": 13,
+                "papers": [
+                    "Partially redundant fence elimination for x86, ARM, and power processors.",
+                    "Lightweight data race detection for production runs.",
+                    "Optimized two-level parallelization for GPU accelerators using the polyhedral model.",
+                    "Optimization space pruning without regrets.",
+                    "Compile-time function memoization.",
+                    "One compiler: deoptimization to optimized code.",
+                    "Static optimization in PHP 7.",
+                    "From functional programs to pipelined dataflow circuits.",
+                    "Granullar: gradual nullable types for Java.",
+                    "Let it recover: multiparty protocol-induced recovery.",
+                    "Data structure-aware heap partitioning.",
+                    "Dynamic symbolic execution for polymorphism.",
+                    "rev.ng: a unified binary analysis framework to recover CFGs and function boundaries."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2016",
+        "name": "25th CC 2016",
+        "info": "Barcelona, Spain",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2016",
+                "sub_name": "Proceedings of the 25th International Conference on Compiler Construction, CC 2016, Barcelona, Spain, March 12-18, 2016.",
+                "count": 29,
+                "papers": [
+                    "Thread-level speculation with kernel support.",
+                    "Reducing memory buffering overhead in software thread-level speculation.",
+                    "Performance implications of transient loop-carried data dependences in automatically parallelized loops.",
+                    "Safe and flexible adaptation via alternate data structure representations.",
+                    "Relaxed dependence tracking for parallel runtime support.",
+                    "Kindergarten cop: dynamic nursery resizing for GHC.",
+                    "Verified construction of static single assignment form.",
+                    "Mechanizing conventional SSA for a verified destruction with coalescing.",
+                    "Reachability and error diagnosis in LR(1) parsers.",
+                    "Automatic fault location for data structures.",
+                    "Sparse representation of implicit flows with applications to side-channel detection.",
+                    "Multiversioned decoupled access-execute: the key to energy-efficient compilation of general-purpose programs.",
+                    "Heap bounds protection with low fat pointers.",
+                    "Register allocation and promotion through combined instruction scheduling and loop unrolling.",
+                    "On fusing recursive traversals of K-d trees.",
+                    "Restrictification of function arguments.",
+                    "Static deadlock detection for concurrent go by global session graph synthesis.",
+                    "Static detection of energy defect patterns in Android applications.",
+                    "On fast large-scale program analysis in Datalog.",
+                    "Improved MHP Analysis.",
+                    "Extended lattice-based memory allocation.",
+                    "Mapping deviation: a technique to adapt or to guard loop transformation intuitions for legality.",
+                    "Automatic data layout generation and kernel mapping for CPU+GPU architectures.",
+                    "Input space splitting for OpenCL.",
+                    "GreenThumb: superoptimizer construction framework.",
+                    "Register allocation and instruction scheduling in Unison.",
+                    "SVF: interprocedural static value-flow analysis in LLVM.",
+                    "Iguana: a practical data-dependent parsing framework.",
+                    "SYCO: a systematic testing tool for concurrent objects."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2015",
+        "name": "24th CC@ETAPS 2015",
+        "info": "London, UK",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2015",
+                "sub_name": "Compiler Construction - 24th International Conference, CC 2015, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2015, London, UK, April 11-18, 2015. Proceedings.",
+                "count": 12,
+                "papers": [
+                    "A Graphical Model for Context-Free Grammar Parsing.",
+                    "A Refactoring Library for Scala Compiler Extensions.",
+                    "Feature-Specific Profiling.",
+                    "A Synchronous-Based Code Generator for Explicit Hybrid Systems Languages.",
+                    "Faster, Practical GLL Parsing.",
+                    "A Backend Extension Mechanism for PQL/Java with Free Run-Time Optimisation.",
+                    "Staged Points-to Analysis for Large Code Bases.",
+                    "Exact and Approximated Data-Reuse Optimizations for Tiling with Parametric Sizes.",
+                    "Optgen: A Generator for Local Optimizations.",
+                    "Towards a Scalable Framework for Context-Free Language Reachability.",
+                    "Protocols by Default - Safe MPI Code Generation Based on Session Types.",
+                    "Verifying Fast and Sparse SSA-Based Optimizations in Coq."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2014",
+        "name": "23rd CC@ETAPS 2014",
+        "info": "Grenoble, France",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2014",
+                "sub_name": "Compiler Construction - 23rd International Conference, CC 2014, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2014, Grenoble, France, April 5-13, 2014. Proceedings.",
+                "count": 15,
+                "papers": [
+                    "Using the SSA-Form in a Code Generator.",
+                    "Parameterized Construction of Program Representations for Sparse Dataflow Analyses.",
+                    "Inter-iteration Scalar Replacement Using Array SSA Form.",
+                    "Recovery of Class Hierarchies and Composition Relationships from Machine Code.",
+                    "Liveness-Based Garbage Collection.",
+                    "deGoal a Tool to Embed Dynamic Code Generators into Applications.",
+                    "Improving the Performance of X10 Programs by Clock Removal.",
+                    "Taming Control Divergence in GPUs through Control Flow Linearization.",
+                    "Exploitation of GPUs for the Parallelisation of Probably Parallel Legacy Code.",
+                    "A Flexible and Efficient ML Lexer Tool Based on Extended Regular Expression Submatching.",
+                    "The PAPAGENO Parallel-Parser Generator.",
+                    "String Analysis for Dynamic Field Access.",
+                    "Addressing JavaScript JIT Engines Performance Quirks: A Crowdsourced Adaptive Compiler.",
+                    "A First Step towards a Compiler for Business Processes.",
+                    "CBMC-GC: An ANSI C Compiler for Secure Two-Party Computations."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2013",
+        "name": "22nd CC@ETAPS 2013",
+        "info": "Rome, Italy",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2013",
+                "sub_name": "Compiler Construction - 22nd International Conference, CC 2013, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2013, Rome, Italy, March 16-24, 2013. Proceedings.",
+                "count": 13,
+                "papers": [
+                    "Optimal Register Allocation in Polynomial Time.",
+                    "Optimal and Heuristic Global Code Motion for Minimal Spilling.",
+                    "Efficient and Effective Handling of Exceptions in Java Points-to Analysis.",
+                    "An Incremental Points-to Analysis with CFL-Reachability.",
+                    "FESA: Fold- and Expand-Based Shape Analysis.",
+                    "Simple and Efficient Construction of Static Single Assignment Form.",
+                    "PolyGLoT: A Polyhedral Loop Transformation Framework for a Graphical Dataflow Language.",
+                    "Architecture-Independent Dynamic Information Flow Tracking.",
+                    "On the Determination of Inlining Vectors for Program Optimization.",
+                    "Automatic Generation of Program Affinity Policies Using Machine Learning.",
+                    "Compiler-Guided Identification of Critical Sections in Parallel Code.",
+                    "Refactoring MATLAB.",
+                    "On LR Parsing with Selective Delays."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2012",
+        "name": "21st CC@ETAPS 2012",
+        "info": "Tallinn, Estonia",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2012",
+                "sub_name": "Compiler Construction - 21st International Conference, CC 2012, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2012, Tallinn, Estonia, March 24 - April 1, 2012. Proceedings.",
+                "count": 13,
+                "papers": [
+                    "Improving Performance of OpenCL on CPUs.",
+                    "Automatic Restructuring of GPU Kernels for Exploiting Inter-thread Data Locality.",
+                    "Programming Paradigm Driven Heap Analysis.",
+                    "Parallel Replication-Based Points-To Analysis.",
+                    "A New Method for Program Inversion.",
+                    "Analytical Bounds for Optimal Tile Size Selection.",
+                    "Static Detection of Unsafe Component Loadings.",
+                    "Object Model Construction for Inheritance in C++ and Its Applications to Program Analysis.",
+                    "GC-Safe Interprocedural Unboxing.",
+                    "Compiler Support for Value-Based Indirect Branch Prediction.",
+                    "Compiler Support for Fine-Grain Software-Only Checkpointing.",
+                    "VMAD: An Advanced Dynamic Program Analysis and Instrumentation Framework.",
+                    "Sambamba: A Runtime System for Online Adaptive Parallelization."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2011",
+        "name": "20th CC@ETAPS 2011",
+        "info": "Saarbr\u00fccken, Germany",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2011",
+                "sub_name": "Compiler Construction - 20th International Conference, CC 2011, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2011, Saarbr\u00fccken, Germany, March 26-April 3, 2011. Proceedings.",
+                "count": 16,
+                "papers": [
+                    "Future-Proofing Collections: From Mutable to Persistent to Parallel.",
+                    "Dynamic Elimination of Overflow Tests in a Trace Compiler.",
+                    "Staged Static Techniques to Efficiently Implement Array Copy Semantics in a MATLAB JIT Compiler.",
+                    "SSA-Based Register Allocation with PBQP.",
+                    "Probabilistic Points-to Analysis for Java.",
+                    "Faster Alias Set Analysis Using Summaries.",
+                    "JPure: A Modular Purity System for Java.",
+                    "Tainted Flow Analysis on e-SSA-Form Programs.",
+                    "Clean Translation of an Imperative Reversible Programming Language.",
+                    "Interpreter Instruction Scheduling.",
+                    "Actor-Based Parallel Dataflow Analysis.",
+                    "Using Disjoint Reachability for Parallelization.",
+                    "Data Layout Transformation for Stencil Computations on Short-Vector SIMD Architectures.",
+                    "Subregion Analysis and Bounds Check Elimination for High Level Arrays.",
+                    "Practical Loop Transformations for Tensor Contraction Expressions on Multi-level Memory Hierarchies.",
+                    "A Static Task Partitioning Approach for Heterogeneous Systems Using OpenCL."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2010",
+        "name": "19th CC@ETAPS 2010",
+        "info": "Paphos, Cyprus",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2010",
+                "sub_name": "Compiler Construction, 19th International Conference, CC 2010, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2010, Paphos, Cyprus, March 20-28, 2010. Proceedings.",
+                "count": 17,
+                "papers": [
+                    "Programming Clouds.",
+                    "Mining Opportunities for Code Improvement in a Just-In-Time Compiler.",
+                    "Unrestricted Code Motion: A Program Representation and Transformation Algorithms Based on Future Values.",
+                    "Optimizing Matlab through Just-In-Time Specialization.",
+                    "RATA: Rapid Atomic Type Analysis by Abstract Interpretation - Application to JavaScript Optimization.",
+                    "JReq: Database Queries in Imperative Languages.",
+                    "Verifying Local Transformations on Relaxed Memory Models.",
+                    "Practical Extensions to the IFDS Algorithm.",
+                    "Using Ownership to Reason about Inherent Parallelism in Object-Oriented Programs.",
+                    "Punctual Coalescing.",
+                    "Strategies for Predicate-Aware Register Allocation.",
+                    "Preference-Guided Register Assignment.",
+                    "Validating Register Allocation and Spilling.",
+                    "Automatic C-to-CUDA Code Generation for Affine Programs.",
+                    "Is Reuse Distance Applicable to Data Locality Analysis on Chip Multiprocessors?",
+                    "The Polyhedral Model Is More Widely Applicable Than You Think.",
+                    "The Hot Path SSA Form: Extending the Static Single Assignment Form for Speculative Optimizations."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2009",
+        "name": "18th CC@ETAPS 2009",
+        "info": "York, UK",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2009",
+                "sub_name": "Compiler Construction, 18th International Conference, CC 2009, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2009, York, UK, March 22-29, 2009. Proceedings.",
+                "count": 19,
+                "papers": [
+                    "Challenges in Code Optimization of Parallel Programs.",
+                    "Extensible Proof-Producing Compilation.",
+                    "From Specification to Optimisation: An Architecture for Optimisation of Java Bytecode.",
+                    "A Framework for Exploring Optimization Properties.",
+                    "Compile-Time Analysis and Specialization of Clocks in Concurrent Programs.",
+                    "Implementation and Use of Transactional Memory with Dynamic Separation.",
+                    "Exploiting Speculative TLP in Recursive Programs by Dynamic Thread Prediction.",
+                    "Live Debugging of Distributed Systems.",
+                    "Parsing C/C++ Code without Pre-processing.",
+                    "Faster Scannerless GLR Parsing.",
+                    "Decorated Attribute Grammars: Attribute Evaluation Meets Strategic Programming.",
+                    "SSA Elimination after Register Allocation.",
+                    "Register Spilling and Live-Range Splitting for SSA-Form Programs.",
+                    "Loop-Aware Instruction Scheduling with Dynamic Contention Tracking for Tiled Dataflow Architectures.",
+                    "Scheduling Tasks to Maximize Usage of Aggregate Variables in Place.",
+                    "Dynamic Look Ahead Compilation: A Technique to Hide JIT Compilation Latencies in Multicore Environment.",
+                    "Precise Management of Scratchpad Memories for Localising Array Accesses in Scientific Codes.",
+                    "Blind Optimization for Exploiting Hardware Features.",
+                    "How to CPS Transform a Monad."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2008",
+        "name": "17th CC@ETAPS 2008",
+        "info": "Budapest, Hungary",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2008",
+                "sub_name": "Compiler Construction, 17th International Conference, CC 2008, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2008, Budapest, Hungary, March 29 - April 6, 2008. Proceedings.",
+                "count": 20,
+                "papers": [
+                    "Design Choices in a Compiler Course or How to Make Undergraduates Love Formal Notation.",
+                    "Improved Memory-Access Analysis for x86 Executables.",
+                    "A System for Generating Static Analyzers for Machine Instructions.",
+                    "IDE Dataflow Analysis in the Presence of Large Object-Oriented Libraries.",
+                    "An Adaptive Strategy for Inline Substitution.",
+                    "Automatic Transformation of Bit-Level C Code to Support Multiple Equivalent Data Layouts.",
+                    "Control Flow Emulation on Tiled SIMD Architectures.",
+                    "Generating SIMD Vectorized Permutations.",
+                    "Automatic Transformations for Communication-Minimized Parallelization and Locality Optimization in the Polyhedral Model.",
+                    "How to Do a Million Watchpoints: Efficient Debugging Using Dynamic Instrumentation.",
+                    "Compiler-Guaranteed Safety in Code-Copying Virtual Machines.",
+                    "Hardware JIT Compilation for Off-the-Shelf Dynamically Reconfigurable FPGAs.",
+                    "Visualization of Program Dependence Graphs.",
+                    "On the Relative Completeness of Bytecode Analysis Versus Source Code Analysis.",
+                    "Efficiency, Precision, Simplicity, and Generality in Interprocedural Data Flow Analysis: Resurrecting the Classical Call Strings Method.",
+                    "Java Bytecode Verification for @NonNull Types.",
+                    "Efficient Context-Sensitive Shape Analysis with Graph Based Heap Models.",
+                    "Coqa: Concurrent Objects with Quantized Atomicity.",
+                    "Keep Off the Grass: Locking the Right Path for Atomicity.",
+                    "Supporting Legacy Binary Code in a Software Transaction Compiler with Dynamic Binary Translation and Optimization."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2007",
+        "name": "16th CC@ETAPS 2007",
+        "info": "Braga, Portugal",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2007",
+                "sub_name": "Compiler Construction, 16th International Conference, CC 2007, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2007, Braga, Portugal, March 26-30, 2007, Proceedings.",
+                "count": 15,
+                "papers": [
+                    "New Algorithms for SIMD Alignment.",
+                    "Preprocessing Strategy for Effective Modulo Scheduling on Multi-issue Digital Signal Processors.",
+                    "An Array Allocation Scheme for Energy Reduction in Partitioned Memory Architectures.",
+                    "Using Prefetching to Improve Reference-Counting Garbage Collectors.",
+                    "Accurate Garbage Collection in Uncooperative Environments with Lazy Pointer Stacks.",
+                    "Correcting the Dynamic Call Graph Using Control-Flow Constraints.",
+                    "Obfuscating Java: The Most Pain for the Least Gain.",
+                    "A Fast Cutting-Plane Algorithm for Optimal Coalescing.",
+                    "Register Allocation and Optimal Spill Code Scheduling in Software Pipelined Loops Using 0-1 Integer Linear Programming Formulation.",
+                    "Extended Linear Scan: An Alternate Foundation for Global Register Allocation.",
+                    "Program Refactoring, Program Synthesis, and Model-Driven Development.",
+                    "A Practical Escape and Effect Analysis for Building Lightweight Method Summaries.",
+                    "Layout Transformations for Heap Objects Using Static Access Patterns.",
+                    "A New Elimination-Based Data Flow Analysis Framework Using Annotated Decomposition Trees.",
+                    "A Declarative Framework for Analysis and Optimization."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2006",
+        "name": "15th CC@ETAPS 2006",
+        "info": "Vienna, Austria",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2006",
+                "sub_name": "Compiler Construction, 15th International Conference, CC 2006, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2006, Vienna, Austria, March 30-31, 2006, Proceedings.",
+                "count": 21,
+                "papers": [
+                    "Using Dependent Types to Port Type Systems to Low-Level Languages.",
+                    "Interprocedural Dataflow Analysis in the Presence of Large Libraries.",
+                    "Efficient Flow-Sensitive Interprocedural Data-Flow Analysis in the Presence of Pointers.",
+                    "Path-Based Reuse Distance Analysis.",
+                    "Context-Sensitive Points-to Analysis: Is It Worth It?.",
+                    "Selective Runtime Memory Disambiguation in a Dynamic Binary Translator.",
+                    "Accurately Choosing Execution Runs for Software Fault Localization.",
+                    "Demonstration: On-Line Visualization and Analysis of Real-Time Systems with TuningFork.",
+                    "Data-Flow Analysis as Model Checking Within the jABC.",
+                    "The CGiS Compiler-A Tool Demonstration.",
+                    "Loop Transformations in the Ahead-of-Time Optimization of Java Bytecode.",
+                    "Hybrid Optimizations: Which Optimization Algorithm to Use?.",
+                    "A Fresh Look at PRE as a Maximum Flow Problem.",
+                    "Performance Characterization of the 64-bit x86 Architecture from Compiler Optimizations' Perspective.",
+                    "Lightweight Lexical Closures for Legitimate Execution Stack Access.",
+                    "Polyhedral Code Generation in the Real World.",
+                    "Iterative Collective Loop Fusion.",
+                    "Converting Intermediate Code to Assembly Code Using Declarative Machine Descriptions.",
+                    "SARA: Combining Stack Allocation and Register Allocation.",
+                    "Register Allocation for Programs in SSA-Form.",
+                    "Enhanced Bitwidth-Aware Register Allocation."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2005",
+        "name": "14th CC@ETAPS 2005",
+        "info": "Edinburgh, Scotland, UK",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2005",
+                "sub_name": "Compiler Construction, 14th International Conference, CC 2005, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2005, Edinburgh, UK, April 4-8, 2005, Proceedings.",
+                "count": 22,
+                "papers": [
+                    "When Abstraction Fails.",
+                    "Source-Level Debugging for Multiple Languages with Modest Programming Effort.",
+                    "Compilation of Generic Regular Path Expressions Using C++ Class Templates.",
+                    "XML Goes Native: Run-Time Representations for Xtatic.",
+                    "Boosting the Performance of Multimedia Applications Using SIMD Instructions.",
+                    "Task Partitioning for Multi-core Network Processors.",
+                    "Experiences with Enumeration of Integer Projections of Parametric Polytopes.",
+                    "Generalized Index-Set Splitting.",
+                    "Age-Oriented Concurrent Garbage Collection.",
+                    "Optimizing C Multithreaded Memory Management Using Thread-Local Storage.",
+                    "An Efficient On-the-Fly Cycle Collection.",
+                    "Data Slicing: Separating the Heap into Independent Regions.",
+                    "A Compiler-Based Approach to Data Security.",
+                    "Composing Source-to-Source Data-Flow Transformations with Rewriting Strategies and Dependent Dynamic Rewrite Rules.",
+                    "Verification of Source Code Transformations by Program Equivalence Checking.",
+                    "Hob: A Tool for Verifying Data Structure Consistency.",
+                    "Jazz: A Tool for Demand-Driven Structural Testing.",
+                    "Tiger - An Interpreter Generation Tool.",
+                    "CodeSurfer/x86-A Platform for Analyzing x86 Executables.",
+                    "A Study of Type Analysis for Speculative Method Inlining in a JIT Environment.",
+                    "Completeness Analysis for Incomplete Object-Oriented Programs.",
+                    "Using Inter-Procedural Side-Effect Information in JIT Optimizations."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2004",
+        "name": "13th CC@ETAPS 2004",
+        "info": "Barcelona, Spain",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2004",
+                "sub_name": "Compiler Construction, 13th International Conference, CC 2004, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2004, Barcelona, Spain, March 29 - April 2, 2004, Proceedings.",
+                "count": 20,
+                "papers": [
+                    "Developing a Foundation for Code Optimization.",
+                    "Analyzing Memory Accesses in x86 Executables.",
+                    "The Limits of Alias Analysis for Scalar Optimizations.",
+                    "Pruning Interference and Ready Dependence for Slicing Concurrent Java Programs.",
+                    "Data Dependence Profiling for Speculative Optimizations.",
+                    "Elkhound: A Fast, Practical GLR Parser Generator.",
+                    "Generalised Parsing: Some Costs.",
+                    "An Automata-Theoretic Algorithm for Counting Solutions to Presburger Formulas.",
+                    "A Symbolic Approach to Bernstein Expansion for Program Analysis and Optimization.",
+                    "Periodic Polyhedra.",
+                    "Region-Based Partial Dead Code Elimination on Predicated Code.",
+                    "Value-Based Partial Redundancy Elimination.",
+                    "Increasing the Applicability of Scalar Replacement.",
+                    "Reducing the Cost of Object Boxing.",
+                    "FFT Compiler Techniques.",
+                    "Widening Integer Arithmetic.",
+                    "Stochastic Bit-Width Approximation Using Extreme Value Theory for Customizable Processors.",
+                    "Using Multiple Memory Access Instructions for Reducing Code Size.",
+                    "Integrating the Soot Compiler Infrastructure into an IDE.",
+                    "Declarative Composition of Stack Frames."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2003",
+        "name": "12th CC@ETAPS 2003",
+        "info": "Warsaw, Poland",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2003",
+                "sub_name": "Compiler Construction, 12th International Conference, CC 2003, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2003, Warsaw, Poland, April 7-11, 2003, Proceedings.",
+                "count": 23,
+                "papers": [
+                    "Combined Code Motion and Register Allocation Using the Value State Dependence Graph.",
+                    "Early Control of Register Pressure for Software Pipelined Loops.",
+                    "Register Allocation by Optimal Graph Coloring.",
+                    "A Compilation and Optimization Model for Aspect-Oriented Programs.",
+                    "A Pattern Matching Compiler for Multiple Target Languages.",
+                    "A New One-Pass Transformation into Monadic Normal Form.",
+                    "Run-Time Type Checking for Binary Programs.",
+                    "Precision in Practice: A Type-Preserving Java Compiler.",
+                    "The MAGICA Type Inference Engine for MATLAB.",
+                    "Dimensions of Precision in Reference Analysis of Object-Oriented Programming Languages.",
+                    "Polyglot: An Extensible Compiler Framework for Java.",
+                    "Scaling Java Points-to Analysis Using SPARK.",
+                    "Effective Inline-Threaded Interpretation of Java Bytecode Using Preparation Sequences.",
+                    "Integrating Generations with Advanced Reference Counting Garbage Collectors.",
+                    "The Interprocedural Express-Lane Transformation.",
+                    "Automatic Detection of Uninitialized Variables.",
+                    "Generalised Regular Parsers.",
+                    "Rapid and Robust Compiler Construction Using Template-Based Metacompilation.",
+                    "The Verifying Compiler: A Grand Challenge for Computing Research.",
+                    "Address Register Assignment for Reducing Code Size.",
+                    "Offset Assignment Showdown: Evaluation of DSP Address Code Optimization Algorithms.",
+                    "Integrating High-Level Optimizations in a Production Compiler: Design and Implementation Experience.",
+                    "Improving Data Locality by Chunking."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2002",
+        "name": "11th CC@ETAPS 2002",
+        "info": "Grenoble, France",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2002",
+                "sub_name": "Compiler Construction, 11th International Conference, CC 2002, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2002, Grenoble, France, April 8-12, 2002, Proceedings.",
+                "count": 23,
+                "papers": [
+                    "LISA: An Interactive Environment for Programming Language Development.",
+                    "Building an Interpreter with Vmgen.",
+                    "Compiler Construction Using LOTOS NT.",
+                    "Data Compression Transformations for Dynamically Allocated Data Structures.",
+                    "Evaluating a Demand Driven Technique for Call Graph Construction.",
+                    "A Graph-Free Approach to Data-Flow Analysis.",
+                    "A Representation for Bit Section Based Analysis and Optimization.",
+                    "Online Subpath Profiling.",
+                    "Precise Exception Semantics in Dynamic Compilation.",
+                    "Decompiling Java Bytecode: Problems, Traps and Pitfalls.",
+                    "Forwarding in Attribute Grammars for Modular Language Design.",
+                    "Disambiguation Filters for Scannerless Generalized LR Parsers.",
+                    "Modular Static Program Analysis.",
+                    "StreamIt: A Language for Streaming Applications.",
+                    "Compiling Mercury to High-Level C Code.",
+                    "CIL: Intermediate Language and Tools for Analysis and Transformation of C Programs.",
+                    "Linear Scan Register Allocation in the Context of SSA Form and Register Constraints.",
+                    "Global Variable Promotion: Using Registers to Reduce Cache Power Dissipation.",
+                    "Optimizing Static Power Dissipation by Functional Units in Superscalar Processors.",
+                    "Influence of Loop Optimizations on Energy Consumption of Multi-bank Memory Systems.",
+                    "Effective Enhancement of Loop Versioning in Java.",
+                    "Value-Profile Guided Stride Prefetching for Irregular Code.",
+                    "A Comprehensive Approach to Array Bounds Check Elimination for Java."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2001",
+        "name": "10th CC@ETAPS 2001",
+        "info": "Genova, Italy",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2001",
+                "sub_name": "Compiler Construction, 10th International Conference, CC 2001 Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2001 Genova, Italy, April 2-6, 2001, Proceedings.",
+                "count": 26,
+                "papers": [
+                    "Virtual Classes and Their Implementation.",
+                    "Alias Analysis by Means of a Model Checker.",
+                    "Points-to and Side-Effect Analyses for Programs Built with Precompiled Libraries.",
+                    "A Novel Probabilistic Data Flow Framework.",
+                    "Imperative Program Transformation by Rewriting.",
+                    "Compiler Transformation of Pointers to Explicit Array Accesses in DSP Applications.",
+                    "User-Extensible Simplification - Type-Based Optimizer Generators.",
+                    "A Practical, Robust Method for Generating Variable Range Tables.",
+                    "Efficient Symbolic Analysis for Optimizing Compilers.",
+                    "Interprocedural Shape Analysis for Recursive Programs.",
+                    "Design-Driven Compilation.",
+                    "Software Pipelining of Nested Loops.",
+                    "A First Step Towards Time Optimal Software Pipelining of Loops with Control Flows.",
+                    "Comparing Tail Duplication with Compensation Code in Single Path Global Instruction Scheduling.",
+                    "Register Saturation in Superscalar and VLIW Codes.",
+                    "Directly-Executable Earley Parsing.",
+                    "A Bounded Graph-Connect Construction for LR-regular Parsers.",
+                    "Array Unification: A Locality Optimization Technique.",
+                    "Optimal Live Range Merge for Address Register Allocation in Embedded Programs.",
+                    "Speculative Prefetching of Induction Pointers.",
+                    "Constant-Time Root Scanning for Deterministic Garbage Collection.",
+                    "Goal-Directed Value Profiling.",
+                    "A Framework for Optimizing Java Using Attributes.",
+                    "SmartTools: A Generator of Interactive Environments Tools.",
+                    "Visual Patterns in the VLEli System.",
+                    "The ASF+SDF Meta-environment: A Component-Based Language Development Environment."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2000",
+        "name": "9th CC@ETAPS 2000",
+        "info": "Berlin, Germany",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/2000",
+                "sub_name": "Compiler Construction, 9th International Conference, CC 2000, Held as Part of the European Joint Conferences on the Theory and Practice of Software, ETAPS 2000, Berlin, Germany, March 25 - April 2, 2000, Proceedings.",
+                "count": 19,
+                "papers": [
+                    "Shape Analysis.",
+                    "Optimizing Java Bytecode Using the Soot Framework: Is It Feasible?",
+                    "Pipelined Java Virtual Machine Interpreters.",
+                    "Automatic Removal of Array Memory Leaks in Java.",
+                    "A Static Study of Java Exceptions Using JESP.",
+                    "Fast Escape Analysis and Stack Allocation for Object-Based Programs.",
+                    "Constant Propagation on the Value Graph: Simple Constants and Beyond.",
+                    "Simple Generation of Static Single-Assignment Form.",
+                    "Demand-Driven Construction of Call Graphs.",
+                    "A Framework for Loop Distribution on Limited On-Chip Memory Processors.",
+                    "Techniques for Effectively Exploiting a Zero Overhead Loop Buffer.",
+                    "Advanced Compiler Optimization for Calm RISC8 Low-End Embedded Processor.",
+                    "Global Software Pipelining with Iteration Preselection.",
+                    "Analysis of Irregular Single-Indexed Array Accesses and Its Applications in Compiler Optimizations.",
+                    "Advanced Scalarization of Array Syntax.",
+                    "Techniques for Reducing the Overhead of Run-Time Parallelization.",
+                    "MATOU: An Implementation of Mode-Automata.",
+                    "Compiling Adaptive Programs by Partial Evaluation.",
+                    "Functional Incremental Attribute Evaluation."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "1999",
+        "name": "8th CC@ETAPS 1999",
+        "info": "Amsterdam, The Netherlands",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/1999",
+                "sub_name": "Compiler Construction, 8th International Conference, CC'99, Held as Part of the European Joint Conferences on the Theory and Practice of Software, ETAPS'99, Amsterdam, The Netherlands, 22-28 March, 1999, Proceedings.",
+                "count": 22,
+                "papers": [
+                    "Data Structure Free Compilation.",
+                    "Debugging Eli-Generated Compilers With Noosa.",
+                    "Faster Generalized LR Parsing.",
+                    "Interprocedural Path Profiling.",
+                    "Experimental Comparison of call string and functional Approaches to Interprocedural Analysis.",
+                    "Link-Time Improvement of Scheme Programs.",
+                    "Expansion-Based Removal of Semantic Partial Redundancies.",
+                    "Register Pressure Sensitive Redundancy Elimination.",
+                    "Code Optimization by Integer Linear Programming.",
+                    "Evaluation of Algorithms for Local Register Allocation.",
+                    "Efficient State-Diagram Construction Methods for Software Pipelining.",
+                    "A Comparison of Compiler Tiling Algorithms.",
+                    "Implementation Issues of Loop-Level Speculative Run-Time Parallelization.",
+                    "Compilation and Memory Management for ASF+SDF.",
+                    "The Design of the PROMIS Compiler.",
+                    "Floating Point to Fixed Point Conversion of C Code.",
+                    "Optimizing Object-Oriented Languages Through Architechtural Transformations.",
+                    "Virtual Cache Line: A New Technique to Improve Cache Exploitation for Recursive Data Structures.",
+                    "Extending Modulo Scheduling with Memory Reference Merging.",
+                    "TRAPing Modelica with Python.",
+                    "A Programmable ANSI C Transformation Engine.",
+                    "Tool Support for Language Design and Prototyping with Montages."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "1998",
+        "name": "7th CC@ETAPS 1998",
+        "info": "Lisbon, Portugal",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/1998",
+                "sub_name": "Compiler Construction, 7th International Conference, CC'98, Held as Part of the European Joint Conferences on the Theory and Practice of Software, ETAPS'98, Lisbon, Portugal, March 28 - April 4, 1998, Proceedings.",
+                "count": 24,
+                "papers": [
+                    "Myths and Facts about the Efficient Implementation of Finite Automata and Lexical Analysis.",
+                    "Generalised Recursive Descent parsing and Fellow-Determinism.",
+                    "Analyzing Direct Non-local Dependencies in Attribute Grammars.",
+                    "Storage Allocation Strategies for Recursive Attributes Evaluators.",
+                    "Basic-Block Graphs: Living Dinosaurs?",
+                    "Analysis of Loops.",
+                    "A New Approach to Control Flow Analysis.",
+                    "Flow Logics for Constraint Based Analysis.",
+                    "Extended SSA Numbering: Introducing SSA Properties to Language with Multi-level Pointers.",
+                    "Strength Reduction via SSAPRE.",
+                    "Detecting Parallelism in C Programs with Recursive Darta Structures.",
+                    "Live Range Splitting in a Graph Coloring Register Allocator.",
+                    "Challenges and Oppurtunities Visual Programming Languages Bring to Programming Language Research.",
+                    "Local Stack Allocation.",
+                    "A New Fast Algorithm for Optimal Register Allocation in Modulo Scheduled Loops.",
+                    "A Code Motion Framework for Global Instruction Scheduling.",
+                    "VLIW Compilation Techniques for Superscalar Architectures.",
+                    "Issues in Translating Smalltalk into Java.",
+                    "Intermodular Slicing of Object-oriented Programs.",
+                    "Portable Debugging and Profiling.",
+                    "The Eli System.",
+                    "Lrc - A Generator for Incremental Language-Oriented Tools.",
+                    "An Extended Static Checker for Modular-3.",
+                    "Cool: A Control-Flow Generator for System Analysis."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "1996",
+        "name": "6th CC 1996",
+        "info": "Link\u00f6ping, Sweden",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/1996",
+                "sub_name": "Compiler Construction, 6th International Conference, CC'96, Link\u00f6ping, Sweden, April 24-26, 1996, Proceedings.",
+                "count": 24,
+                "papers": [
+                    "Pipelining-Dovetailing: A Transformation to Enhance Software Pipelining for Nested Loops.",
+                    "A Comparison of Modulo Scheduling Techniques for Software Pipelining.",
+                    "Removing Anti Dependences by Repairing.",
+                    "Controlled Node Splitting.",
+                    "Aggressive Loop Unrolling in a Retargetable Optimizing Compiler.",
+                    "Generalized Constant Propagation: A Study in C.",
+                    "Structuring Decompiled Graphs.",
+                    "Non-monotone Fixpoint Iterations to Resolve Second Order Effects.",
+                    "How to Uniformly Specify Program Analysis and Transformation with Graph Rewrite Systems.",
+                    "Points-to Analysis by Type Inference of Programs with Structures and Unions.",
+                    "Compiler Construction: Craftmanship or Engineering?",
+                    "Code Generation = A* + BURS.",
+                    "A Compiler for Natural Semantics.",
+                    "Abstract Compilation: A New Implementation Paradigm for Static Analysis.",
+                    "Using Partial Evaluation in Support of Portability, Reusability, and Maintainability.",
+                    "Incremental Computation of Static Single Assignment Form.",
+                    "Efficient Storage Reuse of Aggregates in Single Assignment Languages.",
+                    "Effective Representation of Aliases and Indirect Memory Operations in SSA Form.",
+                    "Maptool - Supporting Modular Syntax Development.",
+                    "A Faster Earley Parser.",
+                    "One-Pass, Optimal Tree Parsing - With Or Without Trees.",
+                    "Compact Dispatch Tables for Dynamically Typed Object Oriented Languages.",
+                    "Delegating Compiler Objects: An Object-Oriented Approach to Crafting Compilers.",
+                    "A Parallel Debugger with Support for Distributed Arrays, Multiple Executables and Dynamic Processes."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "1994",
+        "name": "5th CC 1994",
+        "info": "Edinburgh, U.K.",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/1994",
+                "sub_name": "Compiler Construction, 5th International Conference, CC'94, Edinburgh, UK, April 7-9, 1994, Proceedings.",
+                "count": 29,
+                "papers": [
+                    "OASIS: An Optimizing Action-Based Compiler Generator.",
+                    "Action Transformations in the ACTRESS Compiler Generator.",
+                    "An Overview of Door Attribute Grammars.",
+                    "Coupling Evaluators for Attribute Coupled Grammars.",
+                    "Towards the Global Optimization of Functional Logic Programs.",
+                    "A Portable and Optimizing Back End for the SML/NJ Compiler.",
+                    "Efficient Organization of Control Structures in Distributed Implementations.",
+                    "Implementing 2DT on a Multiprocessor.",
+                    "Global Code Selection of Directed Acyclic Graphs.",
+                    "Compiling Nested Loops for Limited Connectivity VLIWs.",
+                    "Delayed Exceptions - Speculative Execution of Trapping Instructions.",
+                    "On the Implementation of Abstract Interpretation Systems for (Constraint) Logic Programs.",
+                    "A Suite of Analysis Tools Based on a General Purpose Abstract Interpreter.",
+                    "Flow Grammars - a Flow Analysis Methodology.",
+                    "Provable Correctness of Prototype Interpreters in LDL.",
+                    "Developing Efficient Interpreters Based on Formal Language Specifications.",
+                    "Generating an Efficient Compiler for a Data Parallel Language from a Denotational Specification.",
+                    "Adding Semantic and Syntactic Predicates To LL(k): pred-LL(k).",
+                    "Cosy Compiler Phase Embedding with the CoSy Compiler Model.",
+                    "Towards Provably Correct Code Gneration for a Hard Real-Time Programming Language.",
+                    "Supporting Array Dependence Testing for an Optimizing/Parallelizing C Compiler.",
+                    "Processing Array Statements and Procedure Interfaces in the PREPARE High Performance Fortran Compiler.",
+                    "A Practical Approach to the Symbolic Debugging of Parallelized Code.",
+                    "Reducing the Cost of Data Flow Analysis By Congruence Partitioning.",
+                    "Interprocedural Constant Propagation using Dependence Graphs and a Data-Flow Model.",
+                    "Solving Demand Versions of Interprocedural Analysis Problems.",
+                    "Compile Time Instruction Cache Optimizations.",
+                    "Instruction Schedulimg over Regions: A Framework for Scheduling Across Basic Blocks.",
+                    "Transport-Triggering versus Operation-Triggering."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "1992",
+        "name": "4th CC 1992",
+        "info": "Paderborn, Germany",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/1992",
+                "sub_name": "Compiler Construction, 4th International Conference on Compiler Construction, CC'92, Paderborn, Germany, October 5-7, 1992, Proceedings.",
+                "count": 28,
+                "papers": [
+                    "Transformation of Attributed Trees Using Pattern Matching.",
+                    "Generating LR(1) Parsers of Small Size.",
+                    "Syntax Directed Translation with LR Parsing.",
+                    "Attribute-Directed Top-Down Parsing.",
+                    "Another Kind of Modular Attribute Grammars.",
+                    "Integrated Graphics Environment to Develop Applications Based on Attribute Grammars.",
+                    "Implementing High-Level Identification Specifications.",
+                    "Another Solution of Scoping Problems in Symbol Tables.",
+                    "Compiler Implementation of ADTs Using Profile Data.",
+                    "The LDL - Language Development Laboratory.",
+                    "Actress: An Action Semantics Directed Compiler Generator.",
+                    "Creation of a Family of Compilers and Runtime Environments by Combining Reusable Components.",
+                    "The Interprocedural Coincidence Theorem.",
+                    "Provably Correct Compiler Development and Implementation.",
+                    "On Interprocedural Data Flow Analysis for Object Oriented Languages.",
+                    "Testing Completeness of Code Selector Specifications.",
+                    "A Register Allocation Framework Based on Hierarchical Cyclic Interval Graphs.",
+                    "Register Pipelining: An Integrated Approach to Register Allocation for Scalar and Subscripted Variables.",
+                    "Instruction Scheduling for Complex Pipelines.",
+                    "Comparing Software Pipelining for an Operation-Triggered and a Tarnsport-Triggered Architecture.",
+                    "Scheduling Instructions by Direct Placement.",
+                    "Compile-Time Analysis of Object-Oriented Programs.",
+                    "Partial Evaluation of C and Automatic Compiler Generation (Extended Abstract).",
+                    "A Term Pattern-Match Compiler Inspired by Finite Automata Theory.",
+                    "Improving the Performance of Parallel LISP by Compile Time Analysis.",
+                    "FCG: A Code Generator for Lazy Functional Languages.",
+                    "Compiling Flang.",
+                    "The Implementation of ObjectMath - a High-Level Programming Environment for Scientific Computing."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "1990",
+        "name": "3rd CC 1990",
+        "info": "Schwerin, Germany",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/1990",
+                "sub_name": "Compiler Compilers, Third International Workshop on Compiler Construction, CC'90, Schwerin, Germany, October 22-26, 1990, Proceedings.",
+                "count": 23,
+                "papers": [
+                    "Recursive Ascent-Descent Parsers.",
+                    "Application Development with the FNC-2 Attribute Grammar System.",
+                    "Compilation for Instruction Parallel Processors.",
+                    "A Generator for Production Quality Compilers.",
+                    "Rie and Jun: Towards the Generation of all Compiler Phases.",
+                    "STARLET: An Affix-Based Compiler Compiler Designed as a Logic Programming System.",
+                    "PAGODE: A Back End Generator Using Attribute Abstract Syntaxes and Term Rewritings.",
+                    "A Tool Box for Compiler Construction.",
+                    "Tools and Techniques of Annotated Programming.",
+                    "A Compiler with Scheduling for a Specialized Synchronous Multiprocessor System.",
+                    "Using an LALR Compiler Compiler to Generate Incremental Parsers.",
+                    "Generating Efficient Code from Continuation Semantics.",
+                    "Optimizing Directly Executable LR Parsers.",
+                    "SYS/3 - A Software Development Tool.",
+                    "An Attributed ELL(1)-Parser Generator (Abstract).",
+                    "A Hybrid Top-Down Parsing Technique (Abstract).",
+                    "Computer-Aided Building of a Compiler: An Example (Abstract).",
+                    "Specification and Implementation of a Tree-Abiding Interface for Ada (Extended Abstract).",
+                    "Towards a Multilingual Natural Language Understanding Interface (Extended Abstract).",
+                    "Mixed Dialogue Control Defined by an Attribute Grammar (Abstract).",
+                    "MATE - A Metasystem with Concurrent Attribute Evaluation (Abstract).",
+                    "A Practical Implementation of DCGs (Abstract).",
+                    "Algorithmic Debugging for Imperative Languages with Side-Effects (Abstract)."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "1988",
+        "name": "2nd CCHSC 1988",
+        "info": "Berlin, GDR",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/cc/1988",
+                "sub_name": "Compiler Compilers and High Speed Compilation, 2nd CCHSC Workshop, Berlin GDR, October 10-14, 1988, Proceedings.",
+                "count": 18,
+                "papers": [
+                    "A Short Review of High Speed Compilation.",
+                    "Incremental Symbol Processing.",
+                    "Software Engineering Aspects in Language Implementation.",
+                    "OPTRAN - A Language/System for the Specification of Program Transformations: System Overview and Experiences.",
+                    "Compiler Construction by Object-Oriented System Nut.",
+                    "Generators for High-Speed Front-Ends.",
+                    "Incremental Algorithms in Prof-LP.",
+                    "Abstract Interfaces for Compiler Generating Tools.",
+                    "The INDIA Lexic Generator.",
+                    "ILALR: An Incremental Generator of LALR(1) Parsers.",
+                    "Type Checking in the Large.",
+                    "A Compiler Generator for Attributive Evaluation During LR Parsing.",
+                    "Attributed Tree Transformations with Delayed and Smart Re-Evaluation.",
+                    "Incremental Attribute Evaluation with Side-effects.",
+                    "Optimizing Implementation of Aggregates in the Compiler Specification System MAGIC.",
+                    "Code Generation for a RISC Machine.",
+                    "Two Tree Pattern Matchers for Code Selection.",
+                    "Generation of Incremental Indirect Threaded Code for Language-Based Programming Environments."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "1986",
+        "name": "1st CC 1986",
+        "info": "Bautzen, GDR",
+        "venues": []
+    }
+]

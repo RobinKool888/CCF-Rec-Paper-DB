@@ -1,5 +1,113 @@
 [
     {
+        "year": "2025",
+        "name": "45th FORTE 2025",
+        "info": "Lille, France",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/forte/2025",
+                "sub_name": "Formal Techniques for Distributed Objects, Components, and Systems - 45th IFIP WG 6.1 International Conference, FORTE 2025, Held as Part of the 20th International Federated Conference on Distributed Computing Techniques, DisCoTec 2025, Lille, France, June 16-20, 2025, Proceedings.",
+                "count": 14,
+                "papers": [
+                    "A Choreographic View of Smart Contracts.",
+                    "Temporal and Spatial Fault Detection for Connected Cyber-Physical Systems.",
+                    "Sequential Composition of BDD Transition Systems for Model-Based Testing.",
+                    "Scaling Information Flow Control By-Construction to Component-Based Software Architectures.",
+                    "Noninterference Analysis ofStochastically Timed Reversible Systems.",
+                    "Attribute-Based Communication over Pub/Sub: Transactional Coordination for Smart Systems.",
+                    "Probabilistic Safety Verification of Distributed Systems: A Statistical Approach for Monitoring.",
+                    "Towards Efficient Verification of Parallel Applications with Mc SimGrid.",
+                    "Revisited Convergence of a Self-stabilizing BFS Spanning Tree Algorithm.",
+                    "Choreographies for Program Understanding.",
+                    "An Approach to Formalize Information-Theoretic Security of Multiparty Computation Protocols.",
+                    "SNexpression: A New Component for SN Matrix-Based Structural Analysis.",
+                    "Assessing Code Understanding in LLMs.",
+                    "LolaPrompts: Assisting the General Public in Performing Real-Driving Emission Tests."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2024",
+        "name": "44th FORTE 2024",
+        "info": "Groningen, The Netherlands",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/forte/2024",
+                "sub_name": "Formal Techniques for Distributed Objects, Components, and Systems - 44th IFIP WG 6.1 International Conference, FORTE 2024, Held as Part of the 19th International Federated Conference on Distributed Computing Techniques, DisCoTec 2024, Groningen, The Netherlands, June 17-21, 2024, Proceedings.",
+                "count": 13,
+                "papers": [
+                    "A Multi-agent Model for Opinion Evolution in Social Networks Under Cognitive Biases.",
+                    "Weak Simplicial Bisimilarity for Polyhedral Models and SLCS\u03b7.",
+                    "Noninterference Analysis of Reversible Probabilistic Systems.",
+                    "JustAct: Actions Universally Justified by Partial Dynamic Policies.",
+                    "Synthesis for Prefix First-Order Logic on Data Words.",
+                    "MAG\u03c0!: The Role of Replication in Typing Failure-Prone Communication.",
+                    "Leaf-First Zipper Semantics.",
+                    "Synthesizing Timed Automata with Minimal Numbers of Clocks from Optimised Timed Scenarios.",
+                    "Formally Verifying a Rollback-Prevention Protocol for TEEs.",
+                    "Network Simulator-Centric Compositional Testing.",
+                    "Adaptable Configuration of Decentralized Monitors.",
+                    "AuDaLa is Turing Complete.",
+                    "Guess and Then Check: Controller Synthesis for Safe and Secure Cyber-Physical Systems."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2023",
+        "name": "43rd FORTE 2023",
+        "info": "Lisbon, Portugal",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/forte/2023",
+                "sub_name": "Formal Techniques for Distributed Objects, Components, and Systems - 43rd IFIP WG 6.1 International Conference, FORTE 2023, Held as Part of the 18th International Federated Conference on Distributed Computing Techniques, DisCoTec 2023, Lisbon, Portugal, June 19-23, 2023, Proceedings.",
+                "count": 13,
+                "papers": [
+                    "An Experimental Evaluation of Tools for Grading Concurrent Programming Exercises.",
+                    "Towards an Automatic Proof of the Bakery Algorithm.",
+                    "Certified Compilation of Choreographies with hacc.",
+                    "Implementing a CTL Model Checker with \u03bc G, a Language for Programming Graph Neural Networks.",
+                    "Branching Bisimulation Semantics Enables Noninterference Analysis of Reversible Systems.",
+                    "Impact Analysis of Coordinated Cyber-Physical Attacks via Statistical Model Checking: A Case Study.",
+                    "Operations on Timed Scenarios.",
+                    "On the Use of Model and Logical Embeddings for Model Checking of Probabilistic Systems.",
+                    "On Bisimilarity for Polyhedral Models and SLCS.",
+                    "With a Little Help from Your Friends: Semi-cooperative Games via Joker Moves.",
+                    "Efficient Dynamic Model Based Testing - Using Greedy Test Case Selection.",
+                    "Minimal Generating Sets for Semiflows.",
+                    "Relating Reversible Petri Nets and Reversible Event Structures, Categorically."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "name": "42nd FORTE 2022",
+        "info": "Lucca, Italy",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/forte/2022",
+                "sub_name": "Formal Techniques for Distributed Objects, Components, and Systems - 42nd IFIP WG 6.1 International Conference, FORTE 2022, Held as Part of the 17th International Federated Conference on Distributed Computing Techniques, DisCoTec 2022, Lucca, Italy, June 13-17, 2022, Proceedings.",
+                "count": 12,
+                "papers": [
+                    "Monitoring Hyperproperties with Circuits.",
+                    "Process Algebra Can Save Lives: Static Analysis of XACML Access Control Policies Using mCRL2.",
+                    "The Reversible Temporal Process Language.",
+                    "Branch-Well-Structured Transition Systems and Extensions.",
+                    "Offline and Online Monitoring of Scattered Uncertain Logs Using Uncertain Linear Dynamical Systems.",
+                    "Co-engineering Safety-Security Using Statistical Model Checking.",
+                    "Fault-Tolerant Multiparty Session Types.",
+                    "Effective Reductions of Mealy Machines.",
+                    "Traits: Correctness-by-Construction for Free.",
+                    "Encodability Criteria for Quantum Based Systems.",
+                    "LTL Under Reductions with Weaker Conditions Than Stutter Invariance.",
+                    "Computing Race Variants in Message-Passing Concurrent Programming with Selective Receives."
+                ]
+            }
+        ]
+    },
+    {
         "year": "2021",
         "name": "41st FORTE 2021",
         "info": "Valletta, Malta",
@@ -144,7 +252,7 @@
     },
     {
         "year": "2016",
-        "name": "36. FORTE 2016",
+        "name": "36th FORTE 2016",
         "info": "Heraklion, Crete, Greece",
         "venues": [
             {
@@ -176,7 +284,7 @@
     },
     {
         "year": "2015",
-        "name": "35. FORTE 2015",
+        "name": "35th FORTE 2015",
         "info": "Grenoble, France",
         "venues": [
             {
@@ -205,7 +313,7 @@
     },
     {
         "year": "2014",
-        "name": "34. FORTE 2014",
+        "name": "34th FORTE 2014",
         "info": "Berlin, Germany",
         "venues": [
             {
@@ -237,7 +345,7 @@
     },
     {
         "year": "2013",
-        "name": "33. FORTE / 15. FMOODS 2013",
+        "name": "33rd FORTE / 15th FMOODS 2013",
         "info": "Florence, Italy",
         "venues": [
             {
@@ -272,7 +380,7 @@
     },
     {
         "year": "2012",
-        "name": "32. FORTE / 14. FMOODS 2012",
+        "name": "32nd FORTE / 14th FMOODS 2012",
         "info": "Stockholm, Sweden",
         "venues": [
             {
@@ -302,7 +410,7 @@
     },
     {
         "year": "2011",
-        "name": "31. FORTE / 13. FMOODS 2011",
+        "name": "31st FORTE / 13th FMOODS 2011",
         "info": "Reykjavik, Iceland",
         "venues": [
             {
@@ -338,7 +446,7 @@
     },
     {
         "year": "2010",
-        "name": "30. FORTE / 12. FMOODS 2010",
+        "name": "30th FORTE / 12th FMOODS 2010",
         "info": "Amsterdam, The Netherlands",
         "venues": [
             {
@@ -370,7 +478,7 @@
     },
     {
         "year": "2009",
-        "name": "29. FORTE / 11. FMOODS 2009",
+        "name": "29th FORTE / 11th FMOODS 2009",
         "info": "Lisboa, Portugal",
         "venues": [
             {
@@ -403,7 +511,7 @@
     },
     {
         "year": "2008",
-        "name": "28. FORTE 2008",
+        "name": "28th FORTE 2008",
         "info": "Tokyo, Japan",
         "venues": [
             {
@@ -438,7 +546,7 @@
     },
     {
         "year": "2007",
-        "name": "27. FORTE 2007",
+        "name": "27th FORTE 2007",
         "info": "Tallinn, Estonia",
         "venues": [
             {
@@ -475,7 +583,7 @@
     },
     {
         "year": "2006",
-        "name": "26. FORTE 2006",
+        "name": "26th FORTE 2006",
         "info": "Paris, France",
         "venues": [
             {
@@ -522,7 +630,7 @@
     },
     {
         "year": "2005",
-        "name": "25. FORTE 2005",
+        "name": "25th FORTE 2005",
         "info": "Taipei, Taiwan",
         "venues": [
             {
@@ -580,7 +688,7 @@
     },
     {
         "year": "2004",
-        "name": "24. FORTE 2004",
+        "name": "24th FORTE 2004",
         "info": "Madrid, Spain",
         "venues": [
             {
@@ -651,7 +759,7 @@
     },
     {
         "year": "2003",
-        "name": "23. FORTE 2003",
+        "name": "23rd FORTE 2003",
         "info": "Berlin, Germany",
         "venues": [
             {
@@ -692,7 +800,7 @@
     },
     {
         "year": "2002",
-        "name": "22. FORTE 2002",
+        "name": "22nd FORTE 2002",
         "info": "Houston, Texas, USA",
         "venues": [
             {
@@ -732,7 +840,7 @@
     },
     {
         "year": "2001",
-        "name": "21. FORTE 2001",
+        "name": "21st FORTE 2001",
         "info": "Cheju Island, Korea",
         "venues": [
             {
@@ -774,7 +882,7 @@
     },
     {
         "year": "2000",
-        "name": "13. FORTE / 20. PSTV 2000",
+        "name": "13th FORTE / 20th PSTV 2000",
         "info": "Pisa, Italy",
         "venues": [
             {
@@ -808,12 +916,29 @@
                     "Process Algebraic Analysis of Cryptographic Protocols.",
                     "A Logic of Belief and a Model Checking Algorithm for Security Protocols."
                 ]
+            },
+            {
+                "sub_name_abbr": "conf/forte/2000fme",
+                "sub_name": "Formal Methods Elsewhere - a Satellite Workshop of FORTE-PSTV-2000 devoted to applications of formal methods to areas other than communication protocols and software engineering, FM-Elsewhere 2000, Pisa, Italy, October 2000.",
+                "count": 10,
+                "papers": [
+                    "Analyzing Cockpit Interfaces Using Formal Methods.",
+                    "Can American Checkers be Solved by Means of Symbolic Model Checking?",
+                    "Puzzles for Learning Model Checking, Model Checking for Programming Puzzles, Puzzles for Testing Model Checkers.",
+                    "Syndetic Modelling: Computer Science Meets Cognitive Psychology.",
+                    "Formal Verification in the Design of Gestural Interaction.",
+                    "Towards Integrated Cognitive and Interface Analysis.",
+                    "The N-Body Problem in LOTOS.",
+                    "Grammatical Specification in ASL: Germanic Dependent Clause Order.",
+                    "CTML - A Context Transport Mark-up Language for Formalization and Verification of Legal, Medical and Bureaucratic and Safety procedures and Protocols.",
+                    "Formal Methods Elsewhere - A Satellite Workshop of FORTE-PSTV-2000 devoted to applications of formal methods to areas other than communication protocols and software engineering."
+                ]
             }
         ]
     },
     {
         "year": "1999",
-        "name": "12. FORTE / 19. PSTV 1999",
+        "name": "12th FORTE / 19th PSTV 1999",
         "info": "Beijing, China",
         "venues": [
             {
@@ -855,7 +980,7 @@
     },
     {
         "year": "1998",
-        "name": "11. FORTE / 18. PSTV 1998",
+        "name": "11th FORTE / 18th PSTV 1998",
         "info": "Paris, France",
         "venues": [
             {
@@ -897,7 +1022,7 @@
     },
     {
         "year": "1997",
-        "name": "10. FORTE / 17. PSTV 1997",
+        "name": "10th FORTE / 17th PSTV 1997",
         "info": "Osaka, Japan",
         "venues": [
             {
@@ -947,7 +1072,7 @@
     },
     {
         "year": "1996",
-        "name": "9. FORTE / 16. PSTV 1996",
+        "name": "9th FORTE / 16th PSTV 1996",
         "info": "Kaiserslautern, Germany",
         "venues": [
             {
@@ -993,7 +1118,7 @@
     },
     {
         "year": "1995",
-        "name": "8. FORTE 1995",
+        "name": "8th FORTE 1995",
         "info": "Montreal, Canada",
         "venues": [
             {
@@ -1039,7 +1164,7 @@
     },
     {
         "year": "1994",
-        "name": "7. FORTE 1994",
+        "name": "7th FORTE 1994",
         "info": "Berne, Switzerland",
         "venues": [
             {
@@ -1095,7 +1220,7 @@
     },
     {
         "year": "1993",
-        "name": "6. FORTE 1993",
+        "name": "6th FORTE 1993",
         "info": "Boston, MA, USA",
         "venues": [
             {
@@ -1139,7 +1264,7 @@
     },
     {
         "year": "1992",
-        "name": "5. FORET 1992",
+        "name": "5th FORTE 1992",
         "info": "Perros-Guirec, France",
         "venues": [
             {
@@ -1184,7 +1309,7 @@
     },
     {
         "year": "1991",
-        "name": "4. FORTE 1991",
+        "name": "4th FORTE 1991",
         "info": "Sydney, NSW, Australia",
         "venues": [
             {
@@ -1238,7 +1363,7 @@
     },
     {
         "year": "1990",
-        "name": "3. FORTE 1990",
+        "name": "3rd FORTE 1990",
         "info": "Madrid, Spain",
         "venues": [
             {
@@ -1309,7 +1434,7 @@
     },
     {
         "year": "1989",
-        "name": "2. FORTE 1989",
+        "name": "2nd FORTE 1989",
         "info": "Vancouver, BC, Canada",
         "venues": [
             {
@@ -1364,7 +1489,7 @@
     },
     {
         "year": "1988",
-        "name": "1. FORTE 1988",
+        "name": "1st FORTE 1988",
         "info": "Stirling Scotland, UK",
         "venues": [
             {

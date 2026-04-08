@@ -1,5 +1,107 @@
 [
     {
+        "year": "2025",
+        "name": "35th NOSSDAV 2025",
+        "info": "Stellenbosch, South Africa",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/nossdav/2025",
+                "sub_name": "Proceedings of the 35th Workshop on Network and Operating System Support for Digital Audio and Video, NOSSDAV 2025, Stellenbosch, South Africa, 31 March 2025 - 4 April 2025.",
+                "count": 14,
+                "papers": [
+                    "Enabling Distance-Aware Real-Time Volumetric Video Streaming.",
+                    "CAQ: Connection-Aware Adaptive QUIC Configurations for Enhanced Video Streaming.",
+                    "GSVC: Efficient Video Representation and Compression Through 2D Gaussian Splatting.",
+                    "Pushing the Limits? Frame Rate Benefits to Players for up to 500 Hz in First Person Shooter Games.",
+                    "Aero: A Pluggable Congestion Control for QUIC.",
+                    "Privacy-Preserving Multimedia Mobile Cloud Computing Using Cost-Effective Protective Perturbation.",
+                    "LLM4Band: Enhancing Reinforcement Learning with Large Language Models for Accurate Bandwidth Estimation.",
+                    "End-to-End Learning-based Video Streaming Enhancement Pipeline: A Generative AI Approach.",
+                    "Bimodal Semantic-Driven 3D Immersive Telepresence System.",
+                    "Alice: Low-latency Image Live Co-editing via Adaptation.",
+                    "SemConf: A System for Multiparty Semantic Video Conferencing.",
+                    "ModalityMirror: Enhancing Audio Classification in Modality Heterogeneity Federated Learning via Multimodal Distillation.",
+                    "Video Streaming with Kairos: An MPC-Based ABR with Streaming-Aware Throughput Prediction.",
+                    "Active Management of Jammed Packets in Wireless Real-Time Communications."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2024",
+        "name": "34th NOSSDAV 2024",
+        "info": "Bari, Italy",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/nossdav/2024",
+                "sub_name": "Proceedings of the 34th edition of the Workshop on Network and Operating System Support for Digital Audio and Video, NOSSDAV 2024, Bari, Italy, April 15-18, 2024.",
+                "count": 10,
+                "papers": [
+                    "You Only Look Once in Panorama: Object Detection for 360\u00b0 Videos with MLaaS.",
+                    "VAAC-IM: Viewing Area Adaptive Control in Immersive Media Transmission.",
+                    "MATURE: Multistage Throughput Prediction for Adaptive Video Streaming in Cellular Networks.",
+                    "Towards Full-scene Volumetric Video Streaming via Spatially Layered Representation and NeRF Generation.",
+                    "Enabling adaptive and reliable video delivery over hybrid unicast/broadcast networks.",
+                    "JitBright: towards Low-Latency Mobile Cloud Rendering through Jitter Buffer Optimization.",
+                    "On the benefits and caveats of exploiting Quality on Demand Network APIs for video streaming.",
+                    "Identifying Video Resolution from Encrypted QUIC Streams in Segment-combined Transmission Scenarios.",
+                    "VCApather: A Network as a Service Solution for Video Conference Applications.",
+                    "Rethinking Explicit Congestion Notification: A Multilevel Congestion Feedback Perspective."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2023",
+        "name": "33rd NOSSDAV 2023",
+        "info": "Vancouver, BC, Canada",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/nossdav/2023",
+                "sub_name": "Proceedings of the 33rd Workshop on Network and Operating System Support for Digital Audio and Video, NOSSDAV 2023, Vancouver, BC, Canada, June 7-10, 2023.",
+                "count": 10,
+                "papers": [
+                    "RepCaM: Re-parameterization Content-aware Modulation for Neural Video Delivery.",
+                    "Latency-Aware 360-Degree Video Analytics Framework for First Responders Situational Awareness.",
+                    "DMGC: Deep Triangle Mesh Geometry Compression via Connectivity Prediction.",
+                    "A Low Cost Cross-Platform Video/Image Process Framework Empowers Heterogeneous Edge Application.",
+                    "Will Dynamic Foveation Boost Cloud VR Gaming Experience?",
+                    "Implementing Partial Atlas Selector for Viewport-dependent MPEG Immersive Video Streaming.",
+                    "Realtime Multimedia Services over Starlink: A Reality Check.",
+                    "Cross that boundary: Investigating the feasibility of cross-layer information sharing for enhancing ABR decision logic over QUIC.",
+                    "Improving ABR Performance for Short Video Streaming Using Multi-Agent Reinforcement Learning with Expert Guidance.",
+                    "iStream Player: A Versatile Video Player Framework."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "name": "32nd NOSSDAV 2022",
+        "info": "Athlone, Ireland",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/nossdav/2022",
+                "sub_name": "Proceedings of the 32nd ACM Workshop on Network and Operating Systems Support for Digital Audio and Video, NOSSDAV 2022, Athlone, Ireland, 17 June 2022.",
+                "count": 12,
+                "papers": [
+                    "Preserving privacy in mobile spatial computing.",
+                    "Revisiting super-resolution for internet video streaming.",
+                    "Geometry-guided compact compression for light field image using graph convolutional networks.",
+                    "Measurement of the responses of cloud-based game streaming to network congestion.",
+                    "Does TCP new congestion window validation improve HTTP adaptive streaming performance?",
+                    "PRIOR: deep reinforced adaptive video streaming with attention-based throughput prediction.",
+                    "FLAD: a human-centered video content flaw detection system for meeting recordings.",
+                    "CAVE: caching 360\u00b0 videos at the edge.",
+                    "Power-efficient live virtual reality streaming using edge offloading.",
+                    "Dynamic DNN model selection and inference off loading for video analytics with edge-cloud collaboration.",
+                    "Applying VertexShuffle toward 360-degree video super-resolution.",
+                    "Atlas level rate distortion optimization for 6DoF immersive video compression."
+                ]
+            }
+        ]
+    },
+    {
         "year": "2021",
         "name": "31st NOSSDAV 2021",
         "info": "Istanbul, Turkey",

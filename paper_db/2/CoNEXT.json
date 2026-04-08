@@ -1,5 +1,241 @@
 [
     {
+        "year": "2025",
+        "name": "21th CoNEXT 2025",
+        "info": "Hong Kong",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/conext/2025",
+                "sub_name": "Proceedings of the 21st International Conference on emerging Networking EXperiments and Technologies, CoNEXT 2025, Hong Kong, December 1-4, 2025.",
+                "count": 27,
+                "papers": [
+                    "The Three Faces of Networking.",
+                    "Computing Transformation: From Large Language Model to Agentic AI.",
+                    "Poster: Cluster-Aware Federated Caching in Non-IID Environment.",
+                    "Poster: Dynamic Path Allocation in Flat Topologies with Pulse.",
+                    "Poster: Evaluating CAIDA's Inferred AS Relationships Through ASPAs.",
+                    "Poster: KUT: Towards Lightweight On-path Network Assessment for Edge Orchestration.",
+                    "Poster: The FAIRer Path Forward: Advancing Research Infrastructures for Unified Reproducibility and Usability.",
+                    "Poster: ECN-enabled Congestion Control with Loss Differentiation in Integrated Satellite-Terrestrial Network.",
+                    "Poster: Towards Autonomous Airborne Self-Calibration of Ultra-Wideband-Based Industrial Cyber-Physical Systems.",
+                    "Poster: Intent-Aware and LLM-Empowered Automatic Sampling Optimization for In-band Network Telemetry.",
+                    "Poster: Using the Multifractal Spectrum for Fingerprinting Sets of Observed IP Addresses.",
+                    "Poster: Delay-Bounded Stable Routing in Satellite Networks.",
+                    "Poster: Multi-Path Enabled Scalable Video Streaming.",
+                    "Poster - Reconnaissance via Certificate Transparency Logs: Exposing Self-Hosted Web Applications.",
+                    "Poster: Towards Efficient and Faithful Underwater Acoustic Network Simulation with Direct Code Execution.",
+                    "Poster: QueuePilot: Towards Adaptive Queue Scheduling via Live Digital Twins.",
+                    "Poster: Reconstructing LLM Training Workloads: A Topology- and Model-aware Network Tester.",
+                    "Poster: When Public Clouds Meet LEO Satellite Networks.",
+                    "Poster: Quantifying the Cross-Layer Reliance of DNS on the Submarine Cable Network.",
+                    "Poster: Hybrid Differential Privacy for Metadata-Private and Indistinguishable Traffic.",
+                    "PN'25: ACM CoNEXT 2025 Workshop on the Polymorphic Network.",
+                    "BlockNetSys'25: 1st Workshop on Blockchain-Network Synergy: Addressing Network-Centric Challenges in Decentralized Systems.",
+                    "INet4AI '25: 1st Workshop on Inter-networking challenges for AI.",
+                    "ACM CoNEXT Workshop on Edge-Cloud Collaboration with AI (ECCAI 2025).",
+                    "ACM CoNEXT 2025 Student Workshop (CoNEXT-SW'25): Workshop Summary.",
+                    "Achieve Systematic Design with Computing and Network Convergence: CoNEXT CNC Workshop Summary.",
+                    "INCAS'25 - Chairs Workshop Summary."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2024",
+        "name": "20th CoNEXT 2024",
+        "info": "Los Angeles, CA, USA",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/conext/2024",
+                "sub_name": "Proceedings of the 20th International Conference on emerging Networking EXperiments and Technologies, CoNEXT 2024 (Short Papers), Los Angeles, CA, USA, December 9-12, 2024.",
+                "count": 16,
+                "papers": [
+                    "Stress Testing the DMARC Reporting System: Compliance with Standards and Ways of Improvement.",
+                    "Estimating Video Quality Using Coarse-Grained Features: Insights and Limitations from Gaussian Mixture Models.",
+                    "Poster: Reducing Data Movement Tax for Serialization in Microservices.",
+                    "Poster: Pushing RDMA into Milliseconds RTT Communication.",
+                    "Poster: GeoResolver, An Accurate, Scalable, and Explainable Geolocation Technique Using DNS Redirection.",
+                    "Poster: Distance Vector Routing for Named Data Networking.",
+                    "Poster: Evaluating Dual-Stack Content Delivery Within Websites.",
+                    "Poster: Intelligent Network Management: RAG-Enhanced LLMs for Log Analysis, Troubleshooting, and Documentation.",
+                    "Poster: Towards In-Network Resource Scaling of VNFs.",
+                    "Poster: Jakiro: Spitting RDMA and TCP over Virtual Private Cloud.",
+                    "Sustainable Connections: Exploring Energy Efficiency in 5G Networks.",
+                    "SONIC:  Connect the Unconnected via FM Radio & SMS.",
+                    "A First View of Topics API Usage in the Wild.",
+                    "iGuard: Efficient Isolation Forest Design for Malicious Traffic Detection in Programmable Switches.",
+                    "Privacy Implications of AMQ-Based PQ TLS Authentication.",
+                    "NR-Scope: A Practical 5G Standalone Telemetry Tool."
+                ]
+            },
+            {
+                "sub_name_abbr": "conf/conext/2024sw",
+                "sub_name": "Proceedings of the CoNEXT on Student Workshop 2024, CoNEXT-SW 2024, Los Angeles, CA, USA, December 9-12, 2024.",
+                "count": 14,
+                "papers": [
+                    "Dequeue Rate-Agnostic Switch Buffer Sharing through Packet Queueing Delay.",
+                    "Towards Network-friendly and Privacy-preserving Immersive Computing.",
+                    "A Scalable Framework for Responsive Trustworthiness Dissemination in Social IoA.",
+                    "ADROIT: Adaptive Recharge Optimization in Urban IoT.",
+                    "Identifying CDN Replica Selection in the Wild.",
+                    "Towards Efficient and Scalable Internet Cross-Layer Mapping.",
+                    "Delivering Augmented Reality to the Edge: An Approach Toward Object Recognition through the In-Network Computing Paradigm.",
+                    "An Adaptive ML Link Layer Behavior System for mmWave Networks.",
+                    "Optimizing Energy Consumption through Scheduling in Low-resource Edge Clusters using Multi-agent PPO.",
+                    "DECOMPOSER: Functional Decomposition of Monolithic Applications to Heterogeneous Resources in Disaggregated Environments.",
+                    "Rethinking the In-band Network Telemetry: Towards Application and Server-Level Network Telemetry.",
+                    "Signalling as Data: How it Transforms Network Architecture for 6G System.",
+                    "Boosting mmWave Network Resilience through Efficient MPQUIC Scheduling.",
+                    "Automating Distributed In-network Classification with Runtime Programmability."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2023",
+        "name": "19th CoNEXT 2023",
+        "info": "Paris, France",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/conext/2023c",
+                "sub_name": "Companion of the 19th International Conference on emerging Networking EXperiments and Technologies, CoNEXT 2023 (Short Papers), Paris, France, December 5-8, 2023.",
+                "count": 16,
+                "papers": [
+                    "Aggressive Internet-Wide Scanners: Network Impact and Longitudinal Characterization.",
+                    "Characterizing Distributed Mobile Augmented Reality Applications at the Edge.",
+                    "The Performance of Post-Quantum TLS 1.3.",
+                    "Change Point Detection in WLANs with Random AP Forests.",
+                    "Making Sense of Constellations: Methodologies for Understanding Starlink's Scheduling Algorithms.",
+                    "LEO Satellite vs. Cellular Networks: Exploring the Potential for Synergistic Integration.",
+                    "Poster: A Fast, Scalable, and Energy-efficient Edge Acceleration Architecture based on GPU Cluster.",
+                    "Memory-efficient Random Forests in FPGA SmartNICs.",
+                    "Quantization-Aware In-Network Aggregation for Minimizing Communication Overhead.",
+                    "Poster: What Keeps Your Network up at Night?",
+                    "Poster: Device Identification for Efficient Bluetooth Backscatter.",
+                    "Poster: Efficient BLE Backscatter with Excitation Identification.",
+                    "Poster: Duty-Cycled Paging for LTE Backscatter.",
+                    "The Cost of Retrying: Exploiting Retry-Mechanisms in Cloud Applications by DDoS Attacks.",
+                    "How to Attack and Congest a Network? Worst-Case Link-Targeted DDoS Attacks.",
+                    "Poster: Dynamic Clustered Federated Framework for Multi-domain Network Anomaly Detection."
+                ]
+            },
+            {
+                "sub_name_abbr": "conf/conext/2023sw",
+                "sub_name": "Proceedings of the on CoNEXT Student Workshop 2023, CoNEXT-SW 2023, Paris, France, 8 December 2023.",
+                "count": 18,
+                "papers": [
+                    "Towards Local Shortcutting of Fast Failover Routes.",
+                    "5G Ranging: Towards Flexible Positioning Services.",
+                    "Causality Analysis in Control Plane Verification.",
+                    "MicroView: Cloud-Native Observability with Temporal Precision.",
+                    "Towards Database and Serverless Runtime Co-Design.",
+                    "Towards Adaptive ML Traffic Processing Systems.",
+                    "Towards a Compact Routed Internet.",
+                    "Investigating Search Engines Terms Leakage.",
+                    "netroub: Towards an Emulation Platform for Network Trouble Scenarios.",
+                    "To Probe or Not to Probe? Reconciling High Speed Probing with Ethical Probing.",
+                    "Creating an Intelligent Storage Plane for Next Generation Mobile Networks.",
+                    "Using SRv6 to access Edge Applications in 5G Networks.",
+                    "Predicting Specification Violations During BGP Convergence.",
+                    "Disaggregate Applications Along End-Host Data-Path.",
+                    "Next-Generation Distributed Hash Tables.",
+                    "Authoritative DNS Server Discovery Method to Enhance DNS Privacy Preservation.",
+                    "Toward Generative Data Augmentation for Traffic Classification.",
+                    "Network Kernel API with the Control Socket for Extending Transport Protocols."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "name": "18th CoNEXT 2022",
+        "info": "Roma, Italy",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/conext/2022",
+                "sub_name": "Proceedings of the 18th International Conference on emerging Networking EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9, 2022.",
+                "count": 28,
+                "papers": [
+                    "Xatu: boosting existing DDoS detection systems using auxiliary signals.",
+                    "Network measurement methods for locating and examining censorship devices.",
+                    "Intermediate certificate suppression in post-quantum TLS: an approximate membership querying approach.",
+                    "GenDT: mobile network drive testing made efficient with generative modeling.",
+                    "Lumen: a framework for developing and evaluating ML-based IoT network anomaly detection.",
+                    "Raven: belady-guided, predictive (deep) learning for in-memory and content caching.",
+                    "Analyzing and modeling the latency and jitter behavior of mixed industrial TSN and DetNet networks.",
+                    "Flexile: meeting bandwidth objectives almost always.",
+                    "PipeDevice: a hardware-software co-design approach to intra-host container communication.",
+                    "Atlas: automate online service configuration in network slicing.",
+                    "FIAT: frictionless authentication of IoT traffic.",
+                    "How gullible are web measurement tools?: a case study analysing and strengthening OpenWPM's reliability.",
+                    "FlowDNS: correlating netflow and DNS streams at scale.",
+                    "Light, camera, actions: characterizing the usage of IXPs' action BGP communities.",
+                    "On the interplay between TLS certificates and QUIC performance.",
+                    "Scaling beyond packet switch limits with multiple dataplanes.",
+                    "An ultra-low latency and compatible PCIe interconnect for rack-scale communication.",
+                    "A novel programmable software datapath for software-defined networking.",
+                    "Spine: an efficient DRL-based congestion control with ultra-low overhead.",
+                    "R-MPLS: recursive protection for highly dependable MPLS networks.",
+                    "SLAM-share: visual simultaneous localization and mapping for real-time multi-user augmented reality.",
+                    "Coal not diamonds: how memory pressure falters mobile video QoE.",
+                    "Zoonet: a proactive telemetry system for large-scale cloud networks.",
+                    "Drift-bottle: a lightweight and distributed approach to failure localization in general networks.",
+                    "FlowTele: remotely shaping traffic on internet-scale networks.",
+                    "OutRAN: co-optimizing for flow completion time in radio access network.",
+                    "Enabling emerging edge applications through a 5G control plane intervention.",
+                    "TnB: resolving collisions in LoRa based on the peak matching cost and block error correction."
+                ]
+            },
+            {
+                "sub_name_abbr": "conf/conext/2022sw",
+                "sub_name": "Proceedings of the 3rd International CoNEXT Student Workshop, CoNEXT-SW 2022, Rome, Italy, 9 December 2022.",
+                "count": 16,
+                "papers": [
+                    "Covid-19 contact tracing through multipath profile similarity.",
+                    "How to define political ads?",
+                    "Flow-based network intrusion detection based on BERT masked language model.",
+                    "On the joint optimization of security, scalability and decentralization of real-time group communications.",
+                    "Simulating SIMBox frauds for detection investigation.",
+                    "FlexPort: transport scale-out with modern NICs.",
+                    "Experimenting with bit index explicit replication.",
+                    "A high-speed QUIC implementation.",
+                    "Towards disaggregated P4 pipelines with information exchange minimization.",
+                    "Challenges in inferring privacy properties of smart devices: towards scalable multi-vantage point testing methods.",
+                    "Burstiness in data center topologies.",
+                    "Toward flexible auditing for in-network functionality.",
+                    "AwareNet: using WSBMs for network traffic analyis.",
+                    "MetaABR: environment-adaptive video streaming system with meta-reinforcement learning.",
+                    "DeepQuic: multi-path QUIC scheduling for 5G core network.",
+                    "Learned data structures for per-flow measurements."
+                ]
+            },
+            {
+                "sub_name_abbr": "conf/conext/2022nativeni",
+                "sub_name": "Proceedings of the 1st International Workshop on Native Network Intelligence, NativeNi 2022, Rome, Italy, 9 December 2022.",
+                "count": 5,
+                "papers": [
+                    "Henna: hierarchical machine learning inference in programmable switches.",
+                    "The case for native multi-node in-network machine learning.",
+                    "Network artificial intelligence, fast and slow.",
+                    "On using pretext tasks to learn representations from network logs.",
+                    "AI-based detection of DNS misuse for network security."
+                ]
+            },
+            {
+                "sub_name_abbr": "conf/conext/2022ew",
+                "sub_name": "Proceedings of the 1st International Workshop on Emerging Topics in Wireless, EmergingWireless 2022, Rome, Italy, 9 December 2022.",
+                "count": 5,
+                "papers": [
+                    "RadNet: a testbed for mmwave radar networks.",
+                    "Low-cost traffic sensing system based on LoRaWAN for urban areas.",
+                    "Measurement-based blockage and intra-cluster interference analysis in mmWave multi-point connectivity networks.",
+                    "A fine-grained telemetry stream for security services in 5G open radio access networks.",
+                    "DOPAMINE: Doppler frequency and angle of arrival minimization of tracking error for extended reality."
+                ]
+            }
+        ]
+    },
+    {
         "year": "2021",
         "name": "17th CoNEXT 2021",
         "info": "Virtual Event / Munich, Germany",
@@ -93,31 +329,6 @@
                 ]
             },
             {
-                "sub_name_abbr": "conf/conext/2021dml",
-                "sub_name": "DistributedML '21: Proceedings of the 2nd ACM International Workshop on Distributed Machine Learning, Virtual Event / Munich, Germany, 7 December 2021.",
-                "count": 5,
-                "papers": [
-                    "FL_PyTorch: optimization research simulator for federated learning.",
-                    "Secure aggregation for federated learning in flower.",
-                    "Doing more by doing less: how structured partial backpropagation improves deep learning clusters.",
-                    "Rapid IoT device identification at the edge.",
-                    "Image reconstruction attacks on distributed machine learning models."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/conext/2021epiq",
-                "sub_name": "EPIQ '21: Proceedings of the 2021 Workshop on Evolution, Performance and Interoperability of QUIC, Virtual Event / Munich, Germany, 7 December 2021.",
-                "count": 6,
-                "papers": [
-                    "Congestion control for real-time media over QUIC.",
-                    "Days of future past: an optimization-based adaptive bitrate algorithm over HTTP/3.",
-                    "Tracking the QUIC spin bit on Tofino.",
-                    "The search of the path MTU with QUIC.",
-                    "Evaluation of QUIC-based MASQUE proxying.",
-                    "Verifying QUIC implementations using Ivy."
-                ]
-            },
-            {
                 "sub_name_abbr": "conf/conext/2021daisnac",
                 "sub_name": "DAI-SNAC@CoNEXT 2021: Proceedings of the 2021 Workshop on Descriptive Approaches to IoT Security, Network, and Application Configuration, Virtual Event, Munich, Germany, 7 December 2021.",
                 "count": 6,
@@ -208,19 +419,6 @@
                 ]
             },
             {
-                "sub_name_abbr": "conf/conext/2020dml",
-                "sub_name": "DistributedML@CoNEXT 2020: Proceedings of the 1st Workshop on Distributed Machine Learning, Barcelona, Spain, December 1, 2020.",
-                "count": 6,
-                "papers": [
-                    "FEWER: Federated Weight Recovery.",
-                    "FLaaS: Federated Learning as a Service.",
-                    "Accelerating Intra-Party Communication in Vertical Federated Learning with RDMA.",
-                    "Huffman Coding Based Encoding Techniques for Fast Distributed Deep Learning.",
-                    "Maggy: Scalable Asynchronous Parallel Hyperparameter Search.",
-                    "Neural Enhancement in Content Delivery Systems: The State-of-the-Art and Future Directions."
-                ]
-            },
-            {
                 "sub_name_abbr": "conf/conext/2020sw",
                 "sub_name": "CoNEXT'20: Proceedings of the Student Workshop, Barcelona, Spain, December 1, 2020.",
                 "count": 15,
@@ -240,26 +438,6 @@
                     "Leveraging Demand Data as a Proxy for Understanding Large-scale Events.",
                     "The Case for More Flexible Distributed Tracing.",
                     "Lighting Extra Data via OWC Dimming."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/conext/2020europ4",
-                "sub_name": "EuroP4@CoNEXT 2020: Proceedings of the 3rd P4 Workshop in Europe, Barcelona, Spain, December 1, 2020.",
-                "count": 13,
-                "papers": [
-                    "Comparative Evaluation of IP Address Anti-Spoofing Mechanisms using a P4/NetFPGA-based Switch.",
-                    "Falcon: Low Latency, Network-Accelerated Scheduling.",
-                    "SYN Flood Defense in Programmable Data Planes.",
-                    "P4-Protect: 1+1 Path Protection for P4.",
-                    "Compiling Packet Programs to Reconfigurable Switches: Theory and Algorithms.",
-                    "Leveraging P4 Flexibility to Expose Target-specific Features.",
-                    "MTPSA: Multi-Tenant Programmable Switches.",
-                    "A P4 Data Plane for the Quantum Internet.",
-                    "Developing EFSM-based stateful applications with FlowBlaze.p4 and ONOS.",
-                    "Unleashing the performance of virtual BNG by offloading data plane to a programmable ASIC.",
-                    "Towards a Hybrid Next Generation NodeB.",
-                    "A perspective on P4-based data and control plane modularity for network automation.",
-                    "Pushing Network Programmability to the limits with SRv6 uSIDs and P4."
                 ]
             }
         ]
@@ -364,20 +542,6 @@
                     "Trigger-Action Computing in Local Broadcast Beaconing Networks.",
                     "INCA: An Architecture for In-Network Computing."
                 ]
-            },
-            {
-                "sub_name_abbr": "conf/conext/2019bigdama",
-                "sub_name": "Proceedings of the 3rd ACM CoNEXT Workshop on Big DAta, Machine Learning and Artificial Intelligence for Data Communication Networks, Big-DAMA@CoNEXT 2019, Orlando, FL, USA, December 9, 2019.",
-                "count": 7,
-                "papers": [
-                    "Identifying threats in a large company's inbox.",
-                    "Walling up Backdoors in Intrusion Detection Systems.",
-                    "Towards Evaluation of NIDSs in Adversarial Setting.",
-                    "EXPLAIN-IT: Towards Explainable AI for Unsupervised Network Traffic Analysis.",
-                    "Explaining Class-of-Service Oriented Network Traffic Classification with Superfeatures.",
-                    "Comparing Machine Learning Algorithms for BGP Anomaly Detection using Graph Features.",
-                    "Unsupervised machine learning for network-centric anomaly detection in IoT."
-                ]
             }
         ]
     },
@@ -434,20 +598,6 @@
                     "Enhancing Edge robotics through the use of context information.",
                     "Experience Building a Prototype 5G Testbed.",
                     "A Framework for Orchestration and Federation of 5G Services in a Multi-Domain Scenario."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/conext/2018epiq",
-                "sub_name": "Proceedings of the Workshop on the Evolution, Performance, and Interoperability of QUIC, EPIQ@CoNEXT 2018, Heraklion, Greece, December 4, 2018.",
-                "count": 7,
-                "papers": [
-                    "Towards QUIC debuggability.",
-                    "Observing the Evolution of QUIC Implementations.",
-                    "Interoperability-Guided Testing of QUIC Implementations using Symbolic Execution.",
-                    "nQUIC: Noise-Based QUIC Packet Protection.",
-                    "A Stream-Aware Multipath QUIC Scheduler for Heterogeneous Paths: Paper # XXX, XXX pages.",
-                    "Real-time Audio-Visual Media Transport over QUIC.",
-                    "The QUIC Fix for Optimal Video Streaming."
                 ]
             }
         ]
@@ -665,21 +815,6 @@
                     "A server-to-server view of the internet.",
                     "Scheduling techniques for hybrid circuit/packet networks."
                 ]
-            },
-            {
-                "sub_name_abbr": "conf/conext/2015ccdwn",
-                "sub_name": "Proceedings of the 1st Workshop on Content Caching and Delivery in Wireless Networks, CCDWN@CoNEXT 2015, Heidelberg, Germany, December 1-4, 2015.",
-                "count": 8,
-                "papers": [
-                    "Long-term country-scale opportunistic network coded data dissemination.",
-                    "Cache-enabled erasure broadcast channels with feedback: asymmetric user memory case.",
-                    "On energy-efficient caching at the wireless edge.",
-                    "Enhancing multi-source content delivery in content-centric networks with fountain coding.",
-                    "Analysis of latency-aware caching strategies in information-centric networking.",
-                    "Collaborative content caching in wireless edge with SDN.",
-                    "Stochastic content-centric multicast scheduling for cache-enabled heterogeneous cellular networks.",
-                    "DSCA: a data stream caching algorithm."
-                ]
             }
         ]
     },
@@ -858,21 +993,6 @@
                     "Diagnosing slow web page access at the client side.",
                     "MARS: measurement-based allocation of vm resources for cloud data centers."
                 ]
-            },
-            {
-                "sub_name_abbr": "conf/conext/2013hotmiddlebox",
-                "sub_name": "Proceedings of the 2013 workshop on Hot topics in middleboxes and network function virtualization, HotMiddlebox 2013, Santa Barbara, California, USA, December 9, 2013.",
-                "count": 8,
-                "papers": [
-                    "Multipath in the middle(box).",
-                    "Evolving the internet with connection acrobatics.",
-                    "Towards minimalistic, virtualized content caches with minicache.",
-                    "FlowOS: a flow-based platform for middleboxes.",
-                    "Verifiable network function outsourcing: requirements, challenges, and roadmap.",
-                    "SymNet: static checking for stateful networks.",
-                    "Are TCP extensions middlebox-proof?",
-                    "Analysis and topology-based traversal of cascaded large scale NATs."
-                ]
             }
         ]
     },
@@ -973,24 +1093,6 @@
                     "Citywide mobile internet access using dense urban WiFi coverage.",
                     "Analyzing the workload dynamics of a mobile phone network in large scale events.",
                     "Content consumption cartography of the paris urban region using cellular probe data."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/conext/2012csws",
-                "sub_name": "Proceedings of the 2012 ACM workshop on Capacity sharing, CSWS@CoNEXT 2012, Nice, France, December 10, 2012.",
-                "count": 11,
-                "papers": [
-                    "Applying abstraction for a more efficient and fair network usage.",
-                    "Mercado: using market principles to drive alternative network service abstractions.",
-                    "A first look at multi-access connectivity for mobile networking.",
-                    "On flow concurrency in the internet and its implications for capacity sharing.",
-                    "AIMD and CCN: past and novel acronyms working together in the future internet.",
-                    "ConEx based QoE feedback to enhance QoE.",
-                    "Reducing server and network load with shared buffering.",
-                    "Enhancing TCP to support rate-limited traffic.",
-                    "Can congestion-controlled interactive multimedia traffic co-exist with TCP?",
-                    "Resource allocation in underprovisioned multioverlay live video sharing services.",
-                    "Demand-aware flow allocation in data center networks."
                 ]
             }
         ]

@@ -1,5 +1,305 @@
 [
     {
+        "year": "2025",
+        "name": "27th MSWiM 2025",
+        "info": "Barcelona, Spain",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/mswim/2025",
+                "sub_name": "International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems, MSWiM 2025, Barcelona, Spain, October 27-31, 2025.",
+                "count": 120,
+                "papers": [
+                    "Open Radio Access Network Virtualization with Shared Heterogeneous Computing.",
+                    "From Perception to Action: A Hands-On Tutorial on Control-Feedback-Driven Adaptive AI Agents in Path-Planning Simulation Environments.",
+                    "Keynote: Agentic AI for Mobile Connected Systems - Leveraging Small and Large Language Models (SLMs and LLMs) for Disrupting the Telecoms Ecosystem.",
+                    "Tutorial: Small Object Detection in UAV Imagery: Challenges and Solutions.",
+                    "Federated Learning with Reliability-Aware Workload Allocation in Distributed Edge Computing.",
+                    "Non-IID-Aware Multi-Model Federated Learning.",
+                    "Cooperative Multi-Target Search with UAV Swarms: Evolutionary vs. Reinforcement Learning Strategies.",
+                    "QoS-Aware Proportional Fairness Scheduling for Multi-Flow 5G UEs: A Smart Factory Perspective.",
+                    "QoS and Trust aware Mitigation of MQTT Shared Subscription Channel Saturation Attack over 5G Networks.",
+                    "Power Efficiency of a Hybrid 5G gNB Data Plane Combining SmartNICs and Commodity Servers.",
+                    "A Novel Adaptive Hybrid AI Deployment for Virtual Try-On Applications in 5G-Edge Networks.",
+                    "Modeling the Impact of Wi-Fi 6E Traffic on Ultra-Wideband Communication Performance.",
+                    "Predictive Quality of Service and Proactive Channel Switching for Time-Critical Wi-Fi Systems.",
+                    "Privacy-Preserving Device Counting Using Wi-Fi Channel State Information and Deep Learning.",
+                    "Per Link Data-Driven Network Replication Towards Self-Adaptive Digital Twins.",
+                    "A Coordinated Perception Control Simulation Framework Based on Online Evolutive Learning.",
+                    "Exact Resource Allocation for Weighted Proportional Fair Wireless Relay Networks.",
+                    "Social-Aware Resource Allocation in NOMA-Enabled 6G HetNets under Imperfect SIC.",
+                    "Application and Data Placement Solutions for Workloads at the Network Edge.",
+                    "Sharing is Caring: Analysis of Hybrid Network Sharing Strategies for Energy Efficient Multi-Operator Cellular Systems.",
+                    "ECLAT-LRU Predictive Caching: A Novel Approach to Optimizing Cache Performance in Named Data Networking.",
+                    "Federated vs Transfer Learning Technique for Traffic Sign Recognition in Internet of Vehicles.",
+                    "Reducing Travel Times of Tele-Operated Vehicles Through Connected Road Maps.",
+                    "Federated Learning Games in Internet of Edges.",
+                    "DV-Hop Localization Algorithm Optimized by NSGA-II for UWSNs.",
+                    "Localization and Tracking of Ambient RF Sources with Analog Backscatter Tags.",
+                    "FLAIR: Federated Learning with Adaptive and Intelligent Reasoning for Client Selection.",
+                    "Toward Hybrid COTS-based LiFi/WiFi Networks with QoS Requirements in Mobile Environments.",
+                    "AuraWake: A Spectrally-Efficient Wake-Up Radio Control Plane for Wi-Fi.",
+                    "Beyond Aggregates: A Fine-Grained Analysis of Individual Mobility and Traffic Dependencies.",
+                    "dynRDF: Using Deep Contextual Bandits to Optimize Position Flooding in Urban UAV Networks.",
+                    "EnerSwap: Large-Scale, Privacy-First Automated Market Maker for V2G Energy Trading.",
+                    "Energy-Efficient UAV Trajectory and Data Offloading Optimization for LoRa-Enabled IoT Networks.",
+                    "Hierarchical Multi-Agent RL TE in SD-WAN based Cloud Edge Continuum Interconnection.",
+                    "An Analytical Method to Configure TWT in WLANs.",
+                    "PMSA: Power Mode Selection Algorithm in IEEE 802.11 WLANs operating TWT.",
+                    "Enabling Quality-of-Service for Avionic Wireless Sensor Networks in ISM and WAIC Band Using Multi-Layer Improvements to 6TiSCH.",
+                    "TAYLORS: A Fast, Scalable Yet Lightweight Protocol for Resilient Synchronization of WSN.",
+                    "Energy-Efficient Distributed Algorithms for Wireless Multimedia Sensor Network Lifetime Extension.",
+                    "Tiny Sensors, Big Threats: Assessing Motion Sensor-based Fingerprinting in Mobile Systems.",
+                    "The 2-Layer and 2-Estimator Method for Dimensioning Networks Composed of Rare and Clustered Population in Mobile and Wireless Systems.",
+                    "Physical-Layer Analysis of LoRa Robustness in the Presence of Narrowband Interference.",
+                    "SFIxM: Flexible LoRa Modulations for Elastic Resource Allocation.",
+                    "Channel Estimation and Phase Optimization for RIS-Assisted LoRa in IIoT Networks.",
+                    "Performance of LoRaWAN CSMA in Dense LoRa Networks.",
+                    "An Adaptive and Blockchain-based Reputation Mechanism in SDN Multi-Controller Scenario.",
+                    "Energy Sustainability Analysis of Deep Neural Network.",
+                    "CMEmu: Synthesizing a Cycle-Exact Model of Program Execution on ARM Cortex-M from In-Code Timing Measurements.",
+                    "Beyond Static Thresholds: Adaptive RRC Signaling Storm Detection with Extreme Value Theory.",
+                    "Building a Security Canopy Over O-RAN: The SDP Paradigm.",
+                    "Evolving Quantum Circuits: iSOMA-Driven Synthesis of Toffoli Gates.",
+                    "CANSecure: A Secure Lightweight Framework for CAN Protocol in Modern Vehicles.",
+                    "Analysis of OSPFv3 in LEO Satellite Networks.",
+                    "Mobility as a Species Identifier of Hooked Fishes: A Study of Geospatial Time Series.",
+                    "Fingerprinting Encrypted DNS: Exploiting Metadata Leakage in DNS over QUIC.",
+                    "Security Risks in O-RAN: Vulnerabilities and Mitigation Countermeasures.",
+                    "Implementing and Evaluating Post-Quantum DNSSEC in CoreDNS.",
+                    "Federated Authentication for DLT in Intelligent Transportation Systems Based on Certificateless Cryptography.",
+                    "Using Analytics to Predict Data Dissemination Policy Under Energy and Coverage Constraints.",
+                    "Artificial Intelligence Methods for Anomaly Detection in Energy Consumption.",
+                    "Comparing Optimal and Adaptive EV Charging in Smart Cities: MILP vs. Reinforcement Learning.",
+                    "A Reinforcement Learning Simulator for Multi-UAV Based Network Coverage Problem.",
+                    "Joint 3D Placement and Power Optimization for UAV Communications under Rician Shadowed Channel.",
+                    "Diffusion-Based Solver for CNF Placement on the Cloud-Continuum.",
+                    "On the Selection of an Efficient Wavelet Basis for Constructing Online Context Awareness.",
+                    "Decentralized Orchestration Framework for Distributed AI Deployments across Fluid Computing Environments.",
+                    "Resource Allocation for 5G Vehicular Users' Multimedia Multicast and Broadcast Services (MBS) using a CQI-based k-means Grouping Method.",
+                    "SwarmLayer: A Hybrid P2P Assisted Solution for MPEG-DASH Streaming.",
+                    "Vehicle Trajectory Forecasting Using Temporal Fusion Transformers and Feature Selection.",
+                    "Edge-Based Missing Value Imputation For IoT Platforms: Towards Artificial Intelligence of Things.",
+                    "A Novel Synthetic Battery for Realistic IoT Device Lifetime Prediction.",
+                    "Information Theory Characterization for Insect Chemical Communication in Smart Agriculture.",
+                    "DRL-OFC: A Dual-Perception Online Fountain Coding Scheme for Underwater Acoustic Sensor Networks.",
+                    "Simulation under Stress: A Comparative Benchmarking of Large-Scale Traffic Simulators.",
+                    "Performance Evaluation of DQN-Based Reinforcement Learning Congestion Control in Mobile Multi-Hop Wireless Networks.",
+                    "Gap-Fuzzy Adaptive Signal Control: Enhancing Urban Traffic Efficiency.",
+                    "Unsupervised Learning with Autoencoders for Anomaly Detection in 5G Campus Networks.",
+                    "Managing Differentiated Secure Connectivity using Intents.",
+                    "Backpack-LoRa: Energy-Efficient Multi-Hop Networking for LoRaWANs.",
+                    "Gateway-Side Distributed Frame Deduplication for LoRaWAN.",
+                    "Low-Error Indoor Positioning via Synthetic RSSI Augmentation and Zx-WKNN Hybrid Model.",
+                    "MoPFNs: Probabilistic Radio Map Construction via Mixed Transformer-Trained Gaussian Process Regressions.",
+                    "REMLAB: Full-Stack ns-3 Framework for REM-Based Location-Aided Beam Management in 5G-NR Networks.",
+                    "Trusted Storage Management in Edge/Cloud with Verifiable Credentials in Kubernetes.",
+                    "Cross-Slice Online Federated Learning Framework for Anomaly Detection in 5G Networks.",
+                    "Detecting Data Falsification Attacks in Collective Perception Services.",
+                    "Attention-Enhanced DQN Scheduling for Multi-Link Devices in Synchronous N-STR Wi-Fi 7 Networks.",
+                    "On the Design of Mobility-Aware Systems: A Tourist's Perspective.",
+                    "A Novel Architecture for Distributed Computer Vision in IoT Embedded Systems.",
+                    "Probabilistic Time Slot Leasing in TDMA-Based IoT Networks for Enhanced Channel Utilization.",
+                    "DS-Based Optimization Algorithms for Resource Allocation in Wireless Communication.",
+                    "On Transferring, Merging, and Splitting Task-Oriented Network Digital Twins.",
+                    "Hierarchical Blockchain System and Lightweight Authentication for a Secure V2G Network.",
+                    "Enhancing Privacy in DNS Communications with Energy-Aware Methodologies.",
+                    "An AI-based Intelligent Vehicle Routing Approach for Large-scale Fleet Optimization.",
+                    "An Integrated Framework for Simulating Wi-Fi-Based Flying Multi-Hop Networks.",
+                    "Federated Learning-Based Electric Vehicle Energy Consumption Prediction and Charging Station Recommendation.",
+                    "5G Radio Cell Performance Prediction Based on Knowledge Graph Fusion with Neural Network.",
+                    "A Modular and Scalable Simulator for Connected-UAVs Communication in 5G Networks.",
+                    "WFANS: Simulating Wi-Fi Aware Interactions with Android API Fidelity.",
+                    "Misbehavior Detection and Mitigation on 5G Core Services in Kubernetes.",
+                    "HaLow Simulator for Dense Wireless Networks.",
+                    "Policy-Guided ML for Energy Savings: Cell On/Off Switching under Operator QoS Constraints in Real 5G Networks.",
+                    "Hybrid V2X Communication for Micromobility in C-ITS: A DDQN-Driven Strategy for High Reliability and Sustainable Connectivity.",
+                    "Softwarized RIS Steering System: Positioning Use Case.",
+                    "A Two-Stage Machine Learning Framework for Scalable and Accurate Network Intrusion Detection.",
+                    "Realistic Simulation of Urban Air Mobility Scenarios.",
+                    "HAPS for Mitigating RAN Traffic Peaks amid Rising Demand and B5G Evolution.",
+                    "Learning to Talk: Emergent CAM/CPM Scheduling via MAPPO in Constrained V2X Networks.",
+                    "IoT-Based Digital Twin Model for Industrial Applications.",
+                    "POTENTIAL: Privacy-Oriented Task Offloading via Context-Aware Risk Estimation in JCAS-Enabled Edge Networks.",
+                    "Risk-Aware Fast Initial 3D Beam Alignment for UAV-Assisted mmWave/THz URLLC.",
+                    "Design and Evaluation of a Multi-Hop Wearable WBAN Framework for Reliable Remote Health Monitoring.",
+                    "Service Placement for Metaverse Social Applications in 5G Networks.",
+                    "Mobile 360\u00b0 Video QoE: Empirical Analysis of 5G QoS Metrics.",
+                    "SecureAutoLoRa: An Automated Secure Registration Procedure for LoRaWAN Devices.",
+                    "Joint Power Control and User Assignment in RIS-based NOMA: A Multi-kernel Neural Network Approach.",
+                    "FedDTKG: Federated Temporal Graph Learning with Adaptive Loss for Robust 5G Attack Detection under Extreme Class Imbalance.",
+                    "Coupling RTT and RSSI in Fingerprinting Wi-Fi Indoor Positioning Under NLoS Conditions.",
+                    "NexSlice: Towards an Open and Reproducible Network Slicing Testbed for 5G and Beyond."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2023",
+        "name": "26th MSWiM 2023",
+        "info": "Montreal, Quebec, Canada",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/mswim/2023",
+                "sub_name": "Proceedings of the Int'l ACM Conference on Modeling Analysis and Simulation of Wireless and Mobile Systems, MSWiM 2023, Montreal, Quebec, Canada, 30 October 2023 - 3 November 2023.",
+                "count": 41,
+                "papers": [
+                    "Research Directions in Network Architectures and Protocols for Intelligent Digital Infrastructures.",
+                    "Quantum Leap: Exploring the Potential of Quantum Machine Learning for Communication Networks.",
+                    "Smart Mobility Management for 5G-enabled Vehicular Networks: Challenges and Guidelines.",
+                    "Accurate E-CID Framework for Indoor Positioning in 5G using Path Tracing and Machine Learning.",
+                    "Assessing the Impact of Coupling RTT and RSSI Measurements in Fingerprinting Wi-Fi Indoor Positioning.",
+                    "On the Dynamics of Single-Orbit Requester-Provider Systems.",
+                    "QUICL: A QUIC Convergence Layer for Disruption-tolerant Networks.",
+                    "Simple and Efficient Loop-Free Multipath Routing in Wireless Networks.",
+                    "Efficient and Effective Proactive Scheduling for mmWave WLANs.",
+                    "Scheduling \"Last Minute\" Updates for Timely Decision-Making.",
+                    "Offloading Augmented Reality Tasks with Smart Energy Source-Aware Algorithms at the Edge.",
+                    "Learning Optimal Edge Processing with Offloading and Energy Harvesting.",
+                    "A Low-Cost Open-Source Testbed for Experimental Analysis of Ultra-Dense Wireless Networks.",
+                    "Managing Edge Offloading for Stochastic Workloads with Deadlines.",
+                    "Task Offloading Optimization in Mobile Edge Computing based on Deep Reinforcement Learning.",
+                    "Performance Analysis of MAC Energy-saving Strategies for WLANs.",
+                    "Modeling and Performance Analysis of Slotted ALOHA with Interference Cancellation for mMTC.",
+                    "Blind Modulation Classification of Wi-Fi 6 and 5G signals for Spectrum Sensing.",
+                    "IoDAPM: A Reinforcement Learning Approach for Dynamic Assignment of Protection Mechanisms in IoD.",
+                    "Federated Learning for V2X Misbehavior Detection System in 5G Edge Networks.",
+                    "SLOW-Based Pseudonym Changing Schemes for Location Privacy in Vehicular Networks.",
+                    "A VeReMi-based Dataset for Predicting the Effect of Attacks in VANETs.",
+                    "SimEdge: Towards Accelerated Real-Time Augmented Reality Simulations Using Adaptive Smart Edge Computing.",
+                    "Repairing a Service Composition with Graph Embedding and Planning Graph in a Cloud-Edge Environment.",
+                    "High Fidelity Fast Simulation of Human in the Loop Human in the Plant (HIL-HIP) systems.",
+                    "Impact of the Burst Size on the FTM Procedure in Android Phones.",
+                    "Exploring the Tradeoffs Between Systematic and Random Exploration in Mobile Sensors.",
+                    "Analysis of the Influence of Terrain on LoRaWAN-based IoT Deployments.",
+                    "Signal Leakage in Fat Tissue-Based In-Body Communication: Preserving Implant Data Privacy.",
+                    "Determining the Ordering of a Line Topology under Correlated Shadowing and Fast Fading.",
+                    "Djenne: Dependable and Decentralized Computation for Networked Embedded Systems.",
+                    "Fast Transmission of Massive Concurrent Alarm Messages in LoRaWAN.",
+                    "Power Minimization in Federated Learning with Over-the-air Aggregation and Receiver Beamforming.",
+                    "DCH: A Deep Learning Approach To Universal Header Compression For The Internet of Things.",
+                    "In-Band Multi-Connectivity with Local Beamtraining for Improving mmWave Network Resilience.",
+                    "How Fresh is the Data? An Optimal Learning-Based End-to-End Pull-Based Forwarding Framework for NDNoTs.",
+                    "Identification of RF Interference in Astronomical Observations Using Weakly Supervised Machine Learning Classifiers.",
+                    "Supporting Dynamic IDS Deployment with Load Balancing Strategy for SDN-enabled Drones in Emergency Scenarios.",
+                    "Strategies to Plan the Number and Locations of RSUs for an IEEE 802.11p-based Infrastructure in Urban Environment.",
+                    "Redefining the Driver's Attention Gauge in Semi-Autonomous Vehicles.",
+                    "RealFL: A Realistic Platform for Federated Learning."
+                ]
+            },
+            {
+                "sub_name_abbr": "conf/mswim/2023q",
+                "sub_name": "Proceedings of the 19th ACM International Symposium on QoS and Security for Wireless and Mobile Networks, Q2SWinet 2023, Montreal, Quebec, Canada, 30 October 2023 - 3 November 2023.",
+                "count": 14,
+                "papers": [
+                    "T-SAPR: An Efficient Q-Learning Trust-based Secure Routing Protocol for Underwater Acoustic Sensor Networks.",
+                    "Resource-aware Security Configuration for Constrained IoT Devices.",
+                    "dNextG: A Zero-Trust Decentralized Mobile Network User Plane.",
+                    "Evaluation of IEEE 802.11 Ad hoc-Based Wireless Seismic Data Acquisition Networks.",
+                    "IoTNetEMU - A Framework to Emulate and Test IoT Applications.",
+                    "Network Simulation Bridge: Bridging Applications to Network Simulators.",
+                    "Towards a Trusted Channel Energy-Aware Routing Algorithm for Underwater Sensor Networks.",
+                    "GNB-RPL: Gaussian Na\u00efve Bayes for RPL Routing Protocol in Smart Grid Communications.",
+                    "ASRSR: Adaptive Sending Resolution and Super-resolution for Real-time Video Streaming.",
+                    "Non-Contrastive Learning-based Behavioural Biometrics for Smart IoT Devices.",
+                    "Modeling and Analysis of Latencies in Multi-User, Multi-RAT Edge Computing.",
+                    "Adversarial Training Method for Machine Learning Model in a Resource-Constrained Environment.",
+                    "IHGWO-Based Optimization of IoT Wireless Sensor Networks.",
+                    "An Exchange-based AIoT Platform for Fast AI Application Development."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "name": "25th MSWiM 2022",
+        "info": "Montreal, Quebec, Canada",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/mswim/2022",
+                "sub_name": "Proceedings of the International Conference on Modeling Analysis and Simulation of Wireless and Mobile Systems on International Conference on Modeling Analysis and Simulation of Wireless and Mobile Systems, MSWiM 2022, Montreal, Quebec, Canada, October 24-28, 2022.",
+                "count": 29,
+                "papers": [
+                    "Sustainability Challenges in Radio access Networks.",
+                    "The Interplay Between Intelligent Networks and Enabling Technologies for Future Wireless Networks.",
+                    "A Latency-levelling Load Balancing Algorithm for Fog and Edge Computing.",
+                    "An Offloading Algorithm for Maximizing Inference Accuracy on Edge Device in an Edge Intelligence System.",
+                    "Multi-step Prediction of Worker Resource Usage at the Extreme Edge.",
+                    "Energy-Constrained D2D Assisted Federated Learning in Edge Computing.",
+                    "Site-specific Ray generation for Accurate Estimation of Signal Power.",
+                    "Real-Time-Shift: Pseudo-Real-Time Event Scheduling for the Split-Protocol-Stack Radio-in-the-Loop Emulation.",
+                    "Performance Analysis of General P4 Forwarding Devices with Controller Feedback.",
+                    "Uncovering 5G Performance on Public Transit Systems with an App-based Measurement Study.",
+                    "5G New Radio Sidelink Link-Level Simulator and Performance Analysis.",
+                    "A Spatial Model for Using the Age of Information in Cooperative Driving Applications.",
+                    "A Novel Mixed Method of Machine Learning Based Models in Vehicular Traffic Flow Prediction.",
+                    "Blender: Toward Practical Simulation Framework for BLE Neighbor Discovery.",
+                    "A Flow-Level Wi-Fi Model for Large Scale Network Simulation.",
+                    "An Adaptable Module for Designing Jamming Attacks in WiFi Networks for ns-3.",
+                    "Fair Iterative Water-Filling Game for Multiple Access Channels.",
+                    "INSPIRE: Distributed Bayesian Optimization for ImproviNg SPatIal REuse in Dense WLANs.",
+                    "SIREN: Eliminating Multiple Access Interference in Transmission Schedules Established in Multi-Hop Networks.",
+                    "A non-Hidden Markovian Modeling of the Reliability Scheme of the Constrained Application Protocol in Lossy Wireless Networks.",
+                    "Average Age Upon Decisions of Wireless Networks with Truncated HARQ in the Finite Blocklength Regime.",
+                    "Universal Beamforming: A Deep RFML Approach.",
+                    "Optimizing Cell Sizes for Ultra-Reliable Low-Latency Communications in 5G Wireless Networks.",
+                    "HiPR+: A Protocol for Centimeter 3D Localization based on UWB.",
+                    "A Frequency-Based Intelligent Slicing in LoRaWAN with Admission Control Aspects.",
+                    "Interference Aware Heuristics to Optimize Power Beacons for Battery-less WSNs.",
+                    "Characterizing Wi-Fi Probing Behavior for Privacy-Preserving Crowdsensing.",
+                    "Anonymized Counting of Nonstationary Wi-Fi Devices When Monitoring Crowds.",
+                    "Comparison of User Presence Information from Mobile Phone and Sensor Data."
+                ]
+            },
+            {
+                "sub_name_abbr": "conf/mswim/2022q",
+                "sub_name": "Proceedings of the 18th ACM International Symposium on QoS and Security for Wireless and Mobile Networks on 18th ACM International Symposium on QoS and Security for Wireless and Mobile Networks, Q2SWinet 2022, Montreal, Quebec, Canada, October 24-28, 2022.",
+                "count": 16,
+                "papers": [
+                    "A Simulation Environment for Software Defined Wireless Networks with Legacy Devices.",
+                    "Electromagnetic Field Strength Measurements in a Private 5G Campus Network.",
+                    "Experimental Analysis of LoRa Transmission Parameters.",
+                    "Max-min Fair Resource Allocation in SD-RAN.",
+                    "FORLORN: A Framework for Comparing Offline Methods and Reinforcement Learning for Optimization of RAN Parameters.",
+                    "Proportionally Fair Resource Allocation Considering Geometric Blockage Modeling for Improved Mobility Management in 5G.",
+                    "A Data Mining-based Intrusion Detection System for Cyber Physical Power Systems.",
+                    "Classification of Botnet Attacks in IoT Using a Convolutional Neural Network.",
+                    "Data Balancing and Hyper-parameter Optimization for Machine Learning Algorithms for Secure IoT Networks.",
+                    "Performance Evaluation of Edge Computing-Aided IoT Augmented Reality Systems.",
+                    "A Randomized Algorithm for Wireless Sensor Network Lifetime Optimization.",
+                    "Efficacy of Asynchronous GPS Spoofing Against High Volume Consumer GNSS Receivers.",
+                    "Empowering Synergies of Communities with Service Providers for the Bottom-up Deployment of Network Infrastructures.",
+                    "Modeling SCHC ACK-on-Error Fragment Delivery over Sigfox.",
+                    "Cache-Aided Delivery Network in a Shared Cache Framework with Correlated Sources.",
+                    "Modeling of Edge Server Cache-Reservation for Virtual Reality Applications."
+                ]
+            },
+            {
+                "sub_name_abbr": "conf/pe-wasun/2022",
+                "sub_name": "Proceedings of the 19th ACM International Symposium on Performance Evaluation of Wireless Ad Hoc, Sensor, & Ubiquitous Networks on 19th ACM International Symposium on Performance Evaluation of Wireless Ad Hoc, Sensor, & Ubiquitous Networks, Montreal, Quebec, Canada, October 24-28, 2022.",
+                "count": 17,
+                "papers": [
+                    "XuILVQ: A River Implementation of the Incremental Learning Vector Quantization for IoT.",
+                    "Prototype of deployment of Federated Learning with IoT devices.",
+                    "Performance Evaluation of Wi-Fi HaLow, NB-IoT and LoRa for Smart City Applications.",
+                    "Detecting Malicious Use of DoH Tunnels Using Statistical Traffic Analysis.",
+                    "Using Decentralized Aggregation for Federated Learning with Differential Privacy.",
+                    "Machine Learning Based Prediction with Parameters Tuning of Multi-Label Real Road Vehicles Characteristics.",
+                    "Coverage Path Planning for Internet of Drones.",
+                    "A Quality of Experience Evaluation Methodology for First-Person-View Drone Control in Cellular Networks.",
+                    "How does the Selection of Wireless Technology Impact the Performance of the Smart Grid? A Simulation Approach.",
+                    "RPL+: An Improved Parent Selection Strategy for RPL in Wireless Smart Grid Networks.",
+                    "Cost-effective Measurements of 5G Radio Resources Allocation for Telecom Market Regulator's Monitoring.",
+                    "Realistic Assessment of Transport Protocols Performance over LEO-based Communications.",
+                    "Privacy-Aware Vehicle Emissions Control System for Traffic Light Intersections.",
+                    "LoRaWAN-based Smart Parking Service: Deployment and Performance Evaluation.",
+                    "Performance Evaluation and Testbed for Delivering SRT Live Content using DASH Low Latency Streaming Systems.",
+                    "Making ALOHA Intelligent Taking Advantage of Working Memory Capacity.",
+                    "Behind the Mix-Zones Scenes: On the Evaluation of the Anonymization Quality."
+                ]
+            }
+        ]
+    },
+    {
         "year": "2021",
         "name": "24th MSWiM 2021",
         "info": "Alicante, Spain",
@@ -40,24 +340,6 @@
                     "LoRaWAN Relaying: Push the Cell Boundaries.",
                     "A Video-Quality Driven Strategy in Short Video Streaming.",
                     "Determining the Center of a Line Topology with Signal Strength Measurements under Correlated Log-Normal Shadowing: Analyzing the Three Node Case."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/mswim/2021divanet",
-                "sub_name": "DIVANet '21: Proceedings of the 11th ACM Symposium on Design and Analysis of Intelligent Vehicular Networks and Applications, Alicante, Spain, November 22 - 26, 2021.",
-                "count": 11,
-                "papers": [
-                    "Tutorial: Edge Computing for Mobile Internet of Things.",
-                    "Interference-Aware Trajectory Optimization for Cellular-connected UAVs with Obstacle Avoidance.",
-                    "Secure Drone Identification with Hyperledger Iroha.",
-                    "Flexi-Compression: A Flexible Model Compression Method for Autonomous Driving.",
-                    "A Novel Indirect Trust Mechanism for Addressing Black hole Attacks in MANET.",
-                    "TTWiFi: Time-Triggered Communication over WiFi.",
-                    "Secure Computational Offloading with gRPC: A Performance Evaluation in a Mobile Cloud Computing Environment.",
-                    "Autonomous Vehicle Navigation and Communication by Passive Radio Frequency (RFID) Tags.",
-                    "Edge-based V2X Efficient Traffic Emergency Responding Protocol.",
-                    "A Dual Mode Privacy-Preserving Scheme Enabled Secure and Anonymous for Edge Computing Assisted Internet of Vehicle Networks.",
-                    "A Novel Dynamic Split and Merge Clustering Scheme for SDVN."
                 ]
             },
             {
@@ -150,22 +432,6 @@
                     "Using Reinforcement Learning in Slotted Aloha for Ad-Hoc Networks.",
                     "Leveraging Antenna Orientation to Optimize Network Performance of Fleets of UAVs.",
                     "A Scalable Scheme for Joint Routing and Resource Allocation in LTE-D2D Based Offloading."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/mswim/2020divanet",
-                "sub_name": "DIVANet '20: Proceedings of the 10th ACM Symposium on Design and Analysis of Intelligent Vehicular Networks and Applications, Alicante, Spain, November 16-20, 2020.",
-                "count": 9,
-                "papers": [
-                    "Edge Computing for Video Analytics in the Internet of Vehicles with Blockchain.",
-                    "Real-Time Low-Pixel Infrared Human Detection From Unmanned Aerial Vehicles.",
-                    "A Multi-stack Simulation Framework for Vehicular Applications Testing.",
-                    "Advanced Models for the Simulation of AGV Communication in Industrial Environments: Model proposal and Demonstration.",
-                    "Trustworthy Traffic Information Sharing Secured via Blockchain in VANETs.",
-                    "Machine Learning-Based Intrusion Detection System for Controller Area Networks.",
-                    "Vehicle Fusion Positioning Model based on CSI.",
-                    "Reactive Overlays for Adaptive Routing in Mobile Ad hoc Networks.",
-                    "Machine Learning for Self-Adaptive Internet of Underwater Things."
                 ]
             },
             {
@@ -268,27 +534,6 @@
                     "Elastic Offloading of Multitasking Applications to Mobile Edge Computing.",
                     "Modeling Realistic Bit Rates of D2D Communications between Android Devices.",
                     "Secure Routing in Multi-hop IoT-based Cognitive Radio Networks under Jamming Attacks."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/mswim/2019divanet",
-                "sub_name": "Proceedings of the 9th ACM Symposium on Design and Analysis of Intelligent Vehicular Networks and Applications, DIVANet 2019, Miami Beach, FL, USA, November 25-29, 2019.",
-                "count": 14,
-                "papers": [
-                    "ASAP: An Agent-Assisted Smart Auction-Based Parking System in Internet of Things.",
-                    "On Leveraging the Computational Potential of Fog-Enabled Vehicular Networks.",
-                    "Ridesharing Architecture for Patterned Commute Traffic.",
-                    "Multi-Vehicle Cooperative Positioning Correction Framework Based on Vehicular Blockchain.",
-                    "Providing a Dynamic Milk-Run Vehicle Routing Using Vehicular Ad hoc Networks.",
-                    "A Novel Framework of Vehicle Ad-Hoc Networks based on Virtualization and Distributed Ledger Technology.",
-                    "Download and Fly: An Online Solution for the UAV 3D Trajectory Planning Problem in Smart Cities.",
-                    "A Multilayer Low-Altitude Airspace Model for UAV Traffic Management.",
-                    "Performance Analysis of IEEE 802.11p and IEEE 802.11n based on QoS for UAV networks.",
-                    "Distributed Intelligent Algorithm for Interdependent Electrified Transportation and Power Networks.",
-                    "Vehicular Traffic Density Forecasting through the Eyes of Traffic Cameras; a Spatio-Temporal Machine Learning Study.",
-                    "A Multi-object Detection Method Based on Connected Vehicles.",
-                    "Spectrum Analytic Approach for Cooperative Navigation of Connected and Autonomous Vehicles.",
-                    "Taxonomy of an Application Model: Toward Building Large Scale, Connected Vehicle Applications."
                 ]
             },
             {
@@ -430,25 +675,6 @@
                 ]
             },
             {
-                "sub_name_abbr": "conf/mswim/2018divanet",
-                "sub_name": "Proceedings of the 8th ACM Symposium on Design and Analysis of Intelligent Vehicular Networks and Applications, DIVANet@MSWIM 2018, Montreal, QC, Canada, October 28 - November 02, 2018.",
-                "count": 12,
-                "papers": [
-                    "A Deep Reinforcement Learning-based Trust Management Scheme for Software-defined Vehicular Networks.",
-                    "Blockchain-Based Distributed Software-Defined Vehicular Networks via Deep Q-Learning.",
-                    "Distributed SDN Controller Placement Using Betweenness Centrality & Hierarchical Clustering.",
-                    "Information-Centric Strategies for Content Delivery in Intelligent Vehicular Networks.",
-                    "Adaptive Forwarding Control using Network Coding for Efficient Multicasting in Mobile Ad-hoc Networks.",
-                    "An Energy-efficient UAV-based Data Aggregation Protocol in Wireless Sensor Networks.",
-                    "Multi-objective Approaches to Improve QoS in Vehicular Ad-hoc Networks.",
-                    "Congestion Mitigation in Densely Crowded Environments for Augmenting QoS in Vehicular Clouds.",
-                    "An Adaptive Power Level Control Algorithm for DSRC Congestion Control.",
-                    "Optimized Anonymity Updating in VANET Based on Information and Privacy Joint Metrics.",
-                    "Energy Trade-offs in Millimeter Wave Vehicular Networks by exploiting a Hyperfractal Model.",
-                    "PlaSA - Platooning Service Architecture."
-                ]
-            },
-            {
                 "sub_name_abbr": "conf/pe-wasun/2018",
                 "sub_name": "Proceedings of the 15th ACM International Symposium on Performance Evaluation of Wireless Ad Hoc, Sensor, & Ubiquitous Networks, PE-WASUN@MSWiM 2018, Montreal, QC, Canada, October 28 - November 02, 2018.",
                 "count": 19,
@@ -555,32 +781,6 @@
                 ]
             },
             {
-                "sub_name_abbr": "conf/mswim/2017divanet",
-                "sub_name": "Proceedings of the 6th ACM Symposium on Development and Analysis of Intelligent VehicularNetworks and Applications, MSWiM 2017, Miami, FL, USA, November 21-25, 2017.",
-                "count": 19,
-                "papers": [
-                    "Spatially Adaptive Positioning for Molecular Geometry Inspired Aerial Networks.",
-                    "Tracking Vehicles Equipped with Dedicated Short-Range Communication at Traffic Intersections.",
-                    "SoLVE: A Localization System Framework for VANets using the Cloud and Fog Computing.",
-                    "On the Characterization of Vehicular Mobility.",
-                    "A Lightweight and Efficient Approach (LEA) for Hovering Information protocols.",
-                    "nlsrSIM: Porting and Simulation of Named-data Link State Routing Protocol into ndnSIM.",
-                    "Deep Reinforcement Learning (DRL)-based Resource Management in Software-Defined and Virtualized Vehicular Ad Hoc Networks.",
-                    "QoS-oriented Management of Multi-vehicle Coordinated Cruise Control in Uncertain Environments.",
-                    "Performance Analysis of Communication Networks for EV Charging Stations in Residential Grid.",
-                    "Resource Allocation in Software Defined Fog Vehicular Networks.",
-                    "Vehicular Clouds Research: What is Missing?",
-                    "The Cooperative Vehicle Infrastructure System Based on Machine Vision.",
-                    "Utilizing Advanced Metering Infrastructure to Build a Public Key Infrastructure for Electric Vehicles.",
-                    "Mass Configuration with Confirmation in Tactical Networks.",
-                    "Detection and Avoidance of Wormhole Attacks in Connected Vehicles.",
-                    "Addressing the Effects of Low Vehicle Density in Highly Mobile Vehicular Named-Data Networks.",
-                    "Implementation and Performance Assessment of Location-based Routing Protocols for MANETs.",
-                    "Using Probabilistic Estimates to Guarantee Reliability in Crossroad VANETs.",
-                    "Modeling, Analysis and Simulation of Wireless Power Transfer."
-                ]
-            },
-            {
                 "sub_name_abbr": "conf/pe-wasun/2017",
                 "sub_name": "Proceedings of the 14th ACM Symposium on Performance Evaluation of Wireless Ad Hoc, Sensor, & Ubiquitous Networks, PE-WASUN 2017, Miami, FL, USA, November 21 - 25, 2017.",
                 "count": 12,
@@ -684,29 +884,6 @@
                     "A Comparative Study of Data Aggregation Approaches for Wireless Sensor Networks.",
                     "Internet of Things: Security in the Keys.",
                     "How Interactions between RPL and Radio Duty Cycling Protocols Affect QoS in Wireless Sensor Networks."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/mswim/2016divanet",
-                "sub_name": "Proceedings of the 6th ACM Symposium on Development and Analysis of Intelligent Vehicular Networks and Applications, DIVANet 2016, Malta, November 13-17, 2016.",
-                "count": 16,
-                "papers": [
-                    "Random Access Optimization for M2M Communications in VANET with Wireless Network Virtualization.",
-                    "From Random Process to Chaotic Behavior in Swarms of UAVs.",
-                    "Paving the way for Intelligent Transport Systems (ITS): Privacy Implications of Vehicle Infotainment and Telematics Systems.",
-                    "Identifying Relationships in Vehicular Sensor Data: A Case Study and Characterization.",
-                    "Software-defined Vehicular Ad Hoc Networks with Trust Management.",
-                    "A Media-Aware Transmission Framework for 3D-HEVC Over LTE Networks.",
-                    "Vehicular Digital Forensics: What Does My Vehicle Know About Me?",
-                    "Delay Tolerant and Predictive Data Dissemination Protocol (DTP-DDP) for urban and highway vehicular ad hoc networks (VANETs).",
-                    "The Effect of Hidden Terminal Interference on Safety-Critical Traffic in Vehicular Ad Hoc Networks.",
-                    "LOGR: Joint LOcalization and Geographic Routing-based Data Dissemination in Wireless Sensor Networks with Mobile Sinks.",
-                    "On Developing Smart Transportation Applications in Fog Computing Paradigm.",
-                    "A Deployment Algorithm for Multi-hop Wireless Networks.",
-                    "Effect of Traffic Arrival Distributions on Routing Strategyin Multi-Hop Wireless Networks.",
-                    "Simulating Wireless Links Within a Dynamic Environment.",
-                    "Performance Evaluation of Link Metrics in Vehicle Networks: A Study from the Cologne Case.",
-                    "Power in Silence: Revealing the Stationarity of Private-owned Vehicle in Urban Vehicular Ad Hoc Networks."
                 ]
             }
         ]
@@ -819,28 +996,6 @@
                     "E-BIAS: A Pervasive EEG-Based Identification and Authentication System.",
                     "QoS Management for WiFi MAC Layer Processing in the Cloud: Demo Description."
                 ]
-            },
-            {
-                "sub_name_abbr": "conf/mswim/2015divanet",
-                "sub_name": "Proceedings of the 5th ACM Symposium on Development and Analysis of Intelligent Vehicular Networks and Applications, DIVANet 2015, Cancun, Mexico, November 2-6, 2015.",
-                "count": 15,
-                "papers": [
-                    "Connectivity Stability in Autonomous Multi-level UAV Swarms for Wide Area Monitoring.",
-                    "WhatIF Application: Moving Electrically without an Electric Vehicle.",
-                    "Towards Efficient Vehicle Classification in Intelligent Transportation Systems.",
-                    "Cooperative Spectrum Sensing with Trust Assistance for Cognitive Radio Vehicular Ad hoc Networks.",
-                    "Improving the Performance of VANETs using Many-to-Many Communication.",
-                    "Scalable Transportation Monitoring using the Smartphone Road Monitoring (SRoM) System.",
-                    "HCI in VANET IR-CAS: Multimodal Interface for VANET Context Aware IR Systems.",
-                    "Towards In Time Music Mood-Mapping for Drivers: A Novel Approach.",
-                    "OnlineCruise: An Online Social Grouping Strategy for Vehicular Social Networks.",
-                    "On the Provisioning of Vehicle-Based Public Sensing Services.",
-                    "Smartphone-based Architecture for Smart Cities.",
-                    "Geometry-Based Statistical Modeling of Non-Stationary MIMO Vehicle-to-Vehicle Channels.",
-                    "An Efficient Pseudonym Change Protocol Based on Trusted Neighbours for Privacy and Anonymity in VANETs.",
-                    "A Fuzzy Logic-Based Communication Medium Selection for QoS Preservation in Vehicular Networks.",
-                    "Spectrum Access Quality for Mobile Broadband Video Communications in Smart Cities."
-                ]
             }
         ]
     },
@@ -945,36 +1100,6 @@
                     "Storms in mobile networks.",
                     "Elastic virtual private cloud.",
                     "Traffic forecasting using a multi layer perceptron model."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/mswim/2014divanet",
-                "sub_name": "Proceedings of the fourth ACM international symposium on Development and analysis of intelligent vehicular networks and applications, DIVANet@MSWiM 2014, Montreal, QC, Canada, September 21-26, 2014.",
-                "count": 23,
-                "papers": [
-                    "Swarm-based traffic lights policy selection.",
-                    "Keypoint-based binocular distance measurement for pedestrian detection system.",
-                    "Vehicular social systems: an overview and a performance case study.",
-                    "Implementing and evaluating V2X protocols over iTETRIS: traffic estimation in the COLOMBO project.",
-                    "Power efficient high-rate data service provisioning in vehicular networks.",
-                    "A prediction based clustering algorithm for target tracking in vehicular ad-hoc networks.",
-                    "CAMS transmission rate adaptation for vehicular safety application in LTE.",
-                    "Sensor cloud computing for vehicular applications: from analysis to practical implementation.",
-                    "Evaluating VANET information retrieval context aware systems using the average distance measure ADM.",
-                    "Adapting to the driving context in congestion control for vehicular networks.",
-                    "Towards a service centric contextualized vehicular cloud.",
-                    "Improved multi-channel operation for safety messages dissemination in vehicular networks.",
-                    "A model for situation and threat/impact assessment in vehicular ad-hoc networks.",
-                    "Effective public key infrastructure for vehicle-to-grid network.",
-                    "Trust based security enhancements for vehicular ad hocnetworks.",
-                    "Propagation modeling and MAC-layer performance in EM-based underwater sensor networks.",
-                    "An enhanced security scheme for query state inference in EPCglobal discovery services.",
-                    "Content replication and delivery in vehicular networks.",
-                    "Wireless channel resource allocation to support real-time transportation applications with multiple service classes.",
-                    "Big data architecture evolution: 2014 and beyond.",
-                    "Experimental evaluation of pulse-coupled oscillator synchronization in IEEE 802.15.4 networks.",
-                    "Data synchronization via random network coding.",
-                    "Primary-secondary resource-management on vehicular networks under soft and hard collision constraints."
                 ]
             }
         ]
@@ -1133,34 +1258,6 @@
                     "Performances of trigonometric chirp spread spectrum modulation in AWGN & rayleigh channels.",
                     "Localization in IEEE 802.11 networks by using the nelder-mead method."
                 ]
-            },
-            {
-                "sub_name_abbr": "conf/mswim/2013divanet",
-                "sub_name": "Proceedings of the third ACM international symposium on Design and analysis of intelligent vehicular networks and applications, DIVANet@MSWiM 2013, Barcelona, Spain, November 3-4, 2013.",
-                "count": 21,
-                "papers": [
-                    "Available bandwidth estimation in GPSR for VANETs.",
-                    "Improving throughput in highway transportation systems by entry control and virtual queue.",
-                    "Dual-mode optimum distance routing scheme for vehicular ad hoc networks.",
-                    "An efficient fault detection and diagnosis protocolfor vehicular networks.",
-                    "Decision support protocol for intrusion detection in VANETs.",
-                    "Privacy representation in VANET.",
-                    "Security and privacy of electric vehicles in the smart grid context: problem and solution.",
-                    "Securing vehicular ad hoc networks with mean field game theory.",
-                    "Web services for VANET: a service oriented architecturefor infotainment system based on mashup using open APIs.",
-                    "Semantic based networking of information in vehicular clouds based on dimensionality reduction.",
-                    "Investigating mobile crowdsensing application performance.",
-                    "Social drive: a crowdsourcing-based vehicular social networking system for green transportation.",
-                    "Evaluation of dynamic communities in large-scale vehicular networks.",
-                    "The emerging applications of intelligent vehicular networks for traffic efficiency.",
-                    "Smart parking by the COIN.",
-                    "Data dissemination for delay tolerant vehicular networks: using historical mobility patterns.",
-                    "Assessing the impact of obstacle modeling accuracy on IEEE 802.11p based message dissemination.",
-                    "Cross-layer transmit power and beacon rate adaptation for VANETs.",
-                    "Network based mobility management protocol for ethernet passive optical networks.",
-                    "A distributed clustering algorithm for target tracking in vehicular ad-hoc networks.",
-                    "A new solution for the time-space localization problem in wireless sensor network using UAV."
-                ]
             }
         ]
     },
@@ -1289,33 +1386,6 @@
                     "Further analysis and tuning of registered multi-cycle polling in wireless medium access management.",
                     "A centralized preventive maintenance strategy for wireless sensor networks.",
                     "Analytical modeling of wireless ad hoc networks: degree distribution and maximum clique size."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/mswim/2012divanet",
-                "sub_name": "Proceedings of the second ACM international symposium on Design and analysis of intelligent vehicular networks and applications, DIVANet@MSWiM 2012, Paphos, Cyprus, October 21, 2012.",
-                "count": 20,
-                "papers": [
-                    "Crowdsourcing for on-street smart parking.",
-                    "Adaptive communication gateway for vehicular networking applications.",
-                    "A content centric approach to dissemination of information in vehicular networks.",
-                    "Fuel economy validation of the smart microhybrid system for used cars.",
-                    "VSSA: a service-oriented vehicular social-networking platform for transportation efficiency.",
-                    "Optimal sensing using query arrival distributions.",
-                    "Congestion control in vehicular ad hoc networks using meta-heuristic techniques.",
-                    "A cognitive WSN framework for highway safety based on weighted cognitive maps and Q-learning.",
-                    "Grid-based hierarchy structure for mining and querying vehicular ad-hoc networks.",
-                    "An efficient and robust clustered data gathering protocol (CDGP) for vehicular networks.",
-                    "Time-distance path recommendation mechanisms for vanets.",
-                    "A multihop supplying partner protocol for 3D streaming systems over thin mobile devices.",
-                    "Distributed scheduling for unmanned aerial vehicle networks with full-duplex radios and multi-packet reception.",
-                    "VANET IR-CAS: utilizing IR techniques in developing context aware system for VANET.",
-                    "Examining privacy in vehicular ad-hoc networks.",
-                    "Proof of concept of a security based on lifetime of communication's pseudonyms for the VANETs.",
-                    "HyDi: a hybrid data dissemination protocol for highway scenarios in vehicular ad hoc networks.",
-                    "Vehicle localization in VANETs using data fusion and V2V communication.",
-                    "Generation of realistic traces for vehicular mobility simulations.",
-                    "Security and quality of service (QoS) co-design using game theory in cooperative wireless ad hoc networks."
                 ]
             },
             {
@@ -1460,30 +1530,6 @@
                     "Performance analysis of HIP diet exchange for WSN security establishment.",
                     "A key management method based on an AVL tree and ECC cryptography for wireless sensor networks.",
                     "Towards a balanced and reliable localization of services in heterogeneous vehicular ad hoc networks."
-                ]
-            },
-            {
-                "sub_name_abbr": "conf/mswim/2011divanet",
-                "sub_name": "Proceedings of the first ACM international symposium on Design and analysis of intelligent vehicular networks and applications, DIVANet@MSWiM 2011, Miami, FL, USA, October 31, 2011.",
-                "count": 17,
-                "papers": [
-                    "Optimizing OLSR in VANETS with differential evolution: a comprehensive study.",
-                    "Wireless traffic safety network for incident and weather information.",
-                    "A self-organizing content centric network model for hybrid vehicular ad-hoc networks.",
-                    "Enhancing the broadcast process in mobile ad hoc networks using community knowledge.",
-                    "Sensitivity analysis for a realistic vehicular mobility model.",
-                    "LICA: robust localization using cluster analysis to improve GPS coordinates.",
-                    "Finding lower bounds of localization with noisy measurements using genetic algorithms.",
-                    "Cognitive wireless sensor networks for highway safety.",
-                    "Towards end-to-end routing for periodic mobile objects.",
-                    "Motion-path based in car gesture control of the multimedia devices.",
-                    "Modeling and simulation of vehicular networks.",
-                    "A semantics-based multi-agent framework for vehicular social network development.",
-                    "Design of a fast handoff scheme for vehicular mesh networks with directional antennas.",
-                    "Secure service discovery protocol for intelligent transport systems: proof of correctness.",
-                    "Outlier detection using na\u00efve bayes in wireless ad hoc networks.",
-                    "Intrusion detection in WSN-based intelligent transportation systems.",
-                    "Security and quality of service (QoS) co-design in vehicular ad hoc networks with cooperative communications."
                 ]
             },
             {
@@ -2685,7 +2731,7 @@
     {
         "year": "2000",
         "name": "3rd MSWiM 2000",
-        "info": "Boston, Massachusetts, USA",
+        "info": "Boston, MA, USA",
         "venues": [
             {
                 "sub_name_abbr": "conf/mswim/2000",
@@ -2707,6 +2753,33 @@
                     "Visualization of real-time survivability metrics for mobile networks.",
                     "QoS and simulation models in mobile communication networks.",
                     "Flexible simulation of distributed protocols for mobile computing."
+                ]
+            }
+        ]
+    },
+    {
+        "year": "1999",
+        "name": "2nd MSWiM 1999",
+        "info": "Seattle, WA, USA",
+        "venues": [
+            {
+                "sub_name_abbr": "conf/mswim/1999",
+                "sub_name": "Proceedings of the 2nd ACM International Workshop on Modeling, Analysis and Simulation of Wireless and Mobile Systems, MSWiM 1999, Seattle, Washington, USA, August 20, 1999.",
+                "count": 13,
+                "papers": [
+                    "Third generation wireless communications and beyond: summary.",
+                    "Impact of channel models on simulation of large scale wireless networks.",
+                    "Survivable load sharing protocals: a simulation study.",
+                    "On the effects of adaptive forward error correction mechanism in direct broadcast satellite networks.",
+                    "Acknowledgment procedures at radio link control level in GPRS.",
+                    "D-PRMA: a dynamic packet reservation multiple access protocol for wireless communications.",
+                    "A group mobility model for ad hoc wireless networks.",
+                    "An activity-based mobility model and location management simulation framework.",
+                    "Evaluating the performance of mobile agent-based message communication among mobile hosts in large ad hoc wireless network.",
+                    "A model for enhancing connection rerouting using active networks.",
+                    "A spatio-temporal resource allocation protocol (STRAP) with mobility specification: simulation and performance evaluation.",
+                    "Location area planning for personal communication services networks.",
+                    "A bitmap scaling and rotation design for SH1 low power CPU."
                 ]
             }
         ]
