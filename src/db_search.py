@@ -28,10 +28,14 @@ class Search_Paper_DB():
         papers = list()
         for venue in venue_list:
             if venue not in no_dblp:
-                with open('../paper_db/{}/{}.json'.format(self.no, venue), 'r', encoding='utf-8') as f:
-                    db_info = json.load(f)
+                json_path = '../paper_db/{}/{}.json'.format(self.no, venue)
+                try:
+                    with open(json_path, 'r', encoding='utf-8') as f:
+                        db_info = json.load(f)
+                except FileNotFoundError:
+                    continue
 
-                n_years = len(db_info) if self.year==0 else self.year
+                n_years = len(db_info) if self.year == 0 else min(self.year, len(db_info))
                 for n in range(n_years):
                     if 'count' in list(db_info[n].keys()):  # 期刊
                         papers.extend(db_info[n]['papers'])

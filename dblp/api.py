@@ -9,9 +9,9 @@ from urllib.parse import urlencode
 def _get_ccf_class(venue: str) -> str:
     ccf_catalog = pathlib.Path(__file__).parent.joinpath('data').joinpath('ccf_catalog.csv')
     df = pd.read_csv(ccf_catalog)
-    if len(series := df.loc[df.get('abbr').str.lower() == venue.lower(), 'class']) > 0:
+    if len(series := df.loc[df.get('abbr').str.lower() == venue.lower(), 'rank']) > 0:
         return series.item()
-    elif len(series := df.loc[df.get('url').str.contains(f'/{venue.lower()}/'), 'class']) > 0:
+    elif len(series := df.loc[df.get('url').str.contains(f'/{venue.lower()}/'), 'rank']) > 0:
         return series.item()
     return 'N/A'
 
