@@ -65,6 +65,10 @@ def merge_synonyms(
         config.get("term_stats", {})
         .get("top_k_for_synonym_merge", 2000)
     )
+    batch_size = (
+        config.get("term_stats", {})
+        .get("synonym_batch_size", 500)
+    )
     # Limit to top-k by count
     top_terms = dict(
         sorted(term_counts.items(), key=lambda x: -x[1])[:top_k]
@@ -72,6 +76,17 @@ def merge_synonyms(
     if not top_terms:
         return []
 
-    prompt = _build_prompt(top_terms)
-    response = llm_client.complete(prompt)
-    return _parse_response(response)
+    # Split into batches to avoid content-filter issues with large prompts
+    items = list(top_terms.items())
+    prompts = []
+    for i in range(0, len(items), batch_size):
+        chunk = dict(items[i : i + batch_size])
+        prompts.append(_build_prompt(chunk))
+
+    responses = llm_client.complete_batch(prompts)
+
+    result = []
+    for response in responses:
+        if response:
+            result.extend(_parse_response(response))
+    return result

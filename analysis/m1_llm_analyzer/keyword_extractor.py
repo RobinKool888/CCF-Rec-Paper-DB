@@ -1,4 +1,5 @@
 import json
+import os
 import re
 import textwrap
 
@@ -49,6 +50,9 @@ def batch_extract_keywords(
     batch_size = config.get("llm", {}).get("batch_size", 50)
     result: dict = {}
 
+    cache_dir = config.get("paths", {}).get("cache_dir", "cache")
+    skipped_log = os.path.join(cache_dir, "skipped_batches.jsonl")
+
     prompts = []
     batches = []
     for i in range(0, len(records), batch_size):
@@ -59,8 +63,26 @@ def batch_extract_keywords(
     responses = llm_client.complete_batch(prompts)
 
     for batch, response in zip(batches, responses):
-        if response:
-            parsed = _parse_response(response, batch)
-            result.update(parsed)
+        if not response:
+            # Empty response — content filtered or other API error
+            with open(skipped_log, "a", encoding="utf-8") as f:
+                f.write(json.dumps({
+                    "reason": "empty_response",
+                    "titles": [r.title for r in batch]
+                }, ensure_ascii=False) + "\n")
+            continue
+
+        parsed = _parse_response(response, batch)
+
+        if not parsed:
+            # Response received but JSON parsing failed
+            with open(skipped_log, "a", encoding="utf-8") as f:
+                f.write(json.dumps({
+                    "reason": "json_parse_error",
+                    "titles": [r.title for r in batch]
+                }, ensure_ascii=False) + "\n")
+            continue
+
+        result.update(parsed)
 
     return result
