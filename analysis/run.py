@@ -69,7 +69,7 @@ def run_m1(records: list, config: dict) -> tuple:
         rec.keywords = kw_map.get(rec.title_normalized, [])
 
     # Count terms
-    term_counts: dict = Counter()
+    term_counts: Counter = Counter()
     for rec in records:
         for kw in rec.keywords:
             term_counts[kw] += 1

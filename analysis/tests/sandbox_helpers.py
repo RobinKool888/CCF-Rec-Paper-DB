@@ -1,5 +1,5 @@
 """
-conftest.py — shared fixtures and helpers for sandbox tests.
+sandbox_helpers.py — shared fixtures and helpers for sandbox tests.
 
 All helpers use MockLLMClient: zero real HTTP calls.
 """
@@ -7,6 +7,7 @@ import json
 import os
 import re
 import sys
+from collections import Counter
 
 import pytest
 
@@ -361,7 +362,6 @@ def run_m1_sandbox() -> dict:
     from m1_llm_analyzer.keyword_extractor import batch_extract_keywords
     from m1_llm_analyzer.synonym_merger import merge_synonyms
     from m1_llm_analyzer.anomaly_detector import detect_anomalies
-    from collections import Counter
 
     records = load_sandbox()
     llm = MockLLMClient()
@@ -370,7 +370,7 @@ def run_m1_sandbox() -> dict:
     for rec in records:
         rec.keywords = kw_map.get(rec.title_normalized, [])
 
-    term_counts: dict = Counter()
+    term_counts: Counter = Counter()
     for rec in records:
         for kw in rec.keywords:
             term_counts[kw] += 1
@@ -406,7 +406,6 @@ def run_m2_sandbox(**kwargs) -> dict:
     from m1_llm_analyzer.keyword_extractor import batch_extract_keywords
     from m1_llm_analyzer.synonym_merger import merge_synonyms
     from m2_term_stats.statistician import compute_term_stats
-    from collections import Counter
 
     records = load_sandbox(**kwargs)
     llm = MockLLMClient()
@@ -415,7 +414,7 @@ def run_m2_sandbox(**kwargs) -> dict:
     for rec in records:
         rec.keywords = kw_map.get(rec.title_normalized, [])
 
-    term_counts: dict = Counter()
+    term_counts: Counter = Counter()
     for rec in records:
         for kw in rec.keywords:
             term_counts[kw] += 1
