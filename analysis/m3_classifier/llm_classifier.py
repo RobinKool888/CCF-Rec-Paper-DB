@@ -63,21 +63,48 @@ def _parse_response(response: str, batch: list) -> list:
 
 class LLMClassifier:
     def classify_batch(
-        self, records: list, llm_client, config: dict
+        self, records: list, llm_client, config: dict,
+        category: int = 0,
+        cache_db=None,
     ) -> list:
-        """Returns list of {title, research_type, application_domain, method}."""
+        """Returns list of {title, research_type, application_domain, method}.
+
+        When *cache_db* (a SubStageCache) is provided the method:
+          - Pre-loads already-persisted clf_results so those titles are skipped
+            entirely (no prompt, no LLM call, no re-parse).
+          - Writes each batch's parsed results to clf_results immediately after
+            parsing, so a crash loses at most one in-flight batch.
+        """
         batch_size = config.get("llm", {}).get("batch_size", 50)
-        results = []
+
+        # Seed output with any already-persisted classification rows.
+        persisted: dict = {}
+        if cache_db is not None:
+            persisted = cache_db.load_clf_results(category)
+
+        results = [
+            {"title": t, **v} for t, v in persisted.items()
+        ]
+
+        # Only process records not yet in persisted results.
+        pending_records = [r for r in records if r.title not in persisted]
+
+        if not pending_records:
+            return results
+
+        batches_to_send = []
         prompts = []
-        batches = []
-        for i in range(0, len(records), batch_size):
-            batch = records[i : i + batch_size]
-            batches.append(batch)
+        for i in range(0, len(pending_records), batch_size):
+            batch = pending_records[i : i + batch_size]
+            batches_to_send.append(batch)
             prompts.append(_build_prompt(batch))
 
         responses = llm_client.complete_batch(prompts)
-        for batch, response in zip(batches, responses):
+        for batch, response in zip(batches_to_send, responses):
             if response:
                 parsed = _parse_response(response, batch)
                 results.extend(parsed)
+                # Persist immediately — crash loses at most this one batch.
+                if cache_db is not None:
+                    cache_db.save_clf_batch(category, parsed)
         return results

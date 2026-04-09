@@ -12,7 +12,7 @@ if _ANALYSIS_DIR not in sys.path:
 
 from core.config_loader import load_config
 from core.llm_client import LLMClient
-from core.cache_manager import CacheDB, PaperCache
+from core.cache_manager import CacheDB, PaperCache, SubStageCache
 
 
 def _setup_logging(log_dir: str):
@@ -92,6 +92,7 @@ def run_m1(records: list, config: dict, category: int, args) -> tuple:
     from m1_llm_analyzer.anomaly_detector import detect_anomalies
     from collections import Counter
 
+    log = logging.getLogger("M1")
     cache_dir = config["paths"]["cache_dir"]
     ckpt_db = _get_checkpoint_db(config)
     ckpt = _ckpt_key("M1", category)
@@ -101,7 +102,7 @@ def run_m1(records: list, config: dict, category: int, args) -> tuple:
     anomaly_path = os.path.join(cache_dir, "anomaly_report.json")
 
     if not force and ckpt_db.get(ckpt) and os.path.exists(term_map_path) and os.path.exists(anomaly_path):
-        logging.getLogger("M1").info("Resuming: M1 already complete, loading term_map and anomaly_report from disk")
+        log.info("Resuming: M1 already complete, loading term_map and anomaly_report from disk")
         with open(term_map_path) as fh:
             term_map = json.load(fh)
         with open(anomaly_path) as fh:
@@ -123,9 +124,25 @@ def run_m1(records: list, config: dict, category: int, args) -> tuple:
         return term_map, anomaly_report
 
     llm = LLMClient(config["llm"])
+    sub_cache = SubStageCache(os.path.join(cache_dir, "llm_cache.sqlite"))
+    m1a_ckpt = _ckpt_key("M1a", category)
 
-    # Keyword extraction
-    kw_map = batch_extract_keywords(records, llm, config)
+    # Sub-stage M1a: keyword extraction
+    # If M1a checkpoint is set, keyword extraction already completed on a
+    # previous run — load the persisted per-title results directly and skip
+    # the entire batch_extract_keywords call.
+    if not force and ckpt_db.get(m1a_ckpt):
+        log.info(
+            "Resuming: M1a (keyword extraction) complete, loading kw_results from cache"
+        )
+        kw_map = sub_cache.load_kw_results(category)
+    else:
+        kw_map = batch_extract_keywords(
+            records, llm, config, category=category, cache_db=sub_cache
+        )
+        ckpt_db.set(m1a_ckpt, "done")
+        log.info("M1a complete: extracted keywords for %d titles", len(kw_map))
+
     for rec in records:
         rec.keywords = kw_map.get(rec.title_normalized, [])
 
@@ -200,6 +217,7 @@ def run_m3(records: list, config: dict, category: int, args) -> list:
     heuristic = HeuristicClassifier(heuristics_file, threshold)
     llm = LLMClient(config["llm"])
     llm_clf = LLMClassifier()
+    sub_cache = SubStageCache(os.path.join(cache_dir, "llm_cache.sqlite"))
 
     needs_llm = []
     for rec in records:
@@ -212,7 +230,9 @@ def run_m3(records: list, config: dict, category: int, args) -> list:
             needs_llm.append(rec)
 
     if needs_llm:
-        llm_results = llm_clf.classify_batch(needs_llm, llm, config)
+        llm_results = llm_clf.classify_batch(
+            needs_llm, llm, config, category=category, cache_db=sub_cache
+        )
         title_to_result = {r["title"]: r for r in llm_results}
         for rec in needs_llm:
             res = title_to_result.get(rec.title, {})
@@ -383,9 +403,13 @@ def main():
 
     if args.force_recompute:
         ckpt_db = _get_checkpoint_db(config)
-        for stage in ("M0", "M1", "M2", "M3", "M4"):
+        for stage in ("M0", "M1", "M1a", "M2", "M3", "M4"):
             ckpt_db.invalidate(_ckpt_key(stage, args.category))
-        log.info("force-recompute: cleared all pipeline checkpoints for category %d", args.category)
+        cache_dir = config["paths"]["cache_dir"]
+        sub_cache = SubStageCache(os.path.join(cache_dir, "llm_cache.sqlite"))
+        sub_cache.clear_kw_results(args.category)
+        sub_cache.clear_clf_results(args.category)
+        log.info("force-recompute: cleared all pipeline checkpoints and sub-stage caches for category %d", args.category)
 
     # Rank filter
     allowed_ranks = set(r.strip().upper() for r in args.rank.split("/"))
