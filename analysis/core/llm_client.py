@@ -22,6 +22,7 @@ class LLMClient:
         self.provider = config.get("provider", "openai")
         self.model = config.get("model", "gpt-4o-mini")
         self.api_key_env = config.get("api_key_env", "OPENAI_API_KEY")
+        self.openai_base_url = config.get("openai_base_url")
         self.ollama_base_url = config.get(
             "ollama_base_url", "http://localhost:11434"
         )
@@ -104,7 +105,10 @@ class LLMClient:
         import openai
 
         api_key = os.environ.get(self.api_key_env, "")
-        client = openai.OpenAI(api_key=api_key)
+        kwargs = {"api_key": api_key}
+        if self.openai_base_url:
+            kwargs["base_url"] = self.openai_base_url
+        client = openai.OpenAI(**kwargs)
         for attempt in range(self.max_retries):
             try:
                 resp = client.chat.completions.create(

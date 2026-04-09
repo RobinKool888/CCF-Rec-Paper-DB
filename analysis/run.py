@@ -206,9 +206,13 @@ def main():
                         help="Ignore cached results and recompute")
     parser.add_argument("--config", default="config.yaml",
                         help="Path to config.yaml")
+    parser.add_argument("--base-url", default=None,
+                        help="Override LLM base URL (for OpenAI-compatible endpoints)")
     args = parser.parse_args()
 
     config = load_config(os.path.join(_ANALYSIS_DIR, args.config))
+    if args.base_url:
+        config["llm"]["openai_base_url"] = args.base_url
     _setup_logging(config["paths"]["log_dir"])
     log = logging.getLogger("run")
     log.info(

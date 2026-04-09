@@ -40,6 +40,10 @@ on:
         description: 'LLM API key (leave blank to use the OPENAI_API_KEY repository secret)'
         required: false
         default: ''
+      base_url:
+        description: 'LLM base URL for OpenAI-compatible endpoints (e.g. https://xiaoai.plus/v1). Leave blank to use the official OpenAI API.'
+        required: false
+        default: ''
 
 jobs:
   run_analysis:
@@ -80,10 +84,15 @@ jobs:
           OPENAI_API_KEY: ${{ github.event.inputs.api_key != '' && github.event.inputs.api_key || secrets.OPENAI_API_KEY }}
         run: |
           cd analysis
+          EXTRA_ARGS=""
+          if [ -n "${{ github.event.inputs.base_url }}" ]; then
+            EXTRA_ARGS="--base-url ${{ github.event.inputs.base_url }}"
+          fi
           python run.py \
             --module ${{ github.event.inputs.module }} \
             --category ${{ github.event.inputs.category }} \
-            --rank "${{ github.event.inputs.rank }}"
+            --rank "${{ github.event.inputs.rank }}" \
+            $EXTRA_ARGS
 
       - name: Upload LLM cache artifact
         uses: actions/upload-artifact@v4
