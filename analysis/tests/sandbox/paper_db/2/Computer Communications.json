@@ -1,0 +1,40 @@
+[
+  {
+    "year": "2022",
+    "name": "Computer Communications 2022",
+    "info": "Elsevier Computer Communications 2022",
+    "venues": [
+      {
+        "sub_name_abbr": "journals/comcom/2022",
+        "sub_name": "Computer Communications, Volume 185",
+        "count": 5,
+        "papers": [
+          "Survey on Network Traffic Classification Using Deep Learning.",
+          "QoS-Aware Routing in Software-Defined Networks.",
+          "IoT Data Processing at the Network Edge: Challenges and Solutions.",
+          "Energy-Efficient Routing Protocols for Wireless Sensor Networks.",
+          "Blockchain Technology for Secure Network Communications."
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "name": "Computer Communications 2023",
+    "info": "Elsevier Computer Communications 2023",
+    "venues": [
+      {
+        "sub_name_abbr": "journals/comcom/2023",
+        "sub_name": "Computer Communications, Volume 201",
+        "count": 5,
+        "papers": [
+          "Content-Centric Networking: Principles and Challenges.",
+          "Multi-Armed Bandit for Adaptive Network Resource Allocation.",
+          "Named Data Networking for IoT Applications.",
+          "Network Fault Detection Using Machine Learning.",
+          "Cooperative Caching in Information-Centric Networks."
+        ]
+      }
+    ]
+  }
+]

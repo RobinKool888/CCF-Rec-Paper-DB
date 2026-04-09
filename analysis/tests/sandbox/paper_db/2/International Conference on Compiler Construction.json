@@ -1,0 +1,19 @@
+[
+  {
+    "year": "2022",
+    "name": "International Conference on Compiler Construction 2022",
+    "info": "CC 2022",
+    "venues": [
+      {
+        "sub_name_abbr": "conf/cc/2022",
+        "sub_name": "Proceedings of CC 2022",
+        "count": 3,
+        "papers": [
+          "Just-in-Time Compilation Techniques for Dynamic Languages.",
+          "Static Analysis for Memory Safety in Systems Programming.",
+          "Optimizing LLVM IR for Energy Efficiency."
+        ]
+      }
+    ]
+  }
+]

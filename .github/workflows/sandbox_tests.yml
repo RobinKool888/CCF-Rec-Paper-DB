@@ -1,0 +1,32 @@
+name: Sandbox Module Tests
+
+on:
+  push:
+    paths:
+      - 'analysis/**'
+      - '.github/workflows/sandbox_tests.yml'
+  pull_request:
+    paths:
+      - 'analysis/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('analysis/requirements_analysis.txt') }}
+
+      - name: Install dependencies
+        run: pip install -r analysis/requirements_analysis.txt
+
+      - name: Run sandbox tests
+        run: pytest analysis/tests/ -v --tb=short --cov=analysis --cov-report=term-missing

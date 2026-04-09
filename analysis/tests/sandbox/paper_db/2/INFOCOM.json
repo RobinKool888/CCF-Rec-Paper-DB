@@ -1,0 +1,74 @@
+[
+  {
+    "year": "2022",
+    "name": "INFOCOM 2022",
+    "info": "IEEE INFOCOM 2022, London, UK",
+    "venues": [
+      {
+        "sub_name_abbr": "conf/infocom/2022",
+        "sub_name": "IEEE INFOCOM 2022 - IEEE Conference on Computer Communications",
+        "count": 10,
+        "papers": [
+          "Congestion Control in High-Speed Networks: A Survey.",
+          "NetLLM: Adapting Large Language Models for Networking.",
+          "RDMA-Based High-Performance Networking in Cloud Datacenters.",
+          "Vivisecting Mobility Management in 5G Cellular Networks.",
+          "Low-Power IoT Sensor Networks: Measurement and Optimization.",
+          "Wireless Spectrum Sharing in Heterogeneous Networks.",
+          "Deep Reinforcement Learning for Adaptive Video Streaming.",
+          "Scalable Software-Defined Networking with P4 Programmable Data Planes.",
+          "Distributed Hash Tables for Peer-to-Peer Content Delivery.",
+          "Privacy-Preserving Data Aggregation in Sensor Networks."
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "name": "INFOCOM 2023",
+    "info": "IEEE INFOCOM 2023, New York, NY, USA",
+    "venues": [
+      {
+        "sub_name_abbr": "conf/infocom/2023",
+        "sub_name": "IEEE INFOCOM 2023 - IEEE Conference on Computer Communications",
+        "count": 10,
+        "papers": [
+          "Leveraging 5G mmWave for High-Density Wireless Access.",
+          "Energy-Efficient Routing in IoT Sensor Networks.",
+          "RDMA Transport Protocol Optimization for Datacenter Workloads.",
+          "NFV Orchestration for Multi-Tenant Cloud Services.",
+          "Satellite Constellation Networks: Measurement and Topology Analysis.",
+          "Adaptive Congestion Control for Heterogeneous Networks.",
+          "Machine Learning-Based Intrusion Detection for Industrial IoT.",
+          "Edge Computing Task Offloading in 5G Networks.",
+          "Blockchain-Based Security for IoT Networks.",
+          "QoE-Driven Adaptive Streaming in Cellular Networks."
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "name": "INFOCOM 2024",
+    "info": "IEEE INFOCOM 2024, Vancouver, BC, Canada",
+    "venues": [
+      {
+        "sub_name_abbr": "conf/infocom/2024",
+        "sub_name": "IEEE INFOCOM 2024 - IEEE Conference on Computer Communications",
+        "count": 10,
+        "papers": [
+          "Reconfigurable Intelligent Surfaces for 6G Networks.",
+          "Secure Aggregation for Federated Learning over Wireless Networks.",
+          "Backscatter Communication for Low-Power IoT Devices.",
+          "Toward Terabit Datacenter Networks with Co-Packaged Optics.",
+          "LEO Satellite Network Handover Optimization.",
+          "Programmable Network Functions for 5G Edge Computing.",
+          "Traffic Engineering in Multi-Domain SDN Networks.",
+          "Cross-Layer Optimization for Wireless Video Streaming.",
+          "Distributed Storage Systems with RDMA for Low-Latency Access.",
+          "Network Slicing for Heterogeneous 5G Service Requirements."
+        ]
+      }
+    ]
+  }
+]

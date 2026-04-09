@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Crux: GPU-Efficient Communication Scheduling for Deep Learning Training.",
+    "research_type": "SYSTEM_DESIGN",
+    "application_domain": ["Datacenter"],
+    "venue": "SIGCOMM",
+    "year": 2022,
+    "rank": "A"
+  },
+  {
+    "title": "A Variegated Look at 5G in the Wild: Performance, Power, and QoE Implications.",
+    "research_type": "MEASUREMENT_STUDY",
+    "application_domain": ["Wireless_Cellular_5G6G"],
+    "venue": "SIGCOMM",
+    "year": 2022,
+    "rank": "A"
+  },
+  {
+    "title": "Congestion Control in High-Speed Networks: A Survey.",
+    "research_type": "SURVEY_OVERVIEW",
+    "application_domain": ["General_Networking"],
+    "venue": "INFOCOM",
+    "year": 2022,
+    "rank": "A"
+  }
+]

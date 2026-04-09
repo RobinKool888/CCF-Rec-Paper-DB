@@ -1,0 +1,17 @@
+{
+  "category": 2,
+  "total_records": 87,
+  "main_track_records": 66,
+  "workshop_records": 10,
+  "catalog_verified_venues": ["CC", "INFOCOM", "SIGCOMM", "TMC"],
+  "catalog_unverified_venues": [
+    "Computational Complexity",
+    "International Conference on Compiler Construction"
+  ],
+  "unverified_venue_names": [
+    "Computational Complexity",
+    "International Conference on Compiler Construction"
+  ],
+  "dedup_collisions": 0,
+  "year_range_actual": [2022, 2024]
+}

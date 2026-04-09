@@ -1,0 +1,46 @@
+[
+  {
+    "year": "2022",
+    "name": "IEEE Transactions on Mobile Computing 2022",
+    "info": "IEEE TMC 2022",
+    "venues": [
+      {
+        "sub_name_abbr": "journals/tmc/2022",
+        "sub_name": "IEEE Transactions on Mobile Computing, Volume 21",
+        "count": 8,
+        "papers": [
+          "Energy-Harvesting in Mobile Sensor Networks: A Survey.",
+          "5G NR Millimeter-Wave Channel Measurement and Modeling.",
+          "Efficient Mobile Offloading in Multi-Access Edge Computing.",
+          "Mobility-Aware Resource Management in Cellular Networks.",
+          "Cooperative Spectrum Sensing in Cognitive Radio Networks.",
+          "Deep Learning for Mobile Traffic Classification.",
+          "Heterogeneous Network Integration for 5G and WiFi.",
+          "Secure Mobile Data Aggregation with Privacy Preservation."
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "name": "IEEE Transactions on Mobile Computing 2023",
+    "info": "IEEE TMC 2023",
+    "venues": [
+      {
+        "sub_name_abbr": "journals/tmc/2023",
+        "sub_name": "IEEE Transactions on Mobile Computing, Volume 22",
+        "count": 8,
+        "papers": [
+          "Joint Computation Offloading and Resource Allocation for Mobile Edge Computing.",
+          "6G Network Architecture: Requirements and Challenges.",
+          "LoRa-Based Wide-Area IoT Networks: Coverage Analysis.",
+          "Federated Learning in Heterogeneous Mobile Environments.",
+          "Cross-Technology Communication for IoT Devices.",
+          "Adaptive Beamforming for mmWave 5G Networks.",
+          "Energy-Efficient MAC Protocol for Wireless Sensor Networks.",
+          "D2D Communication Underlaying 5G Cellular Networks."
+        ]
+      }
+    ]
+  }
+]

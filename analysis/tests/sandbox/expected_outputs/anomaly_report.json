@@ -1,0 +1,11 @@
+{
+  "total_checked": 66,
+  "heuristic_candidates": 3,
+  "llm_confirmed": 1,
+  "flags": [
+    {
+      "title": "Graph Isomorphism and Combinatorial Optimization.",
+      "reason": "Not related to computer networking; this paper addresses combinatorial optimization and graph theory, which are outside the domain of computer networks."
+    }
+  ]
+}

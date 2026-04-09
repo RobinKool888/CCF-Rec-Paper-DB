@@ -1,0 +1,20 @@
+[
+  {
+    "canonical": "Software-Defined Networking",
+    "abbreviation": "SDN",
+    "aliases": ["software defined networking", "SDN", "sdn"],
+    "related_narrower": ["P4 programmable data planes", "OpenFlow", "network virtualization"]
+  },
+  {
+    "canonical": "Remote Direct Memory Access",
+    "abbreviation": "RDMA",
+    "aliases": ["rdma", "remote direct memory access"],
+    "related_narrower": ["InfiniBand", "RoCE", "iWARP"]
+  },
+  {
+    "canonical": "Congestion Control",
+    "abbreviation": "",
+    "aliases": ["congestion control", "congestion avoidance"],
+    "related_narrower": ["BBR", "CUBIC", "ECN", "DCQCN"]
+  }
+]

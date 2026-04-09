@@ -1,0 +1,19 @@
+[
+  {
+    "year": "2022",
+    "name": "Computational Complexity 2022",
+    "info": "Computational Complexity Conference 2022",
+    "venues": [
+      {
+        "sub_name_abbr": "conf/ccc/2022",
+        "sub_name": "Proceedings of CCC 2022",
+        "count": 3,
+        "papers": [
+          "On the Complexity of Graph Isomorphism and Related Problems.",
+          "Lower Bounds for Boolean Circuit Complexity.",
+          "Pseudorandom Generators and Derandomization."
+        ]
+      }
+    ]
+  }
+]
