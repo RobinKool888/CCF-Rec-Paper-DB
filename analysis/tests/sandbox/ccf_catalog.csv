@@ -1,0 +1,5 @@
+id,abbr,name,publisher,url,rank,type,category
+1,SIGCOMM,"ACM International Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",ACM,https://dblp.org/db/conf/sigcomm/index.html,A,Conference,2
+2,INFOCOM,IEEE International Conference on Computer Communications,IEEE,https://dblp.org/db/conf/infocom/,A,Conference,2
+3,TMC,IEEE Transactions on Mobile Computing,IEEE,https://dblp.org/db/journals/tmc/,A,Journal,2
+4,CC,Computer Communications,Elsevier,https://dblp.org/db/journals/comcom/,C,Journal,2

@@ -1,0 +1,26 @@
+research_type_heuristics:
+  SURVEY_OVERVIEW:
+    patterns: ['\bsurvey\b', '\boverview\b', '\btutorial\b', '\bsurvey on\b']
+    confidence: 0.95
+  MEASUREMENT_STUDY:
+    patterns: ['\bmeasurement\b', '\bcharacteriz', '\banalysis of\b',
+               '\bstudy of\b', '\bunderstanding\b.*\bwild\b',
+               '\bwild\b', '\bvivisect']
+    confidence: 0.88
+
+application_domain_heuristics:
+  Datacenter:
+    patterns: ['datacenter', 'data center', '\bRDMA\b', 'SmartNIC',
+               '\bcloud\b.*network', 'hyperscale']
+    confidence: 0.90
+  Satellite_LEO:
+    patterns: ['\bsatellite\b', '\bLEO\b', 'low.earth orbit', '\bStarlink\b']
+    confidence: 0.95
+  IoT_Sensor:
+    patterns: ['\bIoT\b', '\bsensor\b', '\bbackscatter\b', '\bLoRa\b',
+               'embedded.*network']
+    confidence: 0.88
+  Wireless_Cellular_5G6G:
+    patterns: ['\b5G\b', '\b6G\b', '\bLTE\b', '\bcellular\b', '\bmobile\b.*network',
+               '\bmmWave\b', '\bwireless\b']
+    confidence: 0.85

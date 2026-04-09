@@ -1,0 +1,15 @@
+research_type_heuristics:
+  PURE_ALGORITHM:
+    patterns: ['\bconvergence\b', '\bproof\b', '\btheorem\b',
+               '\bregret bound\b', '\bcomplexity\b']
+    confidence: 0.88
+
+application_domain_heuristics:
+  Medical:
+    patterns: ['medical', 'clinical', 'hospital', 'diagnosis', 'imaging',
+               'pathology', 'radiology']
+    confidence: 0.92
+  Autonomous_Driving:
+    patterns: ['autonomous driving', 'self-driving', '\bADAS\b',
+               '\bLiDAR\b', 'autonomous vehicle']
+    confidence: 0.95

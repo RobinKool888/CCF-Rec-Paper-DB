@@ -1,0 +1,111 @@
+[
+  {
+    "year": "2022",
+    "name": "SIGCOMM 2022",
+    "info": "ACM SIGCOMM 2022, Amsterdam, Netherlands",
+    "venues": [
+      {
+        "sub_name_abbr": "conf/sigcomm/2022",
+        "sub_name": "Proceedings of the ACM SIGCOMM 2022 Conference",
+        "count": 12,
+        "papers": [
+          "Crux: GPU-Efficient Communication Scheduling for Deep Learning Training.",
+          "RDMA over Ethernet for Distributed Training at Meta Scale.",
+          "A Variegated Look at 5G in the Wild: Performance, Power, and QoE Implications.",
+          "Software-Defined Networking for Dynamic Traffic Management.",
+          "Graph Isomorphism and Combinatorial Optimization.",
+          "Homa: A Receiver-Driven Low-Latency Transport Protocol Using Network Priorities.",
+          "Bolt: Scalable and Cost-Efficient Multicast for Cloud Networks.",
+          "NetReduce: RDMA-Compatible In-Network Reduction for Distributed DNN Training.",
+          "Taming Tail Latency in Key-Value Stores: A Measurement Study.",
+          "CacheLib: Caching at Scale in Meta.",
+          "Aquila: A Practically Usable Verification System for Production-Scale Programmable Data Planes.",
+          "Poster: Early Measurements of the eSIM Ecosystem."
+        ]
+      },
+      {
+        "sub_name_abbr": "conf/sigcomm/2022foci",
+        "sub_name": "Proceedings of the ACM SIGCOMM 2022 Workshop on Free and Open Communications on the Internet (FOCI)",
+        "count": 4,
+        "papers": [
+          "Evaluating the Accessibility of Chinese Domestic Censorship Infrastructure.",
+          "Understanding Censorship Circumvention Tools in the Wild.",
+          "Network Interference Detection at Scale.",
+          "Analyzing DNS Manipulation from a Global Vantage Point."
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "name": "SIGCOMM 2023",
+    "info": "ACM SIGCOMM 2023, New York, NY, USA",
+    "venues": [
+      {
+        "sub_name_abbr": "conf/sigcomm/2023",
+        "sub_name": "Proceedings of the ACM SIGCOMM 2023 Conference",
+        "count": 12,
+        "papers": [
+          "Revisiting Network Transport for Machine Learning.",
+          "Swift: Delay is Simple and Effective for Congestion Control in the Datacenter.",
+          "Shoal: A Network Architecture for Disaggregated Racks.",
+          "SocksDirect: Datacenter Sockets Can Be Fast and Compatible.",
+          "Pensieve: Adaptive Bitrate Video Streaming Using Reinforcement Learning.",
+          "Rethinking Tail Latency in Cloud Microservice Architecture.",
+          "Pantheon: the Training Ground for Internet Congestion-Control Research.",
+          "Low Latency RNN Inference with Cellular Automata.",
+          "Deploying Machine Learning Models in 5G Networks: Challenges and Solutions.",
+          "Programmable Calendar Queues for High-speed Packet Scheduling.",
+          "NetKernel: Making Network Stack Part of the Virtualized Infrastructure.",
+          "Beyond Pilot Contamination: Interference-Aware Beamforming in 5G mmWave Networks."
+        ]
+      },
+      {
+        "sub_name_abbr": "conf/sigcomm/2023netai",
+        "sub_name": "Proceedings of the 2023 Workshop on Network Meets AI & ML (NetAI)",
+        "count": 3,
+        "papers": [
+          "AI-Driven Traffic Engineering for Next-Generation Networks.",
+          "Deep Learning for Network Anomaly Detection.",
+          "Federated Learning for Edge Networks."
+        ]
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "name": "SIGCOMM 2024",
+    "info": "ACM SIGCOMM 2024, Sydney, Australia",
+    "venues": [
+      {
+        "sub_name_abbr": "conf/sigcomm/2024",
+        "sub_name": "Proceedings of the ACM SIGCOMM 2024 Conference",
+        "count": 12,
+        "papers": [
+          "Carbyne: Pushing the Efficiency of Preemptive Disaggregated DNN Serving via Severity-Aware Priority Scheduling.",
+          "Jolteon: Unleashing the Promise of Serverless for Stateful Workflows.",
+          "Partitioning Datacenter Networks to Enable Zero-Configuration High-Bandwidth Networking.",
+          "Scalable Congestion Control for Lossless Networks.",
+          "Wireless Network Slicing for Heterogeneous IoT Traffic.",
+          "Satellite Network Topology Construction in LEO Mega-Constellation.",
+          "Multi-Path QUIC in the Wild: Measuring Deployment and Performance.",
+          "Scalable BGP Security With Path-End Validation.",
+          "6G Network Architecture: Challenges and Opportunities.",
+          "Exploiting Wireless Channel Diversity for Backscatter Communication.",
+          "RDMA-Based Distributed Key-Value Store for Low-Latency Applications.",
+          "Zero-RTT Connection Establishment for Constrained IoT Devices."
+        ]
+      },
+      {
+        "sub_name_abbr": "conf/sigcomm/2024optsys",
+        "sub_name": "Proceedings of the 2024 Workshop on Optical Systems Design (OptSys)",
+        "count": 3,
+        "papers": [
+          "Optical Circuit Switching for Datacenter Networks.",
+          "Microsecond-Level Optical Switching for Cloud Computing.",
+          "Reconfigurable Optical Network Topologies."
+        ]
+      }
+    ]
+  }
+]

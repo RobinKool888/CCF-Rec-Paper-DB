@@ -1,0 +1,28 @@
+{
+  "Remote Direct Memory Access": {
+    "canonical": "Remote Direct Memory Access",
+    "total_count": 4,
+    "paper_fraction": 0.06,
+    "by_year": {"2022": 2, "2023": 1, "2024": 1},
+    "by_rank": {"A": 4},
+    "by_venue": {"SIGCOMM": 2, "INFOCOM": 2},
+    "trend_slope": -0.1,
+    "trend_direction": "stable",
+    "peak_year": 2022,
+    "first_seen": 2022,
+    "last_seen": 2024
+  },
+  "Software-Defined Networking": {
+    "canonical": "Software-Defined Networking",
+    "total_count": 3,
+    "paper_fraction": 0.045,
+    "by_year": {"2022": 1, "2023": 1, "2024": 1},
+    "by_rank": {"A": 2, "C": 1},
+    "by_venue": {"SIGCOMM": 1, "INFOCOM": 1, "CC": 1},
+    "trend_slope": 0.0,
+    "trend_direction": "stable",
+    "peak_year": 2022,
+    "first_seen": 2022,
+    "last_seen": 2024
+  }
+}

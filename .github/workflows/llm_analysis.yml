@@ -1,0 +1,76 @@
+name: LLM Analysis Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      category:
+        description: 'CCF category number (1–10)'
+        required: true
+        default: '2'
+      rank:
+        description: "Rank filter — e.g. 'A' or 'A/B' or 'A/B/C'"
+        required: true
+        default: 'A'
+      module:
+        description: 'Module to run: M1 | M3 | M1+M3 | ALL'
+        required: true
+        default: 'M1'
+
+jobs:
+  run_analysis:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('analysis/requirements_analysis.txt') }}
+
+      - name: Install dependencies
+        run: pip install -r analysis/requirements_analysis.txt
+
+      - name: Download prior LLM cache (if exists)
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: llm-cache-cat${{ github.event.inputs.category }}
+          path: analysis/cache/
+
+      - name: Run analysis module
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python analysis/run.py \
+            --module ${{ github.event.inputs.module }} \
+            --category ${{ github.event.inputs.category }} \
+            --rank "${{ github.event.inputs.rank }}"
+
+      - name: Upload LLM cache artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: llm-cache-cat${{ github.event.inputs.category }}
+          path: analysis/cache/llm_cache.sqlite
+          retention-days: 90
+
+      - name: Upload analysis results
+        uses: actions/upload-artifact@v4
+        with:
+          name: analysis-results-cat${{ github.event.inputs.category }}
+          path: |
+            analysis/cache/term_map.json
+            analysis/cache/term_freq.json
+            analysis/cache/paper_tags.json
+            analysis/cache/anomaly_report.json
+            analysis/cache/graph_data.json
+            analysis/cache/load_report_cat${{ github.event.inputs.category }}.json
+          retention-days: 30
