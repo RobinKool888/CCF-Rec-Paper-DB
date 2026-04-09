@@ -158,6 +158,10 @@ def run_m1(records: list, config: dict, category: int, args) -> tuple:
     anomaly_report = detect_anomalies(records, term_map, llm, config)
     _save_json(anomaly_report, anomaly_path)
 
+    # Persist enriched records (keywords + canonical_terms now populated) so
+    # that re-runs loading from PaperCache have the full data for M2 and M4.
+    paper_cache = PaperCache(os.path.join(cache_dir, "llm_cache.sqlite"))
+    paper_cache.save_papers(records, category)
     ckpt_db.set(ckpt, "done")
     return term_map, anomaly_report
 
@@ -231,6 +235,10 @@ def run_m3(records: list, config: dict, category: int, args) -> list:
         for r in records
     ]
     _save_json(paper_tags, paper_tags_path)
+    # Persist enriched records (research_type + application_domain now set) so
+    # that re-runs loading from PaperCache have the full data for M4.
+    paper_cache = PaperCache(os.path.join(cache_dir, "llm_cache.sqlite"))
+    paper_cache.save_papers(records, category)
     ckpt_db.set(ckpt, "done")
     return paper_tags
 
@@ -402,11 +410,10 @@ def main():
         if not records:
             records, _ = run_m0(args.category, config, args)
         if not term_map:
-            import json as _json
             tm_path = os.path.join(config["paths"]["cache_dir"], "term_map.json")
             if os.path.exists(tm_path):
                 with open(tm_path) as fh:
-                    term_map = _json.load(fh)
+                    term_map = json.load(fh)
         ckpt_db_m2 = _get_checkpoint_db(config)
         m2_ckpt = _ckpt_key("M2", args.category)
         force = getattr(args, "force_recompute", False)
@@ -425,11 +432,10 @@ def main():
         if not records:
             records, _ = run_m0(args.category, config, args)
         if not term_map:
-            import json as _json
             tm_path = os.path.join(config["paths"]["cache_dir"], "term_map.json")
             if os.path.exists(tm_path):
                 with open(tm_path) as fh:
-                    term_map = _json.load(fh)
+                    term_map = json.load(fh)
         ckpt_db_m4 = _get_checkpoint_db(config)
         m4_ckpt = _ckpt_key("M4", args.category)
         force = getattr(args, "force_recompute", False)
