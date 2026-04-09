@@ -21,8 +21,8 @@ llm:
   batch_size: 50
   max_concurrent: 5
   rpm_limit: 500
-  max_retries: 3
-  retry_statuses: [429, 500, 502, 503]
+  max_retries: 5
+  retry_statuses: [429, 500, 502, 503, 524]
 
 domain:
   category: 2
