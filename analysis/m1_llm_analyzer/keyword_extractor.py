@@ -41,49 +41,72 @@ def _parse_response(response: str, batch: list) -> dict:
 
 
 def batch_extract_keywords(
-    records: list, llm_client, config: dict
+    records: list, llm_client, config: dict,
+    category: int = 0,
+    cache_db=None,
 ) -> dict:
     """
     Returns dict mapping title_normalized -> list[str] of technical terms.
     Records are batched by config['llm']['batch_size'].
+
+    When *cache_db* (a SubStageCache) is provided the function:
+      - Pre-loads any already-persisted keyword results so those titles are
+        skipped entirely (no prompt, no LLM call, no re-parse).
+      - Writes each batch's parsed results to kw_results immediately after
+        parsing, so a crash loses at most one in-flight batch (~batch_size
+        titles) rather than the entire extraction run.
     """
     batch_size = config.get("llm", {}).get("batch_size", 50)
-    result: dict = {}
 
     cache_dir = config.get("paths", {}).get("cache_dir", "cache")
     os.makedirs(cache_dir, exist_ok=True)
     skipped_log = os.path.join(cache_dir, "skipped_batches.jsonl")
 
+    # Seed result with any already-persisted keyword rows.
+    result: dict = {}
+    if cache_db is not None:
+        result.update(cache_db.load_kw_results(category))
+
+    # Build prompts only for titles that have not yet been processed.
+    batches_to_send = []
     prompts = []
-    batches = []
     for i in range(0, len(records), batch_size):
         batch = records[i : i + batch_size]
-        batches.append(batch)
-        prompts.append(_build_prompt(batch))
+        pending = [r for r in batch if r.title_normalized not in result]
+        if not pending:
+            continue
+        batches_to_send.append(pending)
+        prompts.append(_build_prompt(pending))
+
+    if not prompts:
+        return result  # everything already in per-title cache
 
     responses = llm_client.complete_batch(prompts)
 
-    for batch, response in zip(batches, responses):
+    for pending, response in zip(batches_to_send, responses):
         if not response:
             # Empty response — content filtered or other API error
             with open(skipped_log, "a", encoding="utf-8") as f:
                 f.write(json.dumps({
                     "reason": "empty_response",
-                    "titles": [r.title for r in batch]
+                    "titles": [r.title for r in pending]
                 }, ensure_ascii=False) + "\n")
             continue
 
-        parsed = _parse_response(response, batch)
+        parsed = _parse_response(response, pending)
 
         if not parsed:
             # Response received but JSON parsing failed
             with open(skipped_log, "a", encoding="utf-8") as f:
                 f.write(json.dumps({
                     "reason": "json_parse_error",
-                    "titles": [r.title for r in batch]
+                    "titles": [r.title for r in pending]
                 }, ensure_ascii=False) + "\n")
             continue
 
         result.update(parsed)
+        # Persist immediately — crash loses at most this one batch.
+        if cache_db is not None:
+            cache_db.save_kw_batch(category, parsed)
 
     return result
