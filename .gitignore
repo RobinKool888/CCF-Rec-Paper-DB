@@ -8,3 +8,10 @@
 analysis/__pycache__
 analysis/**/__pycache__
 analysis/cache/*.sqlite
+analysis/cache/*.npy
+analysis/cache/*.json
+analysis/viz/*.html
+analysis/viz/*.png
+analysis/viz/*.svg
+analysis/logs/
+analysis/test-results.xml

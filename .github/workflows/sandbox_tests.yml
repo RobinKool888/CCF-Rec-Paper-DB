@@ -14,12 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      checks: write        # required to publish test results
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Cache pip
         uses: actions/cache@v4
@@ -31,4 +32,77 @@ jobs:
         run: pip install -r analysis/requirements_analysis.txt
 
       - name: Run sandbox tests
-        run: pytest analysis/tests/ -v --tb=short --cov=analysis --cov-report=term-missing
+        run: |
+          pytest analysis/tests/ -v --tb=short \
+            --cov=analysis --cov-report=term-missing \
+            --junitxml=analysis/test-results.xml
+
+      - name: Publish test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: analysis/test-results.xml
+          retention-days: 30
+
+      - name: Write test summary
+        if: always()
+        run: |
+          python - <<'EOF'
+          import xml.etree.ElementTree as ET, sys, os
+
+          path = "analysis/test-results.xml"
+          if not os.path.exists(path):
+              print("No test-results.xml found")
+              sys.exit(0)
+
+          tree = ET.parse(path)
+          root = tree.getroot()
+          suite = root if root.tag == "testsuite" else root.find("testsuite")
+
+          total    = int(suite.attrib.get("tests", 0))
+          failures = int(suite.attrib.get("failures", 0))
+          errors   = int(suite.attrib.get("errors", 0))
+          skipped  = int(suite.attrib.get("skipped", 0))
+          elapsed  = float(suite.attrib.get("time", 0))
+          passed   = total - failures - errors - skipped
+
+          status_icon = "✅" if (failures + errors) == 0 else "❌"
+
+          lines = [
+              "## Test Results",
+              "",
+              f"| | Count |",
+              f"|---|---|",
+              f"| {status_icon} **Passed** | **{passed}** |",
+              f"| ❌ Failed | {failures} |",
+              f"| ⚠️  Errors | {errors} |",
+              f"| ⏭️  Skipped | {skipped} |",
+              f"| 🕐 Duration | {elapsed:.1f}s |",
+              "",
+              "### Per-test breakdown",
+              "",
+              "| Test | Result | Time |",
+              "|------|--------|------|",
+          ]
+
+          for tc in suite.findall("testcase"):
+              name  = tc.attrib.get("name", "?")
+              cls   = tc.attrib.get("classname", "").split(".")[-1]
+              t     = float(tc.attrib.get("time", 0))
+              label = f"`{cls}::{name}`"
+              if tc.find("failure") is not None or tc.find("error") is not None:
+                  icon = "❌ FAIL"
+              elif tc.find("skipped") is not None:
+                  icon = "⏭️ SKIP"
+              else:
+                  icon = "✅ PASS"
+              lines.append(f"| {label} | {icon} | {t:.2f}s |")
+
+          summary = os.environ.get("GITHUB_STEP_SUMMARY", "")
+          if summary:
+              with open(summary, "a") as fh:
+                  fh.write("\n".join(lines) + "\n")
+          else:
+              print("\n".join(lines))
+          EOF
