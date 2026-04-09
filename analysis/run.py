@@ -161,6 +161,75 @@ def run_m3(records: list, config: dict) -> list:
     return paper_tags
 
 
+def run_mh(category: int, config: dict, args) -> dict:
+    """MH — heuristic-only pipeline (no LLM).
+
+    Steps:
+      1. Load papers (M0).
+      2. Extract n-gram keywords from titles.
+      3. Compute term statistics.
+      4. Classify using heuristics only.
+      5. Generate term visualizations + classification figures.
+
+    Returns a summary dict with counts and output paths.
+    """
+    from mh_heuristic.title_extractor import extract_keywords_from_titles
+    from mh_heuristic.full_classifier import classify_all
+    from m2_term_stats.statistician import compute_term_stats
+    from m2_term_stats.visualizer import (
+        generate_all_visualizations,
+        generate_classification_figures,
+    )
+
+    log = logging.getLogger("MH")
+
+    # --- Step 1: load ---
+    records, load_report = run_m0(category, config, args)
+    log.info("Loaded %d records for category %d", len(records), category)
+
+    # --- Step 2: n-gram keyword extraction ---
+    term_map, _alias_map = extract_keywords_from_titles(records, config)
+    log.info("Extracted %d distinct n-gram terms", len(term_map))
+
+    # --- Step 3: term stats ---
+    term_stats = compute_term_stats(records, term_map, config)
+    cache_dir = config["paths"]["cache_dir"]
+    _save_json(
+        {k: v for k, v in list(term_stats.items())[:500]},
+        os.path.join(cache_dir, f"mh_term_freq_cat{category}.json"),
+    )
+    log.info("Term stats computed: %d terms above min_display_freq", len(term_stats))
+
+    # --- Step 4: heuristic classification ---
+    paper_tags = classify_all(records, config)
+    _save_json(paper_tags, os.path.join(cache_dir, f"mh_paper_tags_cat{category}.json"))
+    log.info("Classified %d papers (heuristics only)", len(paper_tags))
+
+    # --- Step 5: visualizations ---
+    viz_dir = config["paths"]["viz_dir"]
+    generate_all_visualizations(term_stats, records, viz_dir, config)
+    generate_classification_figures(paper_tags, viz_dir)
+    log.info("Figures saved to %s", viz_dir)
+
+    from collections import Counter
+    rt_counts = dict(Counter(t["research_type"] for t in paper_tags))
+    domain_counts: Counter = Counter()
+    for t in paper_tags:
+        for d in t.get("application_domain", []):
+            domain_counts[d] += 1
+
+    summary = {
+        "category": category,
+        "total_papers": len(paper_tags),
+        "research_type_counts": rt_counts,
+        "domain_counts": dict(domain_counts.most_common()),
+        "term_stats_count": len(term_stats),
+        "viz_dir": os.path.abspath(viz_dir),
+    }
+    _save_json(summary, os.path.join(cache_dir, f"mh_summary_cat{category}.json"))
+    return summary
+
+
 def run_m4(records: list, term_map: list, config: dict):
     from m4_graph.embedder import compute_embeddings
     from m4_graph.edge_builder import build_edges
@@ -198,9 +267,19 @@ def main():
                         help="Rank filter: A | B | C | A/B | A/B/C")
     parser.add_argument(
         "--module",
-        choices=["M0", "M1", "M2", "M3", "M4", "M1+M3", "ALL"],
+        choices=["MH", "M0", "M1", "M2", "M3", "M4", "M1+M3", "ALL"],
         default="ALL",
-        help="Which module to run",
+        help=(
+            "Which module to run. "
+            "MH = heuristic-only pipeline (no LLM, fastest); "
+            "M0 = data loader only; "
+            "M1 = LLM keyword extractor; "
+            "M2 = term stats + charts; "
+            "M3 = LLM classifier; "
+            "M4 = graph builder; "
+            "M1+M3 = LLM analysis; "
+            "ALL = full pipeline including LLM steps."
+        ),
     )
     parser.add_argument("--force-recompute", action="store_true",
                         help="Ignore cached results and recompute")
@@ -225,6 +304,11 @@ def main():
 
     records = []
     term_map = []
+
+    if args.module == "MH":
+        summary = run_mh(args.category, config, args)
+        log.info("MH summary: %s", json.dumps(summary, indent=2))
+        return
 
     if args.module in ("M0", "ALL"):
         records, _ = run_m0(args.category, config, args)
