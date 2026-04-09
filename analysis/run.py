@@ -198,7 +198,7 @@ def main():
                         help="Rank filter: A | B | C | A/B | A/B/C")
     parser.add_argument(
         "--module",
-        choices=["M0", "M1", "M2", "M3", "M4", "ALL"],
+        choices=["M0", "M1", "M2", "M3", "M4", "M1+M3", "ALL"],
         default="ALL",
         help="Which module to run",
     )
@@ -225,7 +225,7 @@ def main():
     if args.module in ("M0", "ALL"):
         records, _ = run_m0(args.category, config, args)
 
-    if args.module in ("M1", "ALL"):
+    if args.module in ("M1", "M1+M3", "ALL"):
         if not records:
             records, _ = run_m0(args.category, config, args)
         term_map, _ = run_m1(records, config)
@@ -241,7 +241,7 @@ def main():
                     term_map = _json.load(fh)
         run_m2(records, term_map, config)
 
-    if args.module in ("M3", "ALL"):
+    if args.module in ("M3", "M1+M3", "ALL"):
         if not records:
             records, _ = run_m0(args.category, config, args)
         run_m3(records, config)
