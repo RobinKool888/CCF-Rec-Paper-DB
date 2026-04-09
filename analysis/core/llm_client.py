@@ -1,11 +1,16 @@
 import hashlib
 import json
+import logging
 import os
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Optional
 
 from core.cache_manager import CacheDB
+
+_rate_limit_lock = threading.Lock()
+_rate_limit_until: float = 0.0
 
 
 class SandboxFixtureMissError(Exception):
@@ -109,7 +114,12 @@ class LLMClient:
         if self.openai_base_url:
             kwargs["base_url"] = self.openai_base_url
         client = openai.OpenAI(**kwargs)
+        global _rate_limit_until
         for attempt in range(self.max_retries):
+            with _rate_limit_lock:
+                wait = max(0.0, _rate_limit_until - time.time())
+            if wait > 0:
+                time.sleep(wait)
             try:
                 resp = client.chat.completions.create(
                     model=self.model,
@@ -117,9 +127,19 @@ class LLMClient:
                     temperature=temperature,
                 )
                 return resp.choices[0].message.content
+            except openai.BadRequestError as e:
+                # Third-party proxy content filter triggered (e.g. security paper titles).
+                # Log and return empty string — caller will skip this batch.
+                logging.warning(
+                    f"[LLMClient] BadRequestError (content filtered), skipping: {e}"
+                )
+                return ""
             except openai.RateLimitError:
                 if attempt < self.max_retries - 1:
-                    time.sleep(2 ** attempt)
+                    backoff = 2 ** attempt
+                    with _rate_limit_lock:
+                        _rate_limit_until = time.time() + backoff
+                    time.sleep(backoff)
                 else:
                     raise
 
