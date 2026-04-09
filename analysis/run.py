@@ -12,7 +12,7 @@ if _ANALYSIS_DIR not in sys.path:
 
 from core.config_loader import load_config
 from core.llm_client import LLMClient
-from core.cache_manager import PaperCache
+from core.cache_manager import CacheDB, PaperCache
 
 
 def _setup_logging(log_dir: str):
@@ -33,7 +33,38 @@ def _save_json(obj, path: str):
         json.dump(obj, fh, indent=2, ensure_ascii=False)
 
 
+def _get_checkpoint_db(config: dict) -> "CacheDB":
+    """Returns a CacheDB instance pointing at the same llm_cache.sqlite used by LLMClient."""
+    cache_dir = config["paths"]["cache_dir"]
+    os.makedirs(cache_dir, exist_ok=True)
+    return CacheDB(os.path.join(cache_dir, "llm_cache.sqlite"))
+
+
+def _ckpt_key(stage: str, category: int) -> str:
+    return f"pipeline_checkpoint:cat{category}:{stage}"
+
+
 def run_m0(category: int, config: dict, args) -> tuple:
+    cache_dir = config["paths"]["cache_dir"]
+    paper_cache = PaperCache(os.path.join(cache_dir, "llm_cache.sqlite"))
+    ckpt_db = _get_checkpoint_db(config)
+    ckpt = _ckpt_key("M0", category)
+    force = getattr(args, "force_recompute", False)
+
+    if not force and ckpt_db.get(ckpt):
+        cached_records = paper_cache.load_papers(category)
+        if cached_records:
+            logging.getLogger("M0").info(
+                "Resuming: loaded %d records for category %d from cache (skipping CSV parse)",
+                len(cached_records), category,
+            )
+            report_path = os.path.join(cache_dir, f"load_report_cat{category}.json")
+            load_report = {}
+            if os.path.exists(report_path):
+                with open(report_path) as fh:
+                    load_report = json.load(fh)
+            return cached_records, load_report
+
     from m0_loader.loader import load_papers
     import pandas as pd
 
@@ -46,22 +77,52 @@ def run_m0(category: int, config: dict, args) -> tuple:
         include_unverified=config["loader"]["include_unverified"],
         year_range=(config["loader"]["min_year"], config["loader"]["max_year"]),
     )
-    cache_dir = config["paths"]["cache_dir"]
     _save_json(load_report, os.path.join(cache_dir, f"load_report_cat{category}.json"))
+    paper_cache.save_papers(records, category)
+    ckpt_db.set(ckpt, "done")
     logging.getLogger("M0").info(
         "Loaded %d records for category %d", len(records), category
     )
     return records, load_report
 
 
-def run_m1(records: list, config: dict) -> tuple:
+def run_m1(records: list, config: dict, category: int, args) -> tuple:
     from m1_llm_analyzer.keyword_extractor import batch_extract_keywords
     from m1_llm_analyzer.synonym_merger import merge_synonyms
     from m1_llm_analyzer.anomaly_detector import detect_anomalies
     from collections import Counter
 
-    llm = LLMClient(config["llm"])
     cache_dir = config["paths"]["cache_dir"]
+    ckpt_db = _get_checkpoint_db(config)
+    ckpt = _ckpt_key("M1", category)
+    force = getattr(args, "force_recompute", False)
+
+    term_map_path = os.path.join(cache_dir, "term_map.json")
+    anomaly_path = os.path.join(cache_dir, "anomaly_report.json")
+
+    if not force and ckpt_db.get(ckpt) and os.path.exists(term_map_path) and os.path.exists(anomaly_path):
+        logging.getLogger("M1").info("Resuming: M1 already complete, loading term_map and anomaly_report from disk")
+        with open(term_map_path) as fh:
+            term_map = json.load(fh)
+        with open(anomaly_path) as fh:
+            anomaly_report = json.load(fh)
+        alias_to_canonical: dict = {}
+        for entry in term_map:
+            canonical = entry["canonical"]
+            alias_to_canonical[canonical.lower()] = canonical
+            if entry.get("abbreviation"):
+                alias_to_canonical[entry["abbreviation"].lower()] = canonical
+            for alias in entry.get("aliases", []):
+                alias_to_canonical[alias.lower()] = canonical
+        for rec in records:
+            if not getattr(rec, "canonical_terms", None):
+                rec.canonical_terms = list({
+                    alias_to_canonical.get(kw.lower(), kw)
+                    for kw in (getattr(rec, "keywords", None) or [])
+                })
+        return term_map, anomaly_report
+
+    llm = LLMClient(config["llm"])
 
     # Keyword extraction
     kw_map = batch_extract_keywords(records, llm, config)
@@ -76,7 +137,7 @@ def run_m1(records: list, config: dict) -> tuple:
 
     # Synonym merge
     term_map = merge_synonyms(dict(term_counts), llm, config)
-    _save_json(term_map, os.path.join(cache_dir, "term_map.json"))
+    _save_json(term_map, term_map_path)
 
     # Assign canonical_terms to records
     alias_to_canonical: dict = {}
@@ -95,8 +156,9 @@ def run_m1(records: list, config: dict) -> tuple:
 
     # Anomaly detection
     anomaly_report = detect_anomalies(records, term_map, llm, config)
-    _save_json(anomaly_report, os.path.join(cache_dir, "anomaly_report.json"))
+    _save_json(anomaly_report, anomaly_path)
 
+    ckpt_db.set(ckpt, "done")
     return term_map, anomaly_report
 
 
@@ -113,9 +175,21 @@ def run_m2(records: list, term_map: list, config: dict) -> dict:
     return term_stats
 
 
-def run_m3(records: list, config: dict) -> list:
+def run_m3(records: list, config: dict, category: int, args) -> list:
     from m3_classifier.heuristic_classifier import HeuristicClassifier
     from m3_classifier.llm_classifier import LLMClassifier
+
+    cache_dir = config["paths"]["cache_dir"]
+    ckpt_db = _get_checkpoint_db(config)
+    ckpt = _ckpt_key("M3", category)
+    force = getattr(args, "force_recompute", False)
+
+    paper_tags_path = os.path.join(cache_dir, "paper_tags.json")
+
+    if not force and ckpt_db.get(ckpt) and os.path.exists(paper_tags_path):
+        logging.getLogger("M3").info("Resuming: M3 already complete, loading paper_tags from disk")
+        with open(paper_tags_path) as fh:
+            return json.load(fh)
 
     heuristics_file = config["classifier"]["heuristics_file"]
     threshold = config["classifier"].get("heuristic_confidence_threshold", 0.85)
@@ -156,8 +230,8 @@ def run_m3(records: list, config: dict) -> list:
         }
         for r in records
     ]
-    cache_dir = config["paths"]["cache_dir"]
-    _save_json(paper_tags, os.path.join(cache_dir, "paper_tags.json"))
+    _save_json(paper_tags, paper_tags_path)
+    ckpt_db.set(ckpt, "done")
     return paper_tags
 
 
@@ -299,6 +373,12 @@ def main():
         args.category, args.rank, args.module,
     )
 
+    if args.force_recompute:
+        ckpt_db = _get_checkpoint_db(config)
+        for stage in ("M0", "M1", "M2", "M3", "M4"):
+            ckpt_db.invalidate(_ckpt_key(stage, args.category))
+        log.info("force-recompute: cleared all pipeline checkpoints for category %d", args.category)
+
     # Rank filter
     allowed_ranks = set(r.strip().upper() for r in args.rank.split("/"))
 
@@ -316,7 +396,7 @@ def main():
     if args.module in ("M1", "M1+M3", "ALL"):
         if not records:
             records, _ = run_m0(args.category, config, args)
-        term_map, _ = run_m1(records, config)
+        term_map, _ = run_m1(records, config, args.category, args)
 
     if args.module in ("M2", "ALL"):
         if not records:
@@ -327,12 +407,19 @@ def main():
             if os.path.exists(tm_path):
                 with open(tm_path) as fh:
                     term_map = _json.load(fh)
-        run_m2(records, term_map, config)
+        ckpt_db_m2 = _get_checkpoint_db(config)
+        m2_ckpt = _ckpt_key("M2", args.category)
+        force = getattr(args, "force_recompute", False)
+        if not force and ckpt_db_m2.get(m2_ckpt) and os.path.exists(os.path.join(config["paths"]["cache_dir"], "term_freq.json")):
+            log.info("Resuming: M2 already complete, skipping")
+        else:
+            run_m2(records, term_map, config)
+            ckpt_db_m2.set(m2_ckpt, "done")
 
     if args.module in ("M3", "M1+M3", "ALL"):
         if not records:
             records, _ = run_m0(args.category, config, args)
-        run_m3(records, config)
+        run_m3(records, config, args.category, args)
 
     if args.module in ("M4", "ALL"):
         if not records:
@@ -343,7 +430,14 @@ def main():
             if os.path.exists(tm_path):
                 with open(tm_path) as fh:
                     term_map = _json.load(fh)
-        run_m4(records, term_map, config)
+        ckpt_db_m4 = _get_checkpoint_db(config)
+        m4_ckpt = _ckpt_key("M4", args.category)
+        force = getattr(args, "force_recompute", False)
+        if not force and ckpt_db_m4.get(m4_ckpt) and os.path.exists(os.path.join(config["paths"]["cache_dir"], "graph_data.json")):
+            log.info("Resuming: M4 already complete, skipping")
+        else:
+            run_m4(records, term_map, config)
+            ckpt_db_m4.set(m4_ckpt, "done")
 
     log.info("Done.")
 
