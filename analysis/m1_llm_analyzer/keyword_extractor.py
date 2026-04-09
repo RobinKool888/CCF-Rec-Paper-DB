@@ -51,6 +51,7 @@ def batch_extract_keywords(
     result: dict = {}
 
     cache_dir = config.get("paths", {}).get("cache_dir", "cache")
+    os.makedirs(cache_dir, exist_ok=True)
     skipped_log = os.path.join(cache_dir, "skipped_batches.jsonl")
 
     prompts = []

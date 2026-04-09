@@ -114,8 +114,8 @@ class LLMClient:
         if self.openai_base_url:
             kwargs["base_url"] = self.openai_base_url
         client = openai.OpenAI(**kwargs)
+        global _rate_limit_until
         for attempt in range(self.max_retries):
-            global _rate_limit_until
             with _rate_limit_lock:
                 wait = max(0.0, _rate_limit_until - time.time())
             if wait > 0:
