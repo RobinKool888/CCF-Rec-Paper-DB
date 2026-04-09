@@ -1,26 +1,70 @@
 research_type_heuristics:
   SURVEY_OVERVIEW:
-    patterns: ['\bsurvey\b', '\boverview\b', '\btutorial\b', '\bsurvey on\b']
+    patterns: ['\bsurvey\b', '\boverview\b', '\btutorial\b', '\bsurvey on\b',
+               '\bliterature review\b', '\bstate.of.the.art\b']
     confidence: 0.95
   MEASUREMENT_STUDY:
-    patterns: ['\bmeasurement\b', '\bcharacteriz', '\banalysis of\b',
+    patterns: ['\bmeasurement\b', '\bmeasurements\b', '\bcharacteriz', '\banalysis of\b',
                '\bstudy of\b', '\bunderstanding\b.*\bwild\b',
-               '\bwild\b', '\bvivisect']
+               '\bwild\b', '\bvivisect', '\bempirical\b.*\bstudy\b',
+               '\btraffic analysis\b', '\bnetwork trace\b', '\bmonitoring\b.*\bstudy\b',
+               '\bperformance analysis\b', '\bprofile\b.*\bnetwork\b']
+    confidence: 0.88
+  APPLIED_ML:
+    patterns: ['\bdeep learning\b', '\bneural network\b', '\breinforcement learning\b',
+               '\bmachine learning\b', '\bfederated learning\b',
+               '\bgraph neural\b', '\bGNN\b', '\btransformer\b',
+               '\blarge language model\b', '\bLLM\b', '\bBERT\b', '\bGPT\b',
+               '\bgenerative\b.*\bnetwork\b', '\bdiffusion model\b',
+               '\bautoencoder\b', '\bLSTM\b', '\bconvolutional neural\b',
+               '\battention.based\b', '\bmeta.learning\b', '\bfoundation model\b',
+               '\bknowledge distill', '\btransfer learning\b']
+    confidence: 0.90
+  PURE_ALGORITHM:
+    patterns: ['\boptimal\b.*\balgorithm\b', '\bcombinatorial\b', '\bnp.hard\b',
+               '\bapproximation algorithm\b', '\blower bound\b', '\bupper bound\b',
+               '\bconvergence\b.*\bproof\b', '\btheoretical\b.*\banalysis\b',
+               '\bgame.theoretic\b', '\bnash equilibrium\b',
+               '\bmarkov decision\b', '\bstochastic\b.*\boptimiz',
+               '\bcomplexity\b.*\banalysis\b', '\bproof of\b',
+               '\bpolynomial.time\b', '\bprobabilistic\b.*\bguarantee']
     confidence: 0.88
 
 application_domain_heuristics:
   Datacenter:
     patterns: ['datacenter', 'data center', '\bRDMA\b', 'SmartNIC',
-               '\bcloud\b.*network', 'hyperscale']
+               '\bcloud\b.*network', 'hyperscale', '\bdata.center\b',
+               'rack.scale', '\bhyperscaler\b', 'disaggregated.*memory',
+               'fat.tree', 'leaf.spine', '\bInfiniBand\b', '\bRoCE\b']
     confidence: 0.90
   Satellite_LEO:
-    patterns: ['\bsatellite\b', '\bLEO\b', 'low.earth orbit', '\bStarlink\b']
+    patterns: ['\bsatellite\b', '\bLEO\b', 'low.earth orbit', '\bStarlink\b',
+               '\bOneWeb\b', '\bKuiper\b', 'non.terrestrial network',
+               '\bNTN\b', '\bground station\b', '\binter.satellite link\b']
     confidence: 0.95
   IoT_Sensor:
     patterns: ['\bIoT\b', '\bsensor\b', '\bbackscatter\b', '\bLoRa\b',
-               'embedded.*network']
+               'embedded.*network', '\bNB.IoT\b', '\bZigbee\b',
+               '\bedge.*IoT\b', '\bwearable\b', '\bsmart home\b',
+               '\bindustrial IoT\b', '\bIIoT\b', '\bWSN\b']
     confidence: 0.88
   Wireless_Cellular_5G6G:
     patterns: ['\b5G\b', '\b6G\b', '\bLTE\b', '\bcellular\b', '\bmobile\b.*network',
-               '\bmmWave\b', '\bwireless\b']
+               '\bmmWave\b', '\bwireless\b', '\bWi.Fi\b', '\bIEEE 802\.11\b',
+               '\bMIMO\b', '\bmassive MIMO\b', '\bbeamforming\b',
+               '\bspectrum\b.*\baccess\b', '\bD2D\b', '\bV2X\b',
+               '\bvehicular\b.*network', '\bUAV\b.*\bcommunication\b']
     confidence: 0.85
+  SDN_NFV:
+    patterns: ['\bSDN\b', '\bsoftware.defined\b', '\bNFV\b',
+               '\bnetwork function virtualization\b', '\bOpenFlow\b',
+               '\bP4\b.*\bprogramm', '\bprogrammable\b.*\bnetwork\b',
+               '\bcontrol plane\b', '\bdata plane\b', '\bnetwork slice\b']
+    confidence: 0.88
+  Security:
+    patterns: ['\bDDoS\b', '\bfirewall\b', '\bintrusion detection\b',
+               '\bnetwork security\b', '\bencrypt\b', '\bVPN\b',
+               '\banomaly detection\b.*\bnetwork\b', '\battack\b.*\bnetwork\b',
+               '\bmalware\b', '\bbotn', '\bphishing\b', '\bspoofing\b',
+               '\bzero.trust\b', '\bprivacy\b.*\bnetwork\b']
+    confidence: 0.88

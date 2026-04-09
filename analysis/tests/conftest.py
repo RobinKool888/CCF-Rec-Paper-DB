@@ -22,6 +22,7 @@ from sandbox_helpers import (  # noqa: F401, E402
     MockLLMClient,
     load_sandbox,
     load_sandbox_report,
+    run_mh_sandbox,
     run_m1_sandbox,
     run_m2_sandbox,
     run_m3_sandbox,

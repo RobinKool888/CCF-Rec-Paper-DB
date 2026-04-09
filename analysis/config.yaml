@@ -16,6 +16,7 @@ llm:
   provider: "openai"
   model: "gpt-4o-mini"
   api_key_env: "OPENAI_API_KEY"
+  # openai_base_url: "https://xiaoai.plus/v1"  # third-party OpenAI-compatible endpoint
   ollama_base_url: "http://localhost:11434"
   batch_size: 50
   max_concurrent: 5

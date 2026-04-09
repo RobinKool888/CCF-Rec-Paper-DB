@@ -7,14 +7,43 @@ on:
         description: 'CCF category number (1–10)'
         required: true
         default: '2'
+        type: choice
+        options:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+          - '5'
+          - '6'
+          - '7'
+          - '8'
+          - '9'
+          - '10'
       rank:
         description: "Rank filter — e.g. 'A' or 'A/B' or 'A/B/C'"
         required: true
         default: 'A'
       module:
-        description: 'Module to run: M1 | M3 | M1+M3 | ALL'
+        description: 'Module to run'
         required: true
-        default: 'M1'
+        default: 'M1+M3'
+        type: choice
+        options:
+          - 'M0'
+          - 'M1'
+          - 'M2'
+          - 'M3'
+          - 'M4'
+          - 'M1+M3'
+          - 'ALL'
+      api_key:
+        description: 'LLM API key (leave blank to use the OPENAI_API_KEY repository secret)'
+        required: false
+        default: ''
+      base_url:
+        description: 'LLM base URL for OpenAI-compatible endpoints (e.g. https://xiaoai.plus/v1). Leave blank to use the official OpenAI API.'
+        required: false
+        default: ''
 
 jobs:
   run_analysis:
@@ -46,14 +75,24 @@ jobs:
           name: llm-cache-cat${{ github.event.inputs.category }}
           path: analysis/cache/
 
+      - name: Mask API key if provided via input
+        if: ${{ github.event.inputs.api_key != '' }}
+        run: echo "::add-mask::${{ github.event.inputs.api_key }}"
+
       - name: Run analysis module
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ github.event.inputs.api_key != '' && github.event.inputs.api_key || secrets.OPENAI_API_KEY }}
         run: |
-          python analysis/run.py \
+          cd analysis
+          EXTRA_ARGS=""
+          if [ -n "${{ github.event.inputs.base_url }}" ]; then
+            EXTRA_ARGS="--base-url ${{ github.event.inputs.base_url }}"
+          fi
+          python run.py \
             --module ${{ github.event.inputs.module }} \
             --category ${{ github.event.inputs.category }} \
-            --rank "${{ github.event.inputs.rank }}"
+            --rank "${{ github.event.inputs.rank }}" \
+            $EXTRA_ARGS
 
       - name: Upload LLM cache artifact
         uses: actions/upload-artifact@v4

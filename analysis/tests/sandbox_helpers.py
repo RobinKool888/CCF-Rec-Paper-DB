@@ -599,6 +599,34 @@ def run_m3_sandbox_records():
     return records
 
 
+def run_mh_sandbox(category: int = 2, **kwargs) -> dict:
+    """
+    Run the MH heuristic-only pipeline on sandbox data.
+    Returns {"term_stats": {...}, "paper_tags": [...], "term_map": [...]}.
+    No LLM calls are made.
+    """
+    from mh_heuristic.title_extractor import extract_keywords_from_titles
+    from mh_heuristic.full_classifier import classify_all
+    from m2_term_stats.statistician import compute_term_stats
+
+    records = load_sandbox(category=category, **kwargs)
+
+    term_map, _alias_map = extract_keywords_from_titles(records, SANDBOX_CONFIG)
+
+    cfg = dict(SANDBOX_CONFIG)
+    cfg["term_stats"] = dict(cfg["term_stats"])
+    cfg["term_stats"]["min_display_freq"] = 1
+
+    term_stats = compute_term_stats(records, term_map, cfg)
+    paper_tags = classify_all(records, SANDBOX_CONFIG)
+
+    return {
+        "term_map": term_map,
+        "term_stats": term_stats,
+        "paper_tags": paper_tags,
+    }
+
+
 def count_term_in_sandbox_titles(term: str) -> int:
     """Count how many sandbox (main-track, default) papers have term in normalized title."""
     records = load_sandbox()
