@@ -69,12 +69,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r analysis/requirements_analysis.txt
 
-      - name: Download prior LLM cache (if exists)
-        uses: actions/download-artifact@v4
-        continue-on-error: true
+      - name: Restore LLM cache
+        uses: actions/cache@v4
         with:
-          name: llm-cache-cat${{ github.event.inputs.category }}
-          path: analysis/cache/
+          path: analysis/cache/llm_cache.sqlite
+          key: llm-cache-cat${{ github.event.inputs.category }}-${{ github.run_id }}
+          restore-keys: |
+            llm-cache-cat${{ github.event.inputs.category }}-
 
       - name: Mask API key if provided via input
         if: ${{ github.event.inputs.api_key != '' }}
@@ -94,14 +95,6 @@ jobs:
             --category ${{ github.event.inputs.category }} \
             --rank "${{ github.event.inputs.rank }}" \
             $EXTRA_ARGS
-
-      - name: Upload LLM cache artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: llm-cache-cat${{ github.event.inputs.category }}
-          path: analysis/cache/llm_cache.sqlite
-          retention-days: 90
 
       - name: Upload analysis results
         if: always()
