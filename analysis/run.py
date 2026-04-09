@@ -60,7 +60,7 @@ def run_m1(records: list, config: dict) -> tuple:
     from m1_llm_analyzer.anomaly_detector import detect_anomalies
     from collections import Counter
 
-    llm = LLMClient(config["llm"], )
+    llm = LLMClient(config["llm"])
     cache_dir = config["paths"]["cache_dir"]
 
     # Keyword extraction

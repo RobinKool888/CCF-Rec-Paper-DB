@@ -530,7 +530,6 @@ def run_m4_sandbox() -> dict:
             embeddings[idx] = vec
 
     # Low threshold to ensure edges form in small dataset
-    cfg = dict(SANDBOX_CONFIG)
     cfg = {
         **SANDBOX_CONFIG,
         "graph": {
