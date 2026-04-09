@@ -69,10 +69,23 @@ class LLMClient:
         results = [None] * len(prompts)
         delay = 60.0 / max(self.rpm_limit, 1)
 
+        # Resolve cache hits first — never send a cached prompt to the API
+        uncached_indices = []
+        for i, p in enumerate(prompts):
+            key = self._cache_key(p)
+            cached = self._cache.get(key)
+            if cached is not None:
+                results[i] = cached
+            else:
+                uncached_indices.append(i)
+
+        if not uncached_indices:
+            return results  # everything was already cached
+
         with ThreadPoolExecutor(max_workers=self.max_concurrent) as pool:
             futures = {
-                pool.submit(self.complete, p, temperature): i
-                for i, p in enumerate(prompts)
+                pool.submit(self.complete, prompts[i], temperature): i
+                for i in uncached_indices
             }
             for future in as_completed(futures):
                 idx = futures[future]
@@ -108,9 +121,13 @@ class LLMClient:
 
     def _call_openai(self, prompt: str, temperature: float) -> str:
         import openai
+        import httpx
 
         api_key = os.environ.get(self.api_key_env, "")
-        kwargs = {"api_key": api_key}
+        kwargs = {
+            "api_key": api_key,
+            "timeout": httpx.Timeout(connect=15.0, read=180.0, write=15.0, pool=5.0),
+        }
         if self.openai_base_url:
             kwargs["base_url"] = self.openai_base_url
         client = openai.OpenAI(**kwargs)
@@ -142,6 +159,20 @@ class LLMClient:
                     time.sleep(backoff)
                 else:
                     raise
+            except (openai.APITimeoutError, openai.APIConnectionError) as e:
+                if attempt < self.max_retries - 1:
+                    backoff = 30 * (2 ** attempt)  # 30s, 60s, 120s, …
+                    logging.warning(
+                        f"[LLMClient] Timeout/connection error (attempt {attempt + 1}/{self.max_retries}), "
+                        f"retrying in {backoff}s: {e}"
+                    )
+                    time.sleep(backoff)
+                else:
+                    logging.error(
+                        f"[LLMClient] Giving up after {self.max_retries} attempts due to timeout: {e}"
+                    )
+                    return ""
+        return ""
 
     def _call_anthropic(self, prompt: str, temperature: float) -> str:
         import anthropic
