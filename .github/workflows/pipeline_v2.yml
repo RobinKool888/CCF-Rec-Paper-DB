@@ -13,6 +13,10 @@ on:
         default: '2'
         type: choice
         options: ['1','2','3','4','5','6','7','8','9','10']
+      api_key:
+        description: 'LLM API key — paste your key here (or leave blank to use the OPENAI_API_KEY repo secret)'
+        required: false
+        default: ''
       skip_llm:
         description: 'Skip LLM steps (M1 + M3) — no API key needed'
         required: false
@@ -57,8 +61,6 @@ jobs:
         run: pip install -r pipeline_v2/requirements.txt
 
       # ── Restore savepoint DBs from previous run ──────────────────────────
-      # Key includes venue so each venue has its own independent savepoint chain.
-      # restore-keys falls back to the latest savepoint for this venue.
       - name: Restore pipeline savepoints
         if: ${{ github.event.inputs.force_restart == 'false' }}
         uses: actions/cache@v4
@@ -72,13 +74,13 @@ jobs:
       - name: Mask API key
         if: ${{ github.event.inputs.skip_llm == 'false' }}
         run: |
-          KEY="${{ secrets.OPENAI_API_KEY }}"
+          KEY="${{ github.event.inputs.api_key != '' && github.event.inputs.api_key || secrets.OPENAI_API_KEY }}"
           if [ -n "$KEY" ]; then echo "::add-mask::$KEY"; fi
 
       # ── Run pipeline ──────────────────────────────────────────────────────
       - name: Run pipeline_v2
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ github.event.inputs.api_key != '' && github.event.inputs.api_key || secrets.OPENAI_API_KEY }}
         run: |
           cd pipeline_v2
 
