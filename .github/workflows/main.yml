@@ -1,0 +1,118 @@
+name: pipeline_v2
+
+on:
+  workflow_dispatch:
+    inputs:
+      venue:
+        description: 'Venue name (must match a JSON file in paper_db/2/)'
+        required: true
+        default: 'CoNEXT'
+      category:
+        description: 'CCF category number'
+        required: true
+        default: '2'
+        type: choice
+        options: ['1','2','3','4','5','6','7','8','9','10']
+      skip_llm:
+        description: 'Skip LLM steps (M1 + M3) — no API key needed'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
+      force_restart:
+        description: 'Force restart — clears all savepoints for this venue'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
+      base_url:
+        description: 'LLM base URL (e.g. https://xiaoai.plus/v1). Leave blank for official OpenAI.'
+        required: false
+        default: ''
+
+jobs:
+  run_pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-v2-${{ hashFiles('pipeline_v2/requirements.txt') }}
+          restore-keys: pip-v2-
+
+      - name: Install dependencies
+        run: pip install -r pipeline_v2/requirements.txt
+
+      # ── Restore savepoint DBs from previous run ──────────────────────────
+      # Key includes venue so each venue has its own independent savepoint chain.
+      # restore-keys falls back to the latest savepoint for this venue.
+      - name: Restore pipeline savepoints
+        if: ${{ github.event.inputs.force_restart == 'false' }}
+        uses: actions/cache@v4
+        with:
+          path: pipeline_v2/output/${{ github.event.inputs.venue }}
+          key: pipeline-v2-${{ github.event.inputs.venue }}-${{ github.run_id }}
+          restore-keys: |
+            pipeline-v2-${{ github.event.inputs.venue }}-
+
+      # ── Mask API key ──────────────────────────────────────────────────────
+      - name: Mask API key
+        if: ${{ github.event.inputs.skip_llm == 'false' }}
+        run: |
+          KEY="${{ secrets.OPENAI_API_KEY }}"
+          if [ -n "$KEY" ]; then echo "::add-mask::$KEY"; fi
+
+      # ── Run pipeline ──────────────────────────────────────────────────────
+      - name: Run pipeline_v2
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          cd pipeline_v2
+
+          EXTRA_ARGS=""
+
+          if [ "${{ github.event.inputs.skip_llm }}" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --skip-llm"
+          fi
+
+          if [ "${{ github.event.inputs.force_restart }}" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --force-restart"
+          fi
+
+          if [ -n "${{ github.event.inputs.base_url }}" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --base-url ${{ github.event.inputs.base_url }}"
+          fi
+
+          python run.py \
+            --venue "${{ github.event.inputs.venue }}" \
+            --category "${{ github.event.inputs.category }}" \
+            $EXTRA_ARGS
+
+      # ── Upload output files ───────────────────────────────────────────────
+      - name: Upload analysis results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-v2-results-${{ github.event.inputs.venue }}
+          path: |
+            pipeline_v2/output/${{ github.event.inputs.venue }}/load_report.json
+            pipeline_v2/output/${{ github.event.inputs.venue }}/term_map.json
+            pipeline_v2/output/${{ github.event.inputs.venue }}/term_freq.json
+            pipeline_v2/output/${{ github.event.inputs.venue }}/paper_tags.json
+            pipeline_v2/output/${{ github.event.inputs.venue }}/anomaly_report.json
+            pipeline_v2/output/${{ github.event.inputs.venue }}/run.log
+            pipeline_v2/output/${{ github.event.inputs.venue }}/viz/
+          retention-days: 30
