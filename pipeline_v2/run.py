@@ -141,7 +141,9 @@ def main():
         llm_config["cache_dir"] = venue_output_dir  # llm_cache.sqlite sits next to pipeline.sqlite
         llm_client = LLMClient(llm_config)
 
-    term_map = []
+    # Load term_map from DB if M1 was previously completed (e.g. prior full run,
+    # now re-running with --skip-llm). Falls back to empty list for fresh venues.
+    term_map = db.load_m1_term_map(venue) or []
     anomaly_report = {}
 
     # ──────────────────────────────────────────────────────────────────
