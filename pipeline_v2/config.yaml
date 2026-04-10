@@ -1,0 +1,54 @@
+paths:
+  paper_db: "../paper_db"
+  ccf_catalog: "../paper_db/ccf_catalog.csv"
+  output_dir: "output"
+  log_dir: "output"
+
+loader:
+  include_workshops: false
+  include_unverified: true
+  min_year: 2000
+  max_year: 2025
+
+llm:
+  provider: "openai"
+  model: "gpt-4o-mini"
+  api_key_env: "OPENAI_API_KEY"
+  batch_size: 20
+  max_concurrent: 3
+  rpm_limit: 500
+  max_retries: 5
+  retry_statuses: [429, 500, 502, 503, 524]
+
+domain:
+  category: 2
+  description: >
+    Computer Networks (CCF Category 2): covers datacenter networking,
+    wireless and mobile networks, IoT and sensor networks, network
+    measurement and monitoring, congestion control and transport protocols,
+    software-defined networking (SDN), network function virtualization (NFV),
+    5G/6G cellular systems, satellite and LEO networks, content delivery,
+    and network security protocols.
+
+term_stats:
+  top_k_for_synonym_merge: 500
+  synonym_batch_size: 200
+  min_display_freq: 2
+  ngram_range: [1, 3]
+  trend_window_years: 5
+
+classifier:
+  heuristics_file: "config/heuristics/cat2_networks.yaml"
+  heuristic_confidence_threshold: 0.85
+
+graph:
+  similarity_threshold: 0.45
+  edge_weights:
+    semantic: 0.6
+    term_overlap: 0.3
+    venue_year: 0.1
+  max_nodes_before_faiss: 20000
+  top_k_neighbors_ann: 20
+  embedding_model: "all-MiniLM-L6-v2"
+  umap_n_neighbors: 15
+  umap_min_dist: 0.1
