@@ -73,6 +73,10 @@ def main():
         "--dashboard-only", action="store_true",
         help="Launch M5 dashboard without running the pipeline"
     )
+    parser.add_argument(
+        "--base-url", default=None,
+        help="Override LLM base URL (for OpenAI-compatible endpoints)"
+    )
     args = parser.parse_args()
 
     venue = args.venue
@@ -139,6 +143,8 @@ def main():
         from core.llm_client import LLMClient
         llm_config = dict(config.get("llm", {}))
         llm_config["cache_dir"] = venue_output_dir  # llm_cache.sqlite sits next to pipeline.sqlite
+        if args.base_url:
+            llm_config["openai_base_url"] = args.base_url
         llm_client = LLMClient(llm_config)
 
     # Load term_map from DB if M1 was previously completed (e.g. prior full run,
